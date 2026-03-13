@@ -144,6 +144,14 @@
   margin-bottom: 16px;
   flex-shrink: 0;
 }
+.app-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
 .app-meta {
   display: flex;
   align-items: center;
