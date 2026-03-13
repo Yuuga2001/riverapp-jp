@@ -1,0 +1,182 @@
+/* ===== パンくずリスト ===== */
+.breadcrumb {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 32px 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.3px;
+}
+.breadcrumb a {
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.breadcrumb a:hover { color: var(--text-secondary); }
+.breadcrumb-sep { margin: 0 6px; color: var(--border); }
+.breadcrumb-current { color: var(--text-secondary); }
+
+/* ===== アプリヘッダー ===== */
+.app-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 32px 40px;
+}
+.app-header-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+.app-detail-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.app-header-info { flex: 1; }
+.app-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.app-detail-title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+.app-detail-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* ===== ストアリンク（詳細版） ===== */
+.store-links-detail { display: flex; gap: 8px; flex-wrap: wrap; }
+.store-btn-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  border: 0.5px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.15s;
+  background: var(--surface);
+}
+.store-btn-detail:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  background: #F8F7F4;
+}
+.store-btn-detail svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+/* ===== スクリーンショット ===== */
+.screenshots-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px 48px;
+}
+.screenshots-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+.screenshots-scroll::-webkit-scrollbar { display: none; }
+.screenshot-item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.screenshot-item img {
+  height: 420px;
+  width: auto;
+  border-radius: 16px;
+  border: 0.5px solid var(--border);
+  display: block;
+}
+
+/* ===== セクションラベル（共通） ===== */
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* ===== 説明セクション ===== */
+.description-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 32px 48px;
+  border-top: 0.5px solid var(--border);
+}
+.description-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  max-width: 640px;
+}
+.description-text p + p { margin-top: 16px; }
+
+/* ===== リンクセクション ===== */
+.links-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 32px 64px;
+  border-top: 0.5px solid var(--border);
+}
+.links-list { list-style: none; }
+.link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 0.5px solid var(--border);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.links-list li:first-child .link-item { border-top: 0.5px solid var(--border); }
+.link-item-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: color 0.15s;
+}
+.link-item-arrow {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--text-tertiary);
+  transition: transform 0.15s, color 0.15s;
+}
+.link-item:hover .link-item-label { color: var(--text-primary); }
+.link-item:hover .link-item-arrow { transform: translate(2px, -2px); color: var(--text-secondary); }
+
+/* ===== モバイル ===== */
+@media (max-width: 640px) {
+  .breadcrumb { padding: 16px 20px 0; }
+  .app-header { padding: 32px 20px 32px; }
+  .app-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .app-detail-icon { width: 72px; height: 72px; border-radius: 18px; }
+  .app-detail-title { font-size: 22px; }
+  .screenshots-section { padding: 0 20px 40px; }
+  .screenshot-item img { height: 320px; border-radius: 12px; }
+  .description-section,
+  .links-section { padding-left: 20px; padding-right: 20px; }
+}
