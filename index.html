@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>riverapp.jp — 個人開発アプリ図鑑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --border: #E8E6E0;
+    --border-hover: #C8C5BC;
+    --text-primary: #1A1A18;
+    --text-secondary: #6B6860;
+    --text-tertiary: #A8A59E;
+    --accent: #1A1A18;
+    --mono: 'DM Mono', monospace;
+    --sans: 'Noto Sans JP', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 250, 248, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--text-tertiary); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover { color: var(--text-primary); }
+
+  .hero {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 32px 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: end;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.8px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+  }
+  .hero-title em { font-style: normal; color: var(--text-tertiary); }
+  .hero-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 360px;
+  }
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    padding-bottom: 4px;
+  }
+  .hero-stat { text-align: right; }
+  .hero-stat-num {
+    font-family: var(--mono);
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--text-primary);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  .hero-stat-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-tertiary);
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+  .hero-divider { width: 0.5px; height: 24px; background: var(--border); }
+
+  .filter-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 32px 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid var(--border);
+    margin-bottom: 48px;
+  }
+  .filter-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-tertiary);
+    margin-right: 4px;
+    letter-spacing: 0.5px;
+  }
+  .filter-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 0.5px solid var(--border);
+    color: var(--text-secondary);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.2px;
+  }
+  .filter-btn:hover { border-color: var(--border-hover); color: var(--text-primary); }
+  .filter-btn.active {
+    background: var(--text-primary);
+    color: var(--bg);
+    border-color: var(--text-primary);
+  }
+
+  .apps-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+  }
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .app-card {
+    background: var(--surface);
+    padding: 28px;
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    flex-direction: column;
+  }
+  .app-card:hover { background: #F8F7F4; }
+  .app-card.coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    cursor: default;
+    min-height: 200px;
+  }
+  .app-card.coming-soon:hover { background: var(--bg); }
+
+  .app-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+  }
+  .app-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .app-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+  }
+  .app-badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+  }
+  .badge-game  { background: #EAF3DE; color: #3B6D11; }
+  .badge-util  { background: #E6F1FB; color: #185FA5; }
+  .badge-web   { background: #EEEDFE; color: #534AB7; }
+  .badge-life  { background: #FAEEDA; color: #854F0B; }
+  .badge-social { background: #FBEAF0; color: #993556; }
+
+  .app-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  .app-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+  .store-links { display: flex; gap: 6px; }
+  .store-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+    border: 0.5px solid var(--border);
+    padding: 4px 9px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.15s;
+    background: var(--bg);
+  }
+  .store-btn:hover { border-color: var(--border-hover); color: var(--text-primary); }
+  .store-btn svg { width: 10px; height: 10px; fill: currentColor; flex-shrink: 0; }
+  .app-arrow {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--text-tertiary);
+    transition: transform 0.15s, color 0.15s;
+  }
+  .app-card:hover .app-arrow { transform: translate(2px, -2px); color: var(--text-secondary); }
+  .coming-text {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-tertiary);
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+  .coming-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-tertiary);
+    margin-right: 8px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+  .about-section {
+    border-top: 0.5px solid var(--border);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 32px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .about-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-tertiary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+  .about-text { font-size: 14px; color: var(--text-secondary); line-height: 1.9; }
+  .about-text p + p { margin-top: 16px; }
+
+  footer {
+    border-top: 0.5px solid var(--border);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left { font-family: var(--mono); font-size: 11px; color: var(--text-tertiary); }
+  .footer-right { display: flex; gap: 20px; }
+  .footer-right a {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-right a:hover { color: var(--text-secondary); }
+
+  .fade-up { opacity: 0; transform: translateY(16px); animation: fadeUp 0.5s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .app-card { animation: fadeUp 0.4s ease forwards; opacity: 0; }
+  .app-card:nth-child(1) { animation-delay: 0.05s; }
+  .app-card:nth-child(2) { animation-delay: 0.10s; }
+  .app-card:nth-child(3) { animation-delay: 0.15s; }
+  .app-card:nth-child(4) { animation-delay: 0.20s; }
+  .app-card:nth-child(5) { animation-delay: 0.25s; }
+  .app-card:nth-child(6) { animation-delay: 0.30s; }
+  .app-card:nth-child(7) { animation-delay: 0.35s; }
+
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; padding: 48px 20px 40px; }
+    .hero-right { align-items: flex-start; flex-direction: row; gap: 24px; }
+    .hero-divider { width: 24px; height: 0.5px; }
+    .hero-stat-num { font-size: 28px; }
+    .hero-title { font-size: 26px; }
+    .filter-section, .apps-section { padding-left: 20px; padding-right: 20px; }
+    .apps-grid { grid-template-columns: 1fr; }
+    .about-section { grid-template-columns: 1fr; gap: 16px; padding: 40px 20px; }
+    footer { padding: 20px; flex-direction: column; gap: 12px; text-align: center; }
+    .nav-inner { padding: 0 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">riverapp<span>.jp</span></a>
+    <ul class="nav-links">
+      <li><a href="#apps">apps</a></li>
+      <li><a href="#about">about</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero fade-up" style="animation-delay:0.05s">
+  <div class="hero-left">
+    <p class="hero-eyebrow">indie developer</p>
+    <h1 class="hero-title">
+      ゲーム、便利ツール、<br>
+      スマホアプリ。<br>
+      <em>いろいろ作ってます。</em>
+    </h1>
+    <p class="hero-desc">個人開発者によるアプリ図鑑。iOS・Android・Webアプリを中心に、日々新しいものを作っています。</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat">
+      <div class="hero-stat-num" id="app-count">0</div>
+      <div class="hero-stat-label">apps</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">∞</div>
+      <div class="hero-stat-label">ideas</div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-section" id="apps">
+  <span class="filter-label">filter /</span>
+  <button class="filter-btn active" data-filter="all">すべて</button>
+  <button class="filter-btn" data-filter="game">ゲーム</button>
+  <button class="filter-btn" data-filter="util">便利ツール</button>
+  <button class="filter-btn" data-filter="web">Web</button>
+  <button class="filter-btn" data-filter="life">ライフ</button>
+</div>
+
+<section class="apps-section">
+  <div class="apps-grid" id="apps-grid">
+
+    <!-- ▼▼▼ ここにアプリカードを追加していく ▼▼▼ -->
+    <!-- 新しいアプリを追加するときはこのブロックをコピーして編集 -->
+
+    <div class="app-card" data-category="game">
+      <div class="app-icon-wrap" style="background:#EAF3DE;">🎮</div>
+      <div class="app-meta">
+        <span class="app-name">パズルゲーム A</span>
+        <span class="app-badge badge-game">game</span>
+      </div>
+      <p class="app-desc">シンプルで中毒性のあるパズルゲーム。直感的な操作でだれでも楽しめます。</p>
+      <div class="app-footer">
+        <div class="store-links">
+          <a href="https://apps.apple.com/YOUR_APP_ID" class="store-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="store-btn">
+            <svg viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.65.19.96.04l12.45-7.2-2.78-2.78-10.63 9.94zM.47 1.43C.17 1.76 0 2.27 0 2.93v18.14c0 .66.17 1.17.47 1.5l.08.07 10.16-10.16v-.24L.55 1.36l-.08.07zM20.13 10.44l-2.9-1.68-3.07 3.07 3.07 3.08 2.92-1.69c.83-.48.83-1.27-.02-1.78zM3.18.24l12.45 7.2-2.78 2.77L2.22.28C2.54.11 2.88.07 3.18.24z"/></svg>
+            Google Play
+          </a>
+        </div>
+        <span class="app-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="app-card" data-category="util">
+      <div class="app-icon-wrap" style="background:#E6F1FB;">🛠️</div>
+      <div class="app-meta">
+        <span class="app-name">便利ツール B</span>
+        <span class="app-badge badge-util">util</span>
+      </div>
+      <p class="app-desc">毎日の作業を効率化するシンプルなツール。使いやすさを最優先に設計しています。</p>
+      <div class="app-footer">
+        <div class="store-links">
+          <a href="https://apps.apple.com/YOUR_APP_ID" class="store-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+        </div>
+        <span class="app-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="app-card coming-soon" data-category="all">
+      <div class="coming-text">
+        <span class="coming-dot"></span>開発中...
+      </div>
+    </div>
+
+    <!-- ▲▲▲ アプリカードここまで ▲▲▲ -->
+  </div>
+</section>
+
+<section class="about-section fade-up" id="about" style="animation-delay:0.2s">
+  <div class="about-label">about</div>
+  <div class="about-text">
+    <p>個人開発者です。ゲームから便利ツールまで、思いついたものをとにかく作っています。</p>
+    <p>スマホアプリ（iOS / Android）をメインに、WebアプリやPCツールもつくります。使ってくれる人がいると嬉しいです。</p>
+    <p>お問い合わせは各アプリのサポートページからどうぞ。</p>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-left">© 2025 riverapp.jp</span>
+  <div class="footer-right">
+    <a href="#">privacy policy</a>
+    <a href="#">contact</a>
+  </div>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.app-card:not(.coming-soon)');
+  const countEl = document.getElementById('app-count');
+  const target = cards.length;
+  let current = 0;
+  const timer = setInterval(() => {
+    current++;
+    countEl.textContent = current;
+    if (current >= target) clearInterval(timer);
+  }, 80);
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const appCards = document.querySelectorAll('.app-card[data-category]');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      appCards.forEach(card => {
+        if (card.classList.contains('coming-soon')) {
+          card.style.display = filter === 'all' ? '' : 'none';
+          return;
+        }
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.style.display = match ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>
