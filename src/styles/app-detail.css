@@ -149,6 +149,25 @@
   max-width: 640px;
 }
 .description-text p + p { margin-top: 16px; }
+.description-text h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+.description-text ul, .description-text ol {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.description-text li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+}
+.description-text li + li { margin-top: 4px; }
 
 /* ===== リンクセクション ===== */
 .links-section {
