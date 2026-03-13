@@ -98,20 +98,23 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 32px 48px;
+  overflow: hidden;
 }
-.screenshots-scroll {
+.screenshots-track {
   display: flex;
   gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding-bottom: 8px;
+  width: max-content;
+  animation: scroll-left var(--scroll-duration, 30s) linear infinite;
 }
-.screenshots-scroll::-webkit-scrollbar { display: none; }
+.screenshots-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 .screenshot-item {
   flex-shrink: 0;
-  scroll-snap-align: start;
 }
 .screenshot-item img {
   height: 420px;
@@ -192,7 +195,7 @@
   .app-detail-title { font-size: 22px; }
   .promo-section { padding: 0 20px 32px; }
   .promo-text { font-size: 16px; }
-  .screenshots-section { padding: 0 20px 40px; }
+  .screenshots-section { padding: 0 20px 40px; overflow: hidden; }
   .screenshot-item img { height: 320px; border-radius: 12px; }
   .description-section,
   .links-section { padding-left: 20px; padding-right: 20px; }

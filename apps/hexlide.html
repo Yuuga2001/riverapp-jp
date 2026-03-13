@@ -70,17 +70,18 @@
   <p class="promo-text">六角形のタイルをスライドして、美しいパターンを完成させよう。シンプルだけど奥が深い、新感覚パズル。</p>
 </section>
 
-<!-- ===== スクリーンショット ===== -->
+<!-- ===== スクリーンショット（自動スクロール） ===== -->
 <section class="screenshots-section fade-up" style="animation-delay:0.1s">
-  <div class="screenshots-scroll">
+  <div class="screenshots-track" id="screenshots-track">
+    <!-- JS がこの中身を複製してシームレスループを作る -->
     <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-1.png" alt="スクリーンショット 1" loading="lazy">
+      <img src="/public/images/apps/hexlide/screenshot-1.png" alt="スクリーンショット 1">
     </div>
     <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-2.png" alt="スクリーンショット 2" loading="lazy">
+      <img src="/public/images/apps/hexlide/screenshot-2.png" alt="スクリーンショット 2">
     </div>
     <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-3.png" alt="スクリーンショット 3" loading="lazy">
+      <img src="/public/images/apps/hexlide/screenshot-3.png" alt="スクリーンショット 3">
     </div>
   </div>
 </section>
@@ -128,5 +129,17 @@
   </div>
 </footer>
 
+<script>
+  // スクリーンショット自動スクロール
+  // 元の画像セットを複製してシームレスなループアニメーションを実現
+  const track = document.getElementById('screenshots-track');
+  if (track) {
+    const items = track.innerHTML;
+    track.innerHTML = items + items; // 2セット並べる
+    // 画像枚数に応じてスクロール速度を調整（1枚あたり約8秒）
+    const count = track.querySelectorAll('.screenshot-item').length / 2;
+    track.style.setProperty('--scroll-duration', (count * 8) + 's');
+  }
+</script>
 </body>
 </html>
