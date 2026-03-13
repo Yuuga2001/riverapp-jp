@@ -55,6 +55,21 @@
   margin-bottom: 20px;
 }
 
+/* ===== プロモーションテキスト ===== */
+.promo-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px 40px;
+}
+.promo-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.8;
+  letter-spacing: -0.2px;
+  max-width: 640px;
+}
+
 /* ===== ストアリンク（詳細版） ===== */
 .store-links-detail { display: flex; gap: 8px; flex-wrap: wrap; }
 .store-btn-detail {
@@ -175,6 +190,8 @@
   }
   .app-detail-icon { width: 72px; height: 72px; border-radius: 18px; }
   .app-detail-title { font-size: 22px; }
+  .promo-section { padding: 0 20px 32px; }
+  .promo-text { font-size: 16px; }
   .screenshots-section { padding: 0 20px 40px; }
   .screenshot-item img { height: 320px; border-radius: 12px; }
   .description-section,
