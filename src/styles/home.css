@@ -242,8 +242,8 @@
 }
 .coming-soon-ribbon {
   position: absolute;
-  top: 14px;
-  right: -30px;
+  top: 32px;
+  right: -14px;
   background: var(--text-tertiary);
   color: var(--bg);
   font-family: var(--mono);
