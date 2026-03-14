@@ -72,29 +72,8 @@
 
 <!-- ===== スクリーンショット（自動スクロール） ===== -->
 <section class="screenshots-section fade-up" style="animation-delay:0.1s">
-  <div class="screenshots-track" id="screenshots-track">
-    <!-- JS がこの中身を複製してシームレスループを作る -->
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-1.png" alt="スクリーンショット 1">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-2.png" alt="スクリーンショット 2">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-3.png" alt="スクリーンショット 3">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-4.png" alt="スクリーンショット 4">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-5.png" alt="スクリーンショット 5">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-6.png" alt="スクリーンショット 6">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/hexlide/screenshot-7.png" alt="スクリーンショット 7">
-    </div>
+  <div class="screenshots-track" id="screenshots-track" data-slug="hexlide">
+    <!-- JS が screenshot-*.png を自動検出してカルーセルを構築 -->
   </div>
 </section>
 
@@ -170,16 +149,39 @@
 </footer>
 
 <script>
-  // スクリーンショット自動スクロール
-  // 元の画像セットを複製してシームレスなループアニメーションを実現
-  const track = document.getElementById('screenshots-track');
-  if (track) {
-    const items = track.innerHTML;
-    track.innerHTML = items + items; // 2セット並べる
-    // 画像枚数に応じてスクロール速度を調整（1枚あたり約8秒）
-    const count = track.querySelectorAll('.screenshot-item').length / 2;
-    track.style.setProperty('--scroll-duration', (count * 8) + 's');
-  }
+  // スクリーンショット自動検出 & カルーセル構築
+  // /public/images/apps/{slug}/screenshot-1.png, 2.png, ... を順に試行
+  (function() {
+    var track = document.getElementById('screenshots-track');
+    if (!track) return;
+    var slug = track.dataset.slug;
+    var basePath = '/public/images/apps/' + slug + '/screenshot-';
+    var index = 1;
+
+    function tryLoad() {
+      var img = new Image();
+      img.onload = function() {
+        var item = document.createElement('div');
+        item.className = 'screenshot-item';
+        item.appendChild(img);
+        track.appendChild(item);
+        index++;
+        tryLoad();
+      };
+      img.onerror = function() {
+        // 全画像読み込み完了 → 複製してシームレスループ
+        var count = track.querySelectorAll('.screenshot-item').length;
+        if (count > 0) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          track.style.setProperty('--scroll-duration', (count * 8) + 's');
+        }
+      };
+      img.src = basePath + index + '.png';
+      img.alt = 'スクリーンショット ' + index;
+    }
+
+    tryLoad();
+  })();
 </script>
 </body>
 </html>

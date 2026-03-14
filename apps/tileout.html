@@ -64,20 +64,8 @@
 
 <!-- ===== スクリーンショット（自動スクロール） ===== -->
 <section class="screenshots-section fade-up" style="animation-delay:0.1s">
-  <div class="screenshots-track" id="screenshots-track">
-    <!-- JS がこの中身を複製してシームレスループを作る -->
-    <div class="screenshot-item">
-      <img src="/public/images/apps/tileout/screenshot-1.png" alt="スクリーンショット 1">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/tileout/screenshot-2.png" alt="スクリーンショット 2">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/tileout/screenshot-3.png" alt="スクリーンショット 3">
-    </div>
-    <div class="screenshot-item">
-      <img src="/public/images/apps/tileout/screenshot-4.png" alt="スクリーンショット 4">
-    </div>
+  <div class="screenshots-track" id="screenshots-track" data-slug="tileout">
+    <!-- JS が screenshot-*.png を自動検出してカルーセルを構築 -->
   </div>
 </section>
 
@@ -135,14 +123,37 @@
 </footer>
 
 <script>
-  // スクリーンショット自動スクロール
-  const track = document.getElementById('screenshots-track');
-  if (track) {
-    const items = track.innerHTML;
-    track.innerHTML = items + items;
-    const count = track.querySelectorAll('.screenshot-item').length / 2;
-    track.style.setProperty('--scroll-duration', (count * 8) + 's');
-  }
+  // スクリーンショット自動検出 & カルーセル構築
+  (function() {
+    var track = document.getElementById('screenshots-track');
+    if (!track) return;
+    var slug = track.dataset.slug;
+    var basePath = '/public/images/apps/' + slug + '/screenshot-';
+    var index = 1;
+
+    function tryLoad() {
+      var img = new Image();
+      img.onload = function() {
+        var item = document.createElement('div');
+        item.className = 'screenshot-item';
+        item.appendChild(img);
+        track.appendChild(item);
+        index++;
+        tryLoad();
+      };
+      img.onerror = function() {
+        var count = track.querySelectorAll('.screenshot-item').length;
+        if (count > 0) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          track.style.setProperty('--scroll-duration', (count * 8) + 's');
+        }
+      };
+      img.src = basePath + index + '.png';
+      img.alt = 'スクリーンショット ' + index;
+    }
+
+    tryLoad();
+  })();
 </script>
 </body>
 </html>
