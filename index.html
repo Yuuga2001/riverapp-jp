@@ -46,10 +46,19 @@
 </section>
 
 <div class="filter-section" id="apps">
-  <span class="filter-label">filter /</span>
-  <button class="filter-btn active" data-filter="all">すべて</button>
-  <button class="filter-btn" data-filter="game">ゲーム</button>
-  <button class="filter-btn" data-filter="app">アプリ</button>
+  <div class="filter-row">
+    <span class="filter-label">type /</span>
+    <button class="filter-btn active" data-filter="all" data-group="category">すべて</button>
+    <button class="filter-btn" data-filter="game" data-group="category">ゲーム</button>
+    <button class="filter-btn" data-filter="app" data-group="category">アプリ</button>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">platform /</span>
+    <button class="filter-btn active" data-filter="all" data-group="platform">すべて</button>
+    <button class="filter-btn" data-filter="web" data-group="platform">Web</button>
+    <button class="filter-btn" data-filter="ios" data-group="platform">iOS</button>
+    <button class="filter-btn" data-filter="android" data-group="platform">Android</button>
+  </div>
 </div>
 
 <section class="apps-section">
@@ -58,7 +67,7 @@
     <!-- ▼▼▼ ここにアプリカードを追加していく ▼▼▼ -->
     <!-- data-href="/apps/スラッグ" を指定するとカードクリックで詳細ページに遷移 -->
 
-    <div class="app-card" data-category="game" data-href="/apps/hexlide">
+    <div class="app-card" data-category="game" data-platform="web,ios,android" data-href="/apps/hexlide">
       <img src="/public/images/apps/hexlide/icon.png" alt="HEXLIDE" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">HEXLIDE</span>
@@ -92,7 +101,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="game" data-href="/apps/tileout">
+    <div class="app-card" data-category="game" data-platform="web" data-href="/apps/tileout">
       <img src="/public/images/apps/tileout/icon.png" alt="TileOut" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">TileOut</span>
@@ -117,7 +126,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="game" data-href="/apps/cells">
+    <div class="app-card" data-category="game" data-platform="web" data-href="/apps/cells">
       <img src="/public/images/apps/cells/icon.png" alt="CELLS" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">CELLS</span>
@@ -142,7 +151,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="game" data-href="/apps/puzzlepanel">
+    <div class="app-card" data-category="game" data-platform="web" data-href="/apps/puzzlepanel">
       <img src="/public/images/apps/puzzlepanel/icon.png" alt="パズルパネル" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">パズルパネル</span>
@@ -166,7 +175,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="game" data-href="/apps/circletactics">
+    <div class="app-card" data-category="game" data-platform="web" data-href="/apps/circletactics">
       <img src="/public/images/apps/circletactics/icon.png" alt="CircleTactics" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">CircleTactics</span>
@@ -191,7 +200,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="game" data-href="/apps/bombcountdown">
+    <div class="app-card" data-category="game" data-platform="web" data-href="/apps/bombcountdown">
       <img src="/public/images/apps/bombcountdown/icon.png" alt="BombCountdown" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">BombCountdown</span>
@@ -215,7 +224,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="app" data-href="/apps/branchnamegenerator">
+    <div class="app-card" data-category="app" data-platform="web" data-href="/apps/branchnamegenerator">
       <img src="/public/images/apps/branchnamegenerator/icon.png" alt="Git Branch Name Generator" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">Git Branch Name Generator</span>
@@ -238,7 +247,7 @@
       </div>
     </div>
 
-    <div class="app-card" data-category="app" data-href="/apps/xvideodownloader">
+    <div class="app-card" data-category="app" data-platform="web" data-href="/apps/xvideodownloader">
       <img src="/public/images/apps/xvideodownloader/icon.png" alt="X Video Downloader" class="app-card-icon">
       <div class="app-meta">
         <span class="app-name">X Video Downloader</span>
@@ -300,22 +309,33 @@
     if (current >= target) clearInterval(timer);
   }, 80);
 
-  // フィルター
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  // 2段フィルター（AND条件）
   const appCards = document.querySelectorAll('.app-card[data-category]');
-  filterBtns.forEach(btn => {
+  let activeCategory = 'all';
+  let activePlatform = 'all';
+
+  function applyFilters() {
+    appCards.forEach(card => {
+      if (card.classList.contains('coming-soon')) {
+        const anyVisible = activeCategory === 'all' && activePlatform === 'all';
+        card.style.display = anyVisible ? '' : 'none';
+        return;
+      }
+      const catMatch = activeCategory === 'all' || card.dataset.category === activeCategory;
+      const platforms = (card.dataset.platform || '').split(',');
+      const platMatch = activePlatform === 'all' || platforms.includes(activePlatform);
+      card.style.display = (catMatch && platMatch) ? '' : 'none';
+    });
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
+      const group = btn.dataset.group;
+      document.querySelectorAll('.filter-btn[data-group="' + group + '"]').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      appCards.forEach(card => {
-        if (card.classList.contains('coming-soon')) {
-          card.style.display = filter === 'all' ? '' : 'none';
-          return;
-        }
-        const match = filter === 'all' || card.dataset.category === filter;
-        card.style.display = match ? '' : 'none';
-      });
+      if (group === 'category') activeCategory = btn.dataset.filter;
+      if (group === 'platform') activePlatform = btn.dataset.filter;
+      applyFilters();
     });
   });
 
