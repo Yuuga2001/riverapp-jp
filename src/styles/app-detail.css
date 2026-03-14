@@ -101,6 +101,22 @@
   background: #F8F7F4;
 }
 .store-btn-detail svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+.store-btn-detail-disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+.coming-soon-badge {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  border: 0.5px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
 
 /* ===== スクリーンショット ===== */
 .screenshots-section {

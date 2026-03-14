@@ -235,6 +235,32 @@
 }
 @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
 
+/* Coming Soon リボン付きカード */
+.app-card.app-card-coming-soon {
+  position: relative;
+  overflow: hidden;
+}
+.coming-soon-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -30px;
+  background: var(--text-tertiary);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  padding: 3px 36px;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+  z-index: 1;
+}
+.store-btn-disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
 /* ===== カードアニメーション ===== */
 .app-card { animation: fadeUp 0.4s ease forwards; opacity: 0; }
 .app-card:nth-child(1) { animation-delay: 0.05s; }
@@ -246,6 +272,8 @@
 .app-card:nth-child(7) { animation-delay: 0.35s; }
 .app-card:nth-child(8) { animation-delay: 0.40s; }
 .app-card:nth-child(9) { animation-delay: 0.45s; }
+.app-card:nth-child(10) { animation-delay: 0.50s; }
+.app-card:nth-child(11) { animation-delay: 0.55s; }
 
 /* ===== About ===== */
 .about-section {
