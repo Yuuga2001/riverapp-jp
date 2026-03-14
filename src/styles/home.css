@@ -242,15 +242,15 @@
 }
 .coming-soon-ribbon {
   position: absolute;
-  top: 32px;
-  right: -14px;
+  top: 14px;
+  right: -44px;
   background: var(--text-tertiary);
   color: var(--bg);
   font-family: var(--mono);
   font-size: 9px;
   font-weight: 500;
   letter-spacing: 0.8px;
-  padding: 3px 36px;
+  padding: 5px 80px;
   transform: rotate(45deg);
   text-transform: uppercase;
   z-index: 1;
