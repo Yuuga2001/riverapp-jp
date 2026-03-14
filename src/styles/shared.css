@@ -76,9 +76,7 @@ nav {
   flex-shrink: 0;
 }
 .badge-game  { background: #EAF3DE; color: #3B6D11; }
-.badge-util  { background: #E6F1FB; color: #185FA5; }
-.badge-web   { background: #EEEDFE; color: #534AB7; }
-.badge-life  { background: #FAEEDA; color: #854F0B; }
+.badge-app   { background: #E6F1FB; color: #185FA5; }
 .badge-social { background: #FBEAF0; color: #993556; }
 
 /* ===== タグ（共通） ===== */
