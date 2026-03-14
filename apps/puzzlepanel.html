@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パズルパネル — riverapp.jp</title>
+<meta name="description" content="パズルパネル — タップで反転、規定回数内に目標の形を完成させるロジカルパズル">
+<meta property="og:title" content="パズルパネル — riverapp.jp">
+<meta property="og:description" content="タップで反転、規定回数内に目標の形を完成させるロジカルパズル">
+<meta property="og:image" content="https://riverapp.jp/public/images/apps/puzzlepanel/icon.png">
+<meta property="og:url" content="https://riverapp.jp/apps/puzzlepanel">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles/shared.css">
+<link rel="stylesheet" href="/src/styles/app-detail.css">
+</head>
+<body>
+
+<!-- ===== ナビゲーション ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">riverapp<span>.jp</span></a>
+    <ul class="nav-links">
+      <li><a href="/#apps">apps</a></li>
+      <li><a href="/#about">about</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== パンくずリスト ===== -->
+<div class="breadcrumb fade-up">
+  <a href="/">トップ</a>
+  <span class="breadcrumb-sep">/</span>
+  <a href="/#apps">apps</a>
+  <span class="breadcrumb-sep">/</span>
+  <span class="breadcrumb-current">パズルパネル</span>
+</div>
+
+<!-- ===== アプリヘッダー ===== -->
+<section class="app-header fade-up" style="animation-delay:0.05s">
+  <div class="app-header-inner">
+    <img src="/public/images/apps/puzzlepanel/icon.png" alt="パズルパネル アイコン" class="app-detail-icon">
+    <div class="app-header-info">
+      <div class="app-detail-meta">
+        <h1 class="app-detail-title">パズルパネル</h1>
+        <span class="app-badge badge-game">game</span>
+      </div>
+      <p class="app-detail-subtitle">タップで反転、ロジカルパズル</p>
+      <div class="app-tags app-tags-detail">
+        <span class="app-tag">日本語のみ</span>
+        <span class="app-tag">スマホ/PC両対応</span>
+        <span class="app-tag">Webアプリ</span>
+        <span class="app-tag">1人用</span>
+      </div>
+      <div class="store-links-detail">
+        <div class="store-group">
+          <span class="store-group-label">今すぐブラウザでプレイ</span>
+          <div class="store-group-btns">
+            <a href="https://puzzlepanel.riverapp.jp" class="store-btn-detail" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              Webアプリ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== プロモーションテキスト ===== -->
+<section class="promo-section fade-up" style="animation-delay:0.08s">
+  <p class="promo-text">パネルをタップすると周囲3×3が一斉に反転。規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズルゲームです。全100レベル、4×4から8×8まで段階的に難易度が上昇します。</p>
+</section>
+
+<!-- ===== スクリーンショット（自動スクロール） ===== -->
+<section class="screenshots-section fade-up" style="animation-delay:0.1s">
+  <div class="screenshots-track" id="screenshots-track" data-slug="puzzlepanel">
+    <!-- JS が screenshot-*.png を自動検出してカルーセルを構築 -->
+  </div>
+</section>
+
+<!-- ===== 説明 ===== -->
+<section class="description-section fade-up" style="animation-delay:0.15s">
+  <h2 class="section-label">description</h2>
+  <div class="description-text">
+    <h3>パズルパネルについて</h3>
+    <p>パズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。</p>
+
+    <h3>ゲームの特徴</h3>
+    <ul>
+      <li>ブラウザで今すぐ無料プレイ可能</li>
+      <li>全100レベル（10ステージ構成）</li>
+      <li>盤面サイズ4×4〜8×8まで段階的に拡大</li>
+      <li>毎回異なるランダム問題生成</li>
+      <li>スマートフォン・タブレット・PCに対応</li>
+      <li>登録不要・完全無料</li>
+    </ul>
+
+    <h3>遊び方</h3>
+    <ol>
+      <li>目標の盤面パターンを確認する</li>
+      <li>パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）</li>
+      <li>規定タップ回数をちょうど使い切った時に目標と一致すればクリア</li>
+    </ol>
+
+    <h3>難易度構成</h3>
+    <p>ステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。</p>
+
+    <h3>戦略のポイント</h3>
+    <p>各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。</p>
+  </div>
+</section>
+
+<!-- ===== リンク ===== -->
+<section class="links-section fade-up" style="animation-delay:0.2s">
+  <h2 class="section-label">links</h2>
+  <ul class="links-list">
+    <li>
+      <a href="https://puzzlepanel.riverapp.jp" class="link-item" target="_blank" rel="noopener">
+        <span class="link-item-label">今すぐプレイ</span>
+        <span class="link-item-arrow">↗</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <span class="footer-left">&copy; 2025 riverapp.jp</span>
+  <div class="footer-right">
+    <a href="#">privacy policy</a>
+    <a href="#">contact</a>
+  </div>
+</footer>
+
+<script>
+  // スクリーンショット自動検出 & カルーセル構築
+  (function() {
+    var track = document.getElementById('screenshots-track');
+    if (!track) return;
+    var slug = track.dataset.slug;
+    var basePath = '/public/images/apps/' + slug + '/screenshot-';
+    var index = 1;
+
+    function tryLoad() {
+      var img = new Image();
+      img.onload = function() {
+        var item = document.createElement('div');
+        item.className = 'screenshot-item';
+        item.appendChild(img);
+        track.appendChild(item);
+        index++;
+        tryLoad();
+      };
+      img.onerror = function() {
+        var count = track.querySelectorAll('.screenshot-item').length;
+        if (count > 0) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          track.style.setProperty('--scroll-duration', (count * 8) + 's');
+        }
+      };
+      img.src = basePath + index + '.png';
+      img.alt = 'スクリーンショット ' + index;
+    }
+
+    tryLoad();
+  })();
+</script>
+</body>
+</html>
