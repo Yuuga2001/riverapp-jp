@@ -52,8 +52,9 @@
 .app-detail-subtitle {
   font-size: 14px;
   color: var(--text-secondary);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
+.app-tags-detail { margin-bottom: 16px; }
 
 /* ===== プロモーションテキスト ===== */
 .promo-section {
