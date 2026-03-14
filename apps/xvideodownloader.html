@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X Video Downloader — riverapp.jp</title>
+<link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+<meta name="description" content="X Video Downloader — X（旧Twitter）の動画をワンクリックでダウンロードできる無料Webツール">
+<meta property="og:title" content="X Video Downloader — riverapp.jp">
+<meta property="og:description" content="X（旧Twitter）の動画をワンクリックでダウンロードできる無料Webツール">
+<meta property="og:image" content="https://riverapp.jp/public/images/apps/xvideodownloader/icon.png">
+<meta property="og:url" content="https://riverapp.jp/apps/xvideodownloader">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles/shared.css">
+<link rel="stylesheet" href="/src/styles/app-detail.css">
+</head>
+<body>
+
+<!-- ===== ナビゲーション ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">riverapp<span>.jp</span></a>
+    <ul class="nav-links">
+      <li><a href="/#apps">apps</a></li>
+      <li><a href="/#about">about</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== パンくずリスト ===== -->
+<div class="breadcrumb fade-up">
+  <a href="/">トップ</a>
+  <span class="breadcrumb-sep">/</span>
+  <a href="/#apps">apps</a>
+  <span class="breadcrumb-sep">/</span>
+  <span class="breadcrumb-current">X Video Downloader</span>
+</div>
+
+<!-- ===== アプリヘッダー ===== -->
+<section class="app-header fade-up" style="animation-delay:0.05s">
+  <div class="app-header-inner">
+    <img src="/public/images/apps/xvideodownloader/icon.png" alt="X Video Downloader アイコン" class="app-detail-icon">
+    <div class="app-header-info">
+      <div class="app-detail-meta">
+        <h1 class="app-detail-title">X Video Downloader</h1>
+        <span class="app-badge badge-app">app</span>
+      </div>
+      <p class="app-detail-subtitle">Xの動画をワンクリックで保存</p>
+      <div class="app-tags app-tags-detail">
+        <span class="app-tag">多言語対応</span>
+        <span class="app-tag">スマホ/PC両対応</span>
+        <span class="app-tag">Webアプリ</span>
+      </div>
+      <div class="store-links-detail">
+        <div class="store-group">
+          <span class="store-group-label">今すぐブラウザで使う</span>
+          <div class="store-group-btns">
+            <a href="https://x-video-downloader.riverapp.jp" class="store-btn-detail" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              Webアプリ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== プロモーションテキスト ===== -->
+<section class="promo-section fade-up" style="animation-delay:0.08s">
+  <p class="promo-text">X（旧Twitter）のポストURLを貼り付けるだけで、動画を簡単にダウンロード。最高画質のMP4を自動選択し、ワンクリックで保存できます。登録不要・完全無料の動画保存ツールです。</p>
+</section>
+
+<!-- ===== スクリーンショット（自動スクロール） ===== -->
+<section class="screenshots-section fade-up" style="animation-delay:0.1s">
+  <div class="screenshots-track" id="screenshots-track" data-slug="xvideodownloader">
+    <!-- JS が screenshot-*.png を自動検出してカルーセルを構築 -->
+  </div>
+</section>
+
+<!-- ===== 説明 ===== -->
+<section class="description-section fade-up" style="animation-delay:0.15s">
+  <h2 class="section-label">description</h2>
+  <div class="description-text">
+    <h3>X Video Downloaderについて</h3>
+    <p>X Video Downloaderは、X（旧Twitter）に投稿された動画をかんたんにダウンロードできるWebアプリです。ポストのURLを入力するだけで動画を抽出し、最高画質のMP4ファイルとして保存できます。アカウント登録やソフトのインストールは一切不要です。</p>
+
+    <h3>主な機能</h3>
+    <ul>
+      <li>XのポストURLを貼り付けるだけで動画を抽出</li>
+      <li>最高ビットレートのMP4を自動選択</li>
+      <li>ワンクリックでダウンロード開始</li>
+      <li>日本語・英語の2言語に対応</li>
+      <li>スマホ・PC両対応のレスポンシブデザイン</li>
+      <li>動画はサーバーに保存されないプライバシー配慮設計</li>
+    </ul>
+
+    <h3>使い方</h3>
+    <ol>
+      <li>Xアプリまたはブラウザで動画付きポストのURLをコピー</li>
+      <li>X Video DownloaderにURLを貼り付け</li>
+      <li>「動画を抽出」ボタンをクリック</li>
+      <li>表示された動画を確認し「ダウンロード」をクリック</li>
+    </ol>
+
+    <h3>注意事項</h3>
+    <p>公開ポストの動画のみ対応しています。非公開アカウントや削除済みポストの動画は取得できません。ダウンロードした動画の利用は、著作権法およびXの利用規約に従ってください。</p>
+  </div>
+</section>
+
+<!-- ===== リンク ===== -->
+<section class="links-section fade-up" style="animation-delay:0.2s">
+  <h2 class="section-label">links</h2>
+  <ul class="links-list">
+    <li>
+      <a href="https://x-video-downloader.riverapp.jp" class="link-item" target="_blank" rel="noopener">
+        <span class="link-item-label">今すぐ使う</span>
+        <span class="link-item-arrow">↗</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://x-video-downloader.riverapp.jp/faq.html" class="link-item" target="_blank" rel="noopener">
+        <span class="link-item-label">FAQ・使い方</span>
+        <span class="link-item-arrow">↗</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <span class="footer-left">&copy; 2025 riverapp.jp</span>
+  <div class="footer-right">
+    <a href="#">privacy policy</a>
+    <a href="#">contact</a>
+  </div>
+</footer>
+
+<script>
+  // スクリーンショット自動検出 & カルーセル構築
+  (function() {
+    var track = document.getElementById('screenshots-track');
+    if (!track) return;
+    var slug = track.dataset.slug;
+    var basePath = '/public/images/apps/' + slug + '/screenshot-';
+    var index = 1;
+
+    function tryLoad() {
+      var img = new Image();
+      img.onload = function() {
+        var item = document.createElement('div');
+        item.className = 'screenshot-item';
+        item.appendChild(img);
+        track.appendChild(item);
+        index++;
+        tryLoad();
+      };
+      img.onerror = function() {
+        var count = track.querySelectorAll('.screenshot-item').length;
+        if (count > 0) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          track.style.setProperty('--scroll-duration', (count * 8) + 's');
+        }
+      };
+      img.src = basePath + index + '.png';
+      img.alt = 'スクリーンショット ' + index;
+    }
+
+    tryLoad();
+  })();
+</script>
+</body>
+</html>
