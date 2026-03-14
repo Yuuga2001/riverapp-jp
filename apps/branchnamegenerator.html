@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git Branch Name Generator — riverapp.jp</title>
+<meta name="description" content="Git Branch Name Generator — AIがタスク説明から最適なGitブランチ名を自動生成する開発効率化ツール">
+<meta property="og:title" content="Git Branch Name Generator — riverapp.jp">
+<meta property="og:description" content="AIがタスク説明から最適なGitブランチ名を自動生成する開発効率化ツール">
+<meta property="og:image" content="https://riverapp.jp/public/images/apps/branchnamegenerator/icon.png">
+<meta property="og:url" content="https://riverapp.jp/apps/branchnamegenerator">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles/shared.css">
+<link rel="stylesheet" href="/src/styles/app-detail.css">
+</head>
+<body>
+
+<!-- ===== ナビゲーション ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">riverapp<span>.jp</span></a>
+    <ul class="nav-links">
+      <li><a href="/#apps">apps</a></li>
+      <li><a href="/#about">about</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== パンくずリスト ===== -->
+<div class="breadcrumb fade-up">
+  <a href="/">トップ</a>
+  <span class="breadcrumb-sep">/</span>
+  <a href="/#apps">apps</a>
+  <span class="breadcrumb-sep">/</span>
+  <span class="breadcrumb-current">Git Branch Name Generator</span>
+</div>
+
+<!-- ===== アプリヘッダー ===== -->
+<section class="app-header fade-up" style="animation-delay:0.05s">
+  <div class="app-header-inner">
+    <img src="/public/images/apps/branchnamegenerator/icon.png" alt="Git Branch Name Generator アイコン" class="app-detail-icon">
+    <div class="app-header-info">
+      <div class="app-detail-meta">
+        <h1 class="app-detail-title">Git Branch Name Generator</h1>
+        <span class="app-badge badge-util">util</span>
+      </div>
+      <p class="app-detail-subtitle">AIでブランチ名を自動生成</p>
+      <div class="app-tags app-tags-detail">
+        <span class="app-tag">英語対応</span>
+        <span class="app-tag">スマホ/PC両対応</span>
+        <span class="app-tag">Webアプリ</span>
+        <span class="app-tag">業務効率化</span>
+      </div>
+      <div class="store-links-detail">
+        <div class="store-group">
+          <span class="store-group-label">今すぐブラウザで使う</span>
+          <div class="store-group-btns">
+            <a href="https://branchnamegenerator.riverapp.jp" class="store-btn-detail" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              Webアプリ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== プロモーションテキスト ===== -->
+<section class="promo-section fade-up" style="animation-delay:0.08s">
+  <p class="promo-text">もう「ブランチ名どうしよう…」と悩まない。タスクの説明を入力するだけで、AIが最適なGitブランチ名を5つ提案します。日本語入力OK、プレフィックスや命名規則のカスタマイズにも対応した開発効率化ツールです。</p>
+</section>
+
+<!-- ===== スクリーンショット（自動スクロール） ===== -->
+<section class="screenshots-section fade-up" style="animation-delay:0.1s">
+  <div class="screenshots-track" id="screenshots-track" data-slug="branchnamegenerator">
+    <!-- JS が screenshot-*.png を自動検出してカルーセルを構築 -->
+  </div>
+</section>
+
+<!-- ===== 説明 ===== -->
+<section class="description-section fade-up" style="animation-delay:0.15s">
+  <h2 class="section-label">description</h2>
+  <div class="description-text">
+    <h3>Git Branch Name Generatorについて</h3>
+    <p>Git Branch Name Generatorは、タスクの説明文からAIが最適なGitブランチ名を自動生成する開発者向けツールです。日本語のタスク説明を入力するだけで、意味のある英語ブランチ名を5つ提案。チーム開発での命名規則の統一にも役立ちます。</p>
+
+    <h3>主な機能</h3>
+    <ul>
+      <li>AIがタスク説明から5つのブランチ名候補を提案</li>
+      <li>日本語の説明を意味のある英語ブランチ名に自動変換</li>
+      <li>プレフィックス選択（feature / bugfix / hotfix / fix / カスタム）</li>
+      <li>命名規則の設定（kebab-case / snake_case / camelCase / PascalCase）</li>
+      <li>チケット番号の自動挿入（Jira / GitHub Issue対応）</li>
+      <li>ワンクリックでクリップボードにコピー</li>
+    </ul>
+
+    <h3>使い方</h3>
+    <ol>
+      <li>タスクの説明を入力する（日本語・英語どちらでもOK）</li>
+      <li>必要に応じてプレフィックス・命名規則・チケット番号を設定</li>
+      <li>Generateボタン（または Cmd + Enter）で生成</li>
+      <li>5つの候補から最適なブランチ名をコピー</li>
+    </ol>
+
+    <h3>カスタマイズ例</h3>
+    <p>入力例：「カート機能の修正」→ 生成結果：<code>feature/fix-cart-functionality</code>、<code>bugfix/resolve-cart-issue</code> など。プレフィックスやケーススタイル、チケット番号の有無を自由に組み合わせて、チームのルールに合ったブランチ名を生成できます。</p>
+  </div>
+</section>
+
+<!-- ===== リンク ===== -->
+<section class="links-section fade-up" style="animation-delay:0.2s">
+  <h2 class="section-label">links</h2>
+  <ul class="links-list">
+    <li>
+      <a href="https://branchnamegenerator.riverapp.jp" class="link-item" target="_blank" rel="noopener">
+        <span class="link-item-label">今すぐ使う</span>
+        <span class="link-item-arrow">↗</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <span class="footer-left">&copy; 2025 riverapp.jp</span>
+  <div class="footer-right">
+    <a href="#">privacy policy</a>
+    <a href="#">contact</a>
+  </div>
+</footer>
+
+<script>
+  // スクリーンショット自動検出 & カルーセル構築
+  (function() {
+    var track = document.getElementById('screenshots-track');
+    if (!track) return;
+    var slug = track.dataset.slug;
+    var basePath = '/public/images/apps/' + slug + '/screenshot-';
+    var index = 1;
+
+    function tryLoad() {
+      var img = new Image();
+      img.onload = function() {
+        var item = document.createElement('div');
+        item.className = 'screenshot-item';
+        item.appendChild(img);
+        track.appendChild(item);
+        index++;
+        tryLoad();
+      };
+      img.onerror = function() {
+        var count = track.querySelectorAll('.screenshot-item').length;
+        if (count > 0) {
+          track.innerHTML = track.innerHTML + track.innerHTML;
+          track.style.setProperty('--scroll-duration', (count * 8) + 's');
+        }
+      };
+      img.src = basePath + index + '.png';
+      img.alt = 'スクリーンショット ' + index;
+    }
+
+    tryLoad();
+  })();
+</script>
+</body>
+</html>
