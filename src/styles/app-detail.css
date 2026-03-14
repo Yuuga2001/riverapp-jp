@@ -71,7 +71,15 @@
 }
 
 /* ===== ストアリンク（詳細版） ===== */
-.store-links-detail { display: flex; gap: 8px; flex-wrap: wrap; }
+.store-links-detail { display: flex; gap: 20px; flex-wrap: wrap; }
+.store-group { display: flex; flex-direction: column; gap: 6px; }
+.store-group-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.3px;
+}
+.store-group-btns { display: flex; gap: 8px; flex-wrap: wrap; }
 .store-btn-detail {
   display: inline-flex;
   align-items: center;
