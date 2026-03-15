@@ -128,9 +128,24 @@ export default async function AppDetailPage({ params }: PageProps) {
 
       <DescriptionSection slug={slug} />
 
-      {app.links && app.links.length > 0 && (
-        <LinksSection links={app.links} />
-      )}
+      <LinksSection
+        links={app.links}
+        documentLinks={
+          app.documents
+            ? [
+                ...(app.documents.about
+                  ? [{ label: `${app.name} について`, href: `/app-document/${app.documents.appDisplayName}/about` }]
+                  : []),
+                ...(app.documents["privacy-policy"]
+                  ? [{ label: "プライバシーポリシー", href: `/app-document/${app.documents.appDisplayName}/privacy-policy` }]
+                  : []),
+                ...(app.documents.contact
+                  ? [{ label: "お問い合わせ", href: `/app-document/${app.documents.appDisplayName}/contact` }]
+                  : []),
+              ]
+            : undefined
+        }
+      />
     </>
   );
 }
