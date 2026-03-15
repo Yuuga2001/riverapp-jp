@@ -29,5 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [home, ...appPages, ...docPages];
+  const privacyPolicy: MetadataRoute.Sitemap[number] = {
+    url: `${baseUrl}/privacy-policy`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  };
+
+  return [home, privacyPolicy, ...appPages, ...docPages];
 }

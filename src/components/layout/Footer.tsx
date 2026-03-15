@@ -5,7 +5,7 @@ interface FooterProps {
   contactHref?: string;
 }
 
-export function Footer({ privacyHref = "#", contactHref = "#" }: FooterProps) {
+export function Footer({ privacyHref = "/privacy-policy", contactHref = "/#about" }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
