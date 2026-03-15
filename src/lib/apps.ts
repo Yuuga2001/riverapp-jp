@@ -16,7 +16,9 @@ function loadApps(): App[] {
 
   _cache = files.map((file) => {
     const raw = fs.readFileSync(path.join(appsDir, file), "utf-8");
-    return JSON.parse(raw) as App;
+    const app = JSON.parse(raw) as App;
+    app.slug = app.slug.toLowerCase();
+    return app;
   });
 
   return _cache;
@@ -27,7 +29,7 @@ export function getAllApps(): App[] {
 }
 
 export function getApp(slug: string): App {
-  const app = loadApps().find((a) => a.slug === slug);
+  const app = loadApps().find((a) => a.slug === slug.toLowerCase());
   if (!app) {
     throw new Error(`App not found: ${slug}`);
   }
@@ -69,7 +71,7 @@ export function getAppForDocument(
   docType: string
 ): { app: App; documents: AppDocuments } | undefined {
   for (const app of loadApps()) {
-    if (app.documents && app.slug === appName) {
+    if (app.documents && app.slug === appName.toLowerCase()) {
       const dt = docType as keyof Omit<AppDocuments, "appDisplayName">;
       if (app.documents[dt]) {
         return { app, documents: app.documents };
