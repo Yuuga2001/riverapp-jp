@@ -34,7 +34,7 @@ describe("getAppSlugs", () => {
     const slugs = getAppSlugs();
     expect(slugs).toHaveLength(10);
     expect(slugs).toContain("hexlide");
-    expect(slugs).toContain("widgetmemo");
+    expect(slugs).toContain("memonow");
   });
 });
 
@@ -61,9 +61,9 @@ describe("getAllAppDocumentParams", () => {
 
   it("MemoNow の about/contact/privacy-policy を含む", () => {
     const params = getAllAppDocumentParams();
-    const quickNoteParams = params.filter((p) => p.appName === "MemoNow");
-    expect(quickNoteParams).toHaveLength(3);
-    const docTypes = quickNoteParams.map((p) => p.docType);
+    const memoNowParams = params.filter((p) => p.appName === "MemoNow");
+    expect(memoNowParams).toHaveLength(3);
+    const docTypes = memoNowParams.map((p) => p.docType);
     expect(docTypes).toContain("about");
     expect(docTypes).toContain("contact");
     expect(docTypes).toContain("privacy-policy");
@@ -74,7 +74,7 @@ describe("getAppForDocument", () => {
   it("正しい app + document ペアを返す", () => {
     const result = getAppForDocument("MemoNow", "about");
     expect(result).toBeDefined();
-    expect(result!.app.slug).toBe("widgetmemo");
+    expect(result!.app.slug).toBe("memonow");
     expect(result!.documents.about).toBeDefined();
   });
 

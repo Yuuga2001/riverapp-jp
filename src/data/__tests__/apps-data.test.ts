@@ -36,7 +36,7 @@ describe("apps データ整合性", () => {
   it("comingSoon: true のアプリが1件存在する", () => {
     const comingSoonApps = apps.filter((a) => a.comingSoon);
     expect(comingSoonApps).toHaveLength(1);
-    expect(comingSoonApps[0].slug).toBe("widgetmemo");
+    expect(comingSoonApps[0].slug).toBe("memonow");
   });
 
   it("全アプリが storeLinksCard を持つ", () => {
