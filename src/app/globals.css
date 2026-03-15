@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-bg: #FAFAF8;
+  --color-surface: #FFFFFF;
+  --color-border: #E8E6E0;
+  --color-border-hover: #C8C5BC;
+  --color-text-primary: #1A1A18;
+  --color-text-secondary: #6B6860;
+  --color-text-tertiary: #A8A59E;
+  --color-accent: #1A1A18;
+  --color-card-hover: #F8F7F4;
+  --color-badge-game-bg: #EAF3DE;
+  --color-badge-game-text: #3B6D11;
+  --color-badge-app-bg: #E6F1FB;
+  --color-badge-app-text: #185FA5;
+
+  /* Fonts */
+  --font-mono: "DM Mono", monospace;
+  --font-sans: "Noto Sans JP", sans-serif;
+
+  /* Animations */
+  --animate-fade-up: fadeUp 0.5s ease forwards;
+  --animate-fade-up-card: fadeUp 0.4s ease forwards;
+  --animate-pulse-dot: pulseDot 2s ease-in-out infinite;
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulseDot {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+/* ===== Base ===== */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* ===== Screenshot Carousel ===== */
+@layer components {
+  .screenshots-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    animation: scroll-left var(--scroll-duration, 30s) linear infinite;
+  }
+  .screenshots-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* ===== Description section content styles ===== */
+@layer components {
+  .description-content p + p { margin-top: 16px; }
+  .description-content h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-top: 32px;
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+  }
+  .description-content ul, .description-content ol {
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .description-content li {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+  }
+  .description-content li + li { margin-top: 4px; }
+}
