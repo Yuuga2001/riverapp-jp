@@ -418,7 +418,7 @@ function PrivacyPolicyPage({ app }: { app: { name: string } }) {
 
       {/* Date */}
       <p className="font-mono text-[11px] text-text-tertiary tracking-[0.3px] mt-12">
-        最終更新日: 2025年3月15日
+        最終更新日: 2026年3月15日
       </p>
     </section>
   );

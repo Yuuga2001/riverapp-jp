@@ -17,7 +17,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
 
   if (variant === "detail") {
     const baseClass =
-      "inline-flex items-center gap-1.5 font-mono text-xs text-text-secondary border border-border border-thin px-4 py-2 rounded-lg no-underline transition-all duration-150 bg-surface hover:border-border-hover hover:text-text-primary hover:bg-card-hover";
+      "inline-flex items-center gap-1.5 font-mono text-xs font-medium text-text-primary border border-border border-thin px-4 py-2 rounded-lg no-underline transition-all duration-150 bg-surface hover:border-border-hover hover:bg-card-hover";
 
     if (link.disabled) {
       return (
@@ -38,7 +38,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
 
   // Card variant
   const cardBase =
-    "flex items-center gap-1 font-mono text-[10px] text-text-secondary border border-border border-thin px-[9px] py-1 rounded-md no-underline transition-all duration-150 bg-bg hover:border-border-hover hover:text-text-primary";
+    "flex items-center gap-1 font-mono text-[10px] font-medium text-text-primary border border-border border-thin px-[9px] py-1 rounded-md no-underline transition-all duration-150 bg-bg hover:border-border-hover";
 
   if (link.disabled) {
     return (

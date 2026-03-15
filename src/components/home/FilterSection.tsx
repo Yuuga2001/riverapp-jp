@@ -57,11 +57,11 @@ export function FilterSection({
 }: FilterSectionProps) {
   return (
     <div
-      className="max-w-[960px] mx-auto flex flex-col gap-2.5 border-b border-border border-b-thin mb-12 max-sm:px-5"
-      style={{ padding: "0 32px 24px" }}
+      className="max-w-[960px] mx-auto flex flex-col gap-4 border-b border-border border-b-thin mb-14 max-sm:px-5"
+      style={{ padding: "0 32px 28px" }}
       id="apps"
     >
-      <div className="flex items-center gap-2 flex-wrap">
+      <div className="flex items-center gap-2.5 flex-wrap">
         <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
           type /
         </span>
@@ -75,7 +75,7 @@ export function FilterSection({
           </FilterButton>
         ))}
       </div>
-      <div className="flex items-center gap-2 flex-wrap">
+      <div className="flex items-center gap-2.5 flex-wrap">
         <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
           platform /
         </span>

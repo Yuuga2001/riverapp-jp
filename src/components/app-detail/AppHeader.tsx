@@ -52,7 +52,7 @@ export function AppHeader({ app }: AppHeaderProps) {
           <div className="flex gap-5 flex-wrap">
             {app.storeGroupsDetail.map((group) => (
               <div key={group.label} className="flex flex-col gap-1.5">
-                <span className="font-mono text-[11px] text-text-secondary tracking-[0.3px] font-medium">
+                <span className="font-mono text-[11px] text-text-primary tracking-[0.3px] font-medium">
                   {group.label}
                 </span>
                 <div className="flex gap-2 flex-wrap">
