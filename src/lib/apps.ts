@@ -1,12 +1,33 @@
-import { apps } from "@/data/apps";
-import type { App, AppDocument } from "@/types/app";
+import fs from "fs";
+import path from "path";
+import type { App, AppDocuments } from "@/types/app";
+
+const appsDir = path.join(process.cwd(), "src/data/apps");
+
+let _cache: App[] | null = null;
+
+function loadApps(): App[] {
+  if (_cache) return _cache;
+
+  const files = fs
+    .readdirSync(appsDir)
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+
+  _cache = files.map((file) => {
+    const raw = fs.readFileSync(path.join(appsDir, file), "utf-8");
+    return JSON.parse(raw) as App;
+  });
+
+  return _cache;
+}
 
 export function getAllApps(): App[] {
-  return apps;
+  return loadApps();
 }
 
 export function getApp(slug: string): App {
-  const app = apps.find((a) => a.slug === slug);
+  const app = loadApps().find((a) => a.slug === slug);
   if (!app) {
     throw new Error(`App not found: ${slug}`);
   }
@@ -14,11 +35,11 @@ export function getApp(slug: string): App {
 }
 
 export function getAppSlugs(): string[] {
-  return apps.map((a) => a.slug);
+  return loadApps().map((a) => a.slug);
 }
 
 export function getAppByDisplayName(displayName: string): App | undefined {
-  return apps.find((a) => a.name === displayName);
+  return loadApps().find((a) => a.name === displayName);
 }
 
 export function getAllAppDocumentParams(): {
@@ -26,13 +47,17 @@ export function getAllAppDocumentParams(): {
   docType: string;
 }[] {
   const params: { appName: string; docType: string }[] = [];
-  for (const app of apps) {
+  for (const app of loadApps()) {
     if (app.documents) {
-      for (const doc of app.documents) {
-        params.push({
-          appName: doc.appDisplayName,
-          docType: doc.type,
-        });
+      const docs = app.documents;
+      const docTypes = ["about", "contact", "privacy-policy"] as const;
+      for (const dt of docTypes) {
+        if (docs[dt]) {
+          params.push({
+            appName: docs.appDisplayName,
+            docType: dt,
+          });
+        }
       }
     }
   }
@@ -42,14 +67,12 @@ export function getAllAppDocumentParams(): {
 export function getAppForDocument(
   appName: string,
   docType: string
-): { app: App; document: AppDocument } | undefined {
-  for (const app of apps) {
-    if (app.documents) {
-      const doc = app.documents.find(
-        (d) => d.appDisplayName === appName && d.type === docType
-      );
-      if (doc) {
-        return { app, document: doc };
+): { app: App; documents: AppDocuments } | undefined {
+  for (const app of loadApps()) {
+    if (app.documents && app.documents.appDisplayName === appName) {
+      const dt = docType as keyof Omit<AppDocuments, "appDisplayName">;
+      if (app.documents[dt]) {
+        return { app, documents: app.documents };
       }
     }
   }

@@ -22,9 +22,8 @@ riverapp-jp/
 │   │   ├── app-detail/ Breadcrumb.tsx, AppHeader.tsx, ScreenshotCarousel.tsx, etc.
 │   │   └── shared/    Badge.tsx, Tag.tsx, StoreButton.tsx, icons/
 │   ├── data/
-│   │   ├── apps.ts                             # 全アプリのマスタデータ
-│   │   ├── tags.ts                             # タグカテゴリ定義
-│   │   └── content/{slug}.tsx                  # アプリ別の詳細説明
+│   │   ├── apps/{slug}.json                    # アプリごとのJSONデータ（一元管理）
+│   │   └── tags.ts                             # タグカテゴリ定義
 │   ├── lib/
 │   │   ├── apps.ts                             # getApp, getAllApps ヘルパー
 │   │   └── screenshots.ts                     # ビルド時スクリーンショット列挙
@@ -38,9 +37,15 @@ riverapp-jp/
 
 ## アプリ追加手順
 1. `public/images/apps/{slug}/` にアイコンとスクリーンショットを配置
-2. `src/data/apps.ts` にアプリデータを追加
-3. `src/data/content/{slug}.tsx` に詳細説明コンポーネントを作成
-4. 完了（ページは自動生成される）
+2. `src/data/apps/{slug}.json` を作成（全掲載情報をJSON1ファイルで管理）
+3. 完了（ページは自動生成される）
+
+### JSONファイルの構造
+- 基本情報: slug, name, category, platforms, shortDescription, subtitle, promoText
+- タグ: tags, detailTags
+- ストアリンク: storeLinksCard, storeGroupsDetail
+- 説明文: description（Markdown形式、react-markdownでレンダリング）
+- ドキュメントページ（任意）: documents（about/contact/privacy-policy）
 
 ## フィルターシステム
 - **2段階ANDフィルター**: カテゴリ（type） × プラットフォーム（platform）

@@ -1,0 +1,28 @@
+{
+  "slug": "xvideodownloader",
+  "name": "X Video Downloader",
+  "category": "app",
+  "platforms": ["web"],
+  "shortDescription": "X（旧Twitter）のポストURLを貼り付けるだけで、動画を簡単にダウンロード。最高画質のMP4を自動選択し、ワンクリックで保存できます。日本語・英語対応、登録不要の無料ツールです。",
+  "subtitle": "Xの動画をワンクリックで保存",
+  "promoText": "X（旧Twitter）のポストURLを貼り付けるだけで、動画を簡単にダウンロード。最高画質のMP4を自動選択し、ワンクリックで保存できます。登録不要・完全無料の動画保存ツールです。",
+  "tags": ["英語対応", "スマホ/PC両対応", "業務効率化"],
+  "detailTags": ["Webアプリ", "英語対応", "スマホ/PC両対応", "業務効率化"],
+  "storeLinksCard": [
+    {"type": "web", "url": "https://x-video-downloader.riverapp.jp", "label": "Webアプリ"}
+  ],
+  "storeGroupsDetail": [
+    {
+      "label": "今すぐブラウザで使う",
+      "links": [
+        {"type": "web", "url": "https://x-video-downloader.riverapp.jp", "label": "Webアプリ"}
+      ]
+    }
+  ],
+  "links": [
+    {"label": "今すぐ使う", "url": "https://x-video-downloader.riverapp.jp", "external": true},
+    {"label": "FAQ・使い方", "url": "https://x-video-downloader.riverapp.jp/faq.html", "external": true}
+  ],
+  "ogDescription": "X（旧Twitter）の動画をワンクリックでダウンロードできる無料Webツール",
+  "description": "### X Video Downloaderについて\n\nX Video Downloaderは、X（旧Twitter）に投稿された動画をかんたんにダウンロードできるWebアプリです。ポストのURLを入力するだけで動画を抽出し、最高画質のMP4ファイルとして保存できます。アカウント登録やソフトのインストールは一切不要です。\n\n### 主な機能\n\n- XのポストURLを貼り付けるだけで動画を抽出\n- 最高ビットレートのMP4を自動選択\n- ワンクリックでダウンロード開始\n- 日本語・英語の2言語に対応\n- スマホ・PC両対応のレスポンシブデザイン\n- 動画はサーバーに保存されないプライバシー配慮設計\n\n### 使い方\n\n1. Xアプリまたはブラウザで動画付きポストのURLをコピー\n2. X Video DownloaderにURLを貼り付け\n3. 「動画を抽出」ボタンをクリック\n4. 表示された動画を確認し「ダウンロード」をクリック\n\n### 注意事項\n\n公開ポストの動画のみ対応しています。非公開アカウントや削除済みポストの動画は取得できません。ダウンロードした動画の利用は、著作権法およびXの利用規約に従ってください。"
+}

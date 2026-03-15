@@ -19,10 +19,63 @@ export interface ExternalLink {
   external?: boolean;
 }
 
-export interface AppDocument {
-  type: "about" | "contact" | "privacy-policy";
-  appDisplayName: string;
+// --- Document types for data-driven app pages ---
+
+export interface AboutFeature {
+  name: string;
+  desc: string;
 }
+
+export interface AboutInfo {
+  key: string;
+  value: string;
+}
+
+export interface AboutLink {
+  label: string;
+  href: string;
+  internal?: boolean;
+  external?: boolean;
+}
+
+export interface AboutDocument {
+  catchcopy: string;
+  subcopy: string;
+  features: AboutFeature[];
+  info: AboutInfo[];
+  links: AboutLink[];
+}
+
+export interface ContactMethod {
+  label: string;
+  description: string;
+  url: string;
+  external: boolean;
+}
+
+export interface ContactDocument {
+  methods: ContactMethod[];
+}
+
+export interface PrivacySection {
+  title: string;
+  body: string;
+  bullets?: string[];
+}
+
+export interface PrivacyPolicyDocument {
+  sections: PrivacySection[];
+  lastUpdated: string;
+}
+
+export interface AppDocuments {
+  appDisplayName: string;
+  about?: AboutDocument;
+  contact?: ContactDocument;
+  "privacy-policy"?: PrivacyPolicyDocument;
+}
+
+// --- Main App type ---
 
 export interface App {
   slug: string;
@@ -39,5 +92,6 @@ export interface App {
   links?: ExternalLink[];
   comingSoon?: boolean;
   ogDescription?: string;
-  documents?: AppDocument[];
+  description?: string;
+  documents?: AppDocuments;
 }

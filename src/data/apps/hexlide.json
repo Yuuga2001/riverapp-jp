@@ -1,0 +1,40 @@
+{
+  "slug": "hexlide",
+  "name": "HEXLIDE",
+  "category": "game",
+  "platforms": ["web", "ios", "android"],
+  "shortDescription": "HEXLIDEは、従来のボードゲームにない独自の戦術性を持つ六角形グリッドの対戦ゲームです。コマだけでなく盤面のタイル自体を動かすことができる革新的なルールにより、無限の戦略的可能性が広がります。",
+  "subtitle": "六角形グリッドの対戦ボードゲーム",
+  "promoText": "HEXLIDEは、従来のボードゲームにない独自の戦術性を持つ六角形グリッドの対戦ゲームです。コマだけでなく盤面のタイル自体を動かすことができる革新的なルールにより、無限の戦略的可能性が広がります。",
+  "tags": ["多言語対応", "スマホ/PC両対応", "1〜2人用", "オンライン対戦", "ボードゲーム", "戦略ゲーム"],
+  "detailTags": ["多言語対応", "スマホ/PC両対応", "iOSアプリ", "Androidアプリ", "Webアプリ", "1〜2人用", "オンライン対戦", "ボードゲーム", "戦略ゲーム"],
+  "storeLinksCard": [
+    {"type": "app-store", "url": "https://apps.apple.com/app/hexlide/id000000", "label": "App Store"},
+    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.hexlide", "label": "Google Play"},
+    {"type": "web", "url": "https://hexlide.riverapp.jp", "label": "Webアプリ"}
+  ],
+  "storeGroupsDetail": [
+    {
+      "label": "スマホアプリをダウンロード",
+      "links": [
+        {"type": "app-store", "url": "https://apps.apple.com/app/hexlide/id000000", "label": "App Store"},
+        {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.hexlide", "label": "Google Play"}
+      ]
+    },
+    {
+      "label": "今すぐブラウザでプレイ",
+      "links": [
+        {"type": "web", "url": "https://hexlide.riverapp.jp", "label": "Webアプリ"}
+      ]
+    }
+  ],
+  "links": [
+    {"label": "今すぐプレイ", "url": "https://hexlide.riverapp.jp", "external": true},
+    {"label": "遊び方", "url": "https://hexlide.riverapp.jp/app/how-to-play", "external": true},
+    {"label": "プライバシーポリシー", "url": "https://hexlide.riverapp.jp/app/privacy", "external": true},
+    {"label": "お問い合わせ", "url": "https://hexlide.riverapp.jp/app/contact", "external": true},
+    {"label": "アプリ紹介サイト", "url": "https://hexlide.riverapp.jp/app", "external": true}
+  ],
+  "ogDescription": "コマだけでなく盤面自体を動かす、六角形グリッドの対戦ボードゲーム",
+  "description": "### HEXLIDEについて\n\nHEXLIDEは、六角形（ヘックス）の盤面を動かしながら戦う2人対戦の戦略ボードゲームです。コマの移動に加えて盤面タイル自体も動かせるため、毎手が読み合いになるのが特徴です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- AI対戦モード搭載 - 一人でも楽しめる\n- 2人対戦モード - 友達や家族と対戦\n- スマートフォン・タブレット・PCに対応\n- シンプルなルールで奥深い戦術性\n\n### 遊び方\n\n各プレイヤーは3つのコマを持ち、それらを連結させることで勝利します。1ターンは2つのフェーズから構成されます：\n\n1. コマを選んで端まで滑らせる\n2. 空いているタイルを別の位置へ移動する\n\n### 勝利条件\n\n自分の3つのコマすべてが隣接した状態（線状、三角形、V字など）を作ると勝利です。\n\n### 戦略のポイント\n\nタイル配置を変えることで盤面全体をコントロールできます。相手のコマを分断したり、自分のコマを近づけたりする戦略的な判断が重要です。"
+}

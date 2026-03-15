@@ -15,7 +15,7 @@ export default async function AppDocumentLayout({
     notFound();
   }
 
-  const displayName = result.document.appDisplayName;
+  const displayName = result.documents.appDisplayName;
 
   return (
     <>

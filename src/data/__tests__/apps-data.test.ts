@@ -1,5 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { apps } from "@/data/apps";
+import { getAllApps } from "@/lib/apps";
+
+const apps = getAllApps();
 
 describe("apps データ整合性", () => {
   it("全アプリの slug がユニークである", () => {

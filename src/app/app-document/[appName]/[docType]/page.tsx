@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllAppDocumentParams, getAppForDocument } from "@/lib/apps";
+import type {
+  App,
+  AboutDocument,
+  ContactDocument,
+  PrivacyPolicyDocument,
+  AppDocuments,
+} from "@/types/app";
 
 /* ---------- Static generation ---------- */
 
@@ -28,8 +35,8 @@ export async function generateMetadata({
   const result = getAppForDocument(decodedAppName, docType);
   if (!result) return {};
 
-  const { app } = result;
-  const displayName = result.document.appDisplayName;
+  const { app, documents } = result;
+  const displayName = documents.appDisplayName;
   const docTitle = docTitles[docType];
 
   const title = docTitle
@@ -38,7 +45,7 @@ export async function generateMetadata({
 
   const description = docTitle
     ? `${displayName} の${docTitle}`
-    : `${displayName} — 「ちょっとメモ。」そんな時に、これだけでいい。`;
+    : app.ogDescription ?? app.shortDescription;
 
   const ogImage = `/images/apps/${app.slug}/icon.png`;
 
@@ -80,15 +87,24 @@ export default async function AppDocumentPage({
     notFound();
   }
 
-  const { app } = result;
+  const { app, documents } = result;
 
   switch (docType) {
     case "about":
-      return <AboutPage app={app} />;
+      if (!documents.about) notFound();
+      return <AboutPage app={app} about={documents.about} documents={documents} />;
     case "contact":
-      return <ContactPage app={app} />;
+      if (!documents.contact) notFound();
+      return <ContactPage app={app} contact={documents.contact} />;
     case "privacy-policy":
-      return <PrivacyPolicyPage app={app} />;
+      if (!documents["privacy-policy"]) notFound();
+      return (
+        <PrivacyPolicyPage
+          app={app}
+          privacy={documents["privacy-policy"]}
+          documents={documents}
+        />
+      );
     default:
       notFound();
   }
@@ -98,7 +114,15 @@ export default async function AppDocumentPage({
    About page
    ============================================================ */
 
-function AboutPage({ app }: { app: { slug: string; name: string } }) {
+function AboutPage({
+  app,
+  about,
+  documents,
+}: {
+  app: App;
+  about: AboutDocument;
+  documents: AppDocuments;
+}) {
   return (
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-16 max-sm:px-5 max-sm:pt-8 max-sm:pb-12 animate-fade-up">
       {/* Header */}
@@ -122,14 +146,10 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
 
       {/* Catchcopy */}
       <p className="text-[18px] font-normal text-text-primary leading-[1.8] mb-3 max-sm:text-[16px]">
-        「ちょっとメモ。」そんな時に、これだけでいい。
+        {about.catchcopy}
       </p>
-      <p className="text-[14px] font-light text-text-secondary leading-[1.9] mb-10">
-        たった一枚の、最もシンプルでわかりやすいメモアプリ。
-        <br />
-        ホーム画面ウィジェットやロック画面ウィジェットに常時表示して、瞬時に確認。タップすれば瞬時に開いて、瞬時に書き換え。
-        <br />
-        買い物リスト、電話番号、合言葉——忘れたくない「ちょっとしたこと」を、いつでも目に留まる場所に。
+      <p className="text-[14px] font-light text-text-secondary leading-[1.9] mb-10 whitespace-pre-line">
+        {about.subcopy}
       </p>
 
       {/* Features */}
@@ -137,32 +157,7 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
         features
       </h2>
       <ul className="flex flex-col mb-10">
-        {[
-          {
-            name: "一枚メモ",
-            desc: "余計なものは何もない。画面全体がメモ帳。タップしてすぐ入力",
-          },
-          {
-            name: "ウィジェット常時表示",
-            desc: "メモ内容をホーム画面・ロック画面にいつでも表示。Small / Medium / Large / ロック画面対応",
-          },
-          {
-            name: "フォントサイズ調整",
-            desc: "10pt〜48ptの範囲でスライダー調整",
-          },
-          {
-            name: "カラーカスタマイズ",
-            desc: "背景色・文字色をカラーピッカーで自由に設定",
-          },
-          {
-            name: "グラデーション背景",
-            desc: "設定色に基づいた上部濃・下部淡の美しいグラデーション",
-          },
-          {
-            name: "リアルタイム同期",
-            desc: "書いた瞬間にウィジェットへ反映。アプリを閉じても即時更新",
-          },
-        ].map((feature, i, arr) => (
+        {about.features.map((feature, i) => (
           <li
             key={feature.name}
             className={`flex items-baseline gap-3 py-3.5 max-sm:flex-col max-sm:gap-1 ${
@@ -186,12 +181,7 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
         info
       </h2>
       <ul className="mb-10">
-        {[
-          { key: "対応OS", value: "iOS 17.0 以降" },
-          { key: "価格", value: "無料" },
-          { key: "カテゴリ", value: "仕事効率化" },
-          { key: "開発", value: "riverapp.jp" },
-        ].map((item, i) => (
+        {about.info.map((item, i) => (
           <li
             key={item.key}
             className={`flex items-baseline gap-3 py-2.5 text-[13px] max-sm:flex-col max-sm:gap-0.5 ${
@@ -213,30 +203,44 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
         links
       </h2>
       <ul>
-        <li>
-          <Link
-            href="/app-document/MemoNow/privacy-policy"
-            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
-          >
-            <span>プライバシーポリシー</span>
-            <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              ↗
-            </span>
-          </Link>
-        </li>
-        <li>
-          <a
-            href="https://riverapp.jp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
-          >
-            <span>riverapp.jp</span>
-            <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              ↗
-            </span>
-          </a>
-        </li>
+        {about.links.map((link, i) => {
+          const borderClass =
+            i === 0
+              ? "border-t border-b border-border"
+              : "border-b border-border";
+
+          if (link.internal) {
+            return (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  className={`flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal ${borderClass} transition-colors duration-150 hover:text-text-secondary group border-thin`}
+                >
+                  <span>{link.label}</span>
+                  <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    ↗
+                  </span>
+                </Link>
+              </li>
+            );
+          }
+
+          return (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal ${borderClass} transition-colors duration-150 hover:text-text-secondary group border-thin`}
+              >
+                <span>{link.label}</span>
+                <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
@@ -246,7 +250,13 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
    Contact page
    ============================================================ */
 
-function ContactPage({ app }: { app: { name: string } }) {
+function ContactPage({
+  app,
+  contact,
+}: {
+  app: App;
+  contact: ContactDocument;
+}) {
   return (
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-16 max-sm:px-5 max-sm:pt-8 max-sm:pb-12 animate-fade-up">
       <h1 className="font-sans text-[22px] font-medium text-text-primary mb-2 max-sm:text-[19px]">
@@ -261,44 +271,30 @@ function ContactPage({ app }: { app: { name: string } }) {
       </p>
 
       <ul>
-        <li>
-          <a
-            href="https://forms.gle/68uVrDj6ACmN9PNu8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
-          >
-            <div className="flex flex-col gap-1">
-              <span className="text-[15px] font-normal">
-                お問い合わせフォーム
+        {contact.methods.map((method, i) => (
+          <li key={method.label}>
+            <a
+              href={method.url}
+              target={method.external ? "_blank" : undefined}
+              rel={method.external ? "noopener noreferrer" : undefined}
+              className={`flex items-center justify-between py-[18px] no-underline text-text-primary ${
+                i === 0
+                  ? "border-t border-b border-border"
+                  : "border-b border-border"
+              } transition-colors duration-150 hover:text-text-secondary group border-thin`}
+            >
+              <div className="flex flex-col gap-1">
+                <span className="text-[15px] font-normal">{method.label}</span>
+                <span className="text-[12px] font-light text-text-tertiary">
+                  {method.description}
+                </span>
+              </div>
+              <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                ↗
               </span>
-              <span className="text-[12px] font-light text-text-tertiary">
-                Google フォームから送信
-              </span>
-            </div>
-            <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              ↗
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="mailto:riverapp.jp@gmail.com"
-            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
-          >
-            <div className="flex flex-col gap-1">
-              <span className="text-[15px] font-normal">
-                メールで問い合わせ
-              </span>
-              <span className="text-[12px] font-light text-text-tertiary">
-                riverapp.jp@gmail.com
-              </span>
-            </div>
-            <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              ↗
-            </span>
-          </a>
-        </li>
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
   );
@@ -308,7 +304,21 @@ function ContactPage({ app }: { app: { name: string } }) {
    Privacy Policy page
    ============================================================ */
 
-function PrivacyPolicyPage({ app }: { app: { name: string } }) {
+function PrivacyPolicyPage({
+  app,
+  privacy,
+  documents,
+}: {
+  app: App;
+  privacy: PrivacyPolicyDocument;
+  documents: AppDocuments;
+}) {
+  const displayName = documents.appDisplayName;
+
+  // Format lastUpdated: "2026-03-15" → "2026年3月15日"
+  const [y, m, d] = privacy.lastUpdated.split("-");
+  const formattedDate = `${y}年${parseInt(m)}月${parseInt(d)}日`;
+
   return (
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-16 max-sm:px-5 max-sm:pt-8 max-sm:pb-12 animate-fade-up">
       <h1 className="font-sans text-[22px] font-medium text-text-primary mb-2 max-sm:text-[19px]">
@@ -318,107 +328,50 @@ function PrivacyPolicyPage({ app }: { app: { name: string } }) {
         {app.name}
       </p>
 
-      {/* はじめに */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          はじめに
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本プライバシーポリシーは、{app.name}
-          （以下「本アプリ」）における個人情報の取り扱いについて説明するものです。本アプリは、お客様のプライバシーを尊重し、個人情報の保護に努めます。
-        </p>
-      </div>
+      {privacy.sections.map((section) => {
+        // Replace {appName} template variable
+        const body = section.body.replace(/\{appName\}/g, app.name);
 
-      {/* 収集する情報 */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          収集する情報
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本アプリは、個人情報を一切収集しません。
-        </p>
-        <ul className="text-[14px] font-light text-text-secondary leading-[1.8] pl-5 mt-2">
-          <li className="mb-1">
-            メモの内容はお使いの端末内にのみ保存され、外部サーバーへの送信は行いません
-          </li>
-          <li className="mb-1">
-            フォントサイズ、背景色、文字色などの設定情報も端末内にのみ保存されます
-          </li>
-          <li className="mb-1">アカウント登録やログインは不要です</li>
-        </ul>
-      </div>
+        // Special handling for last section (お問い合わせ) — add link to contact page
+        const isContactSection = section.title === "お問い合わせ";
 
-      {/* データの保存 */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          データの保存
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本アプリのすべてのデータは、端末の UserDefaults（App
-          Groups）にローカル保存されます。データはインターネットを通じて送信されることはなく、開発者がアクセスすることもできません。アプリを削除すると、すべてのデータが端末から完全に削除されます。
-        </p>
-      </div>
-
-      {/* 第三者への提供 */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          第三者への提供
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本アプリは、お客様のデータを第三者に提供、販売、共有することはありません。
-        </p>
-      </div>
-
-      {/* 分析ツール・広告 */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          分析ツール・広告
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本アプリは、分析ツールや広告 SDK を一切使用していません。
-        </p>
-      </div>
-
-      {/* お子様のプライバシー */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          お子様のプライバシー
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本アプリは個人情報を収集しないため、年齢を問わず安心してご利用いただけます。
-        </p>
-      </div>
-
-      {/* プライバシーポリシーの変更 */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          プライバシーポリシーの変更
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本プライバシーポリシーは、必要に応じて更新されることがあります。変更があった場合は、本ページにて最新の内容を掲載します。
-        </p>
-      </div>
-
-      {/* お問い合わせ */}
-      <div className="mb-8">
-        <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
-          お問い合わせ
-        </h2>
-        <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
-          本プライバシーポリシーに関するご質問やお問い合わせは、
-          <Link
-            href="/app-document/MemoNow/contact"
-            className="text-text-secondary underline"
-          >
-            お問い合わせページ
-          </Link>
-          よりご連絡ください。
-        </p>
-      </div>
+        return (
+          <div key={section.title} className="mb-8">
+            <h2 className="font-sans text-[15px] font-medium text-text-primary mb-2.5">
+              {section.title}
+            </h2>
+            {isContactSection && documents.contact ? (
+              <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
+                本プライバシーポリシーに関するご質問やお問い合わせは、
+                <Link
+                  href={`/app-document/${displayName}/contact`}
+                  className="text-text-secondary underline"
+                >
+                  お問い合わせページ
+                </Link>
+                よりご連絡ください。
+              </p>
+            ) : (
+              <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
+                {body}
+              </p>
+            )}
+            {section.bullets && (
+              <ul className="text-[14px] font-light text-text-secondary leading-[1.8] pl-5 mt-2">
+                {section.bullets.map((bullet) => (
+                  <li key={bullet} className="mb-1">
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        );
+      })}
 
       {/* Date */}
       <p className="font-mono text-[11px] text-text-tertiary tracking-[0.3px] mt-12">
-        最終更新日: 2026年3月15日
+        最終更新日: {formattedDate}
       </p>
     </section>
   );

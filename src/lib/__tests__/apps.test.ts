@@ -75,7 +75,7 @@ describe("getAppForDocument", () => {
     const result = getAppForDocument("MemoNow", "about");
     expect(result).toBeDefined();
     expect(result!.app.slug).toBe("widgetmemo");
-    expect(result!.document.type).toBe("about");
+    expect(result!.documents.about).toBeDefined();
   });
 
   it("無効な docType で undefined を返す", () => {

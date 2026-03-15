@@ -1,0 +1,27 @@
+{
+  "slug": "branchnamegenerator",
+  "name": "Git Branch Name Generator",
+  "category": "app",
+  "platforms": ["web"],
+  "shortDescription": "もう「ブランチ名どうしよう…」と悩まない。タスクの説明を入力するだけで、AIが最適なGitブランチ名を5つ提案。日本語入力OK、プレフィックスや命名規則のカスタマイズにも対応した開発効率化ツールです。",
+  "subtitle": "AIでブランチ名を自動生成",
+  "promoText": "もう「ブランチ名どうしよう…」と悩まない。タスクの説明を入力するだけで、AIが最適なGitブランチ名を5つ提案します。日本語入力OK、プレフィックスや命名規則のカスタマイズにも対応した開発効率化ツールです。",
+  "tags": ["英語対応", "スマホ/PC両対応", "業務効率化"],
+  "detailTags": ["英語対応", "スマホ/PC両対応", "Webアプリ", "業務効率化"],
+  "storeLinksCard": [
+    {"type": "web", "url": "https://branchnamegenerator.riverapp.jp", "label": "Webアプリ"}
+  ],
+  "storeGroupsDetail": [
+    {
+      "label": "今すぐブラウザで使う",
+      "links": [
+        {"type": "web", "url": "https://branchnamegenerator.riverapp.jp", "label": "Webアプリ"}
+      ]
+    }
+  ],
+  "links": [
+    {"label": "今すぐ使う", "url": "https://branchnamegenerator.riverapp.jp", "external": true}
+  ],
+  "ogDescription": "AIがタスク説明から最適なGitブランチ名を自動生成する開発効率化ツール",
+  "description": "### Git Branch Name Generatorについて\n\nGit Branch Name Generatorは、タスクの説明文からAIが最適なGitブランチ名を自動生成する開発者向けツールです。日本語のタスク説明を入力するだけで、意味のある英語ブランチ名を5つ提案。チーム開発での命名規則の統一にも役立ちます。\n\n### 主な機能\n\n- AIがタスク説明から5つのブランチ名候補を提案\n- 日本語の説明を意味のある英語ブランチ名に自動変換\n- プレフィックス選択（feature / bugfix / hotfix / fix / カスタム）\n- 命名規則の設定（kebab-case / snake_case / camelCase / PascalCase）\n- チケット番号の自動挿入（Jira / GitHub Issue対応）\n- ワンクリックでクリップボードにコピー\n\n### 使い方\n\n1. タスクの説明を入力する（日本語・英語どちらでもOK）\n2. 必要に応じてプレフィックス・命名規則・チケット番号を設定\n3. Generateボタン（または Cmd + Enter）で生成\n4. 5つの候補から最適なブランチ名をコピー\n\n### カスタマイズ例\n\n入力例：「カート機能の修正」→ 生成結果：`feature/fix-cart-functionality`、`bugfix/resolve-cart-issue` など。プレフィックスやケーススタイル、チケット番号の有無を自由に組み合わせて、チームのルールに合ったブランチ名を生成できます。"
+}
