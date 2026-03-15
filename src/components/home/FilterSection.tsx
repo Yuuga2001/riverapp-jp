@@ -1,6 +1,7 @@
 "use client";
 
 import type { AppCategory, Platform } from "@/types/app";
+import type { SortOrder } from "./AppsContainer";
 
 type CategoryFilter = "all" | AppCategory;
 type PlatformFilter = "all" | Platform;
@@ -8,8 +9,10 @@ type PlatformFilter = "all" | Platform;
 interface FilterSectionProps {
   activeCategory: CategoryFilter;
   activePlatform: PlatformFilter;
+  sortOrder: SortOrder;
   onCategoryChange: (category: CategoryFilter) => void;
   onPlatformChange: (platform: PlatformFilter) => void;
+  onSortChange: (sort: SortOrder) => void;
 }
 
 const CATEGORIES: { value: CategoryFilter; label: string }[] = [
@@ -49,11 +52,18 @@ function FilterButton({
   );
 }
 
+const SORTS: { value: SortOrder; label: string }[] = [
+  { value: "oldest", label: "古い順" },
+  { value: "newest", label: "新しい順" },
+];
+
 export function FilterSection({
   activeCategory,
   activePlatform,
+  sortOrder,
   onCategoryChange,
   onPlatformChange,
+  onSortChange,
 }: FilterSectionProps) {
   return (
     <div
@@ -86,6 +96,20 @@ export function FilterSection({
             onClick={() => onPlatformChange(plat.value)}
           >
             {plat.label}
+          </FilterButton>
+        ))}
+      </div>
+      <div className="flex items-center gap-2.5 flex-wrap">
+        <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
+          sort /
+        </span>
+        {SORTS.map((s) => (
+          <FilterButton
+            key={s.value}
+            active={sortOrder === s.value}
+            onClick={() => onSortChange(s.value)}
+          >
+            {s.label}
           </FilterButton>
         ))}
       </div>
