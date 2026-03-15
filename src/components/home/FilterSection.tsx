@@ -72,9 +72,6 @@ export function FilterSection({
       id="apps"
     >
       <div className="flex items-center gap-2.5 flex-wrap">
-        <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
-          type /
-        </span>
         {CATEGORIES.map((cat) => (
           <FilterButton
             key={cat.value}
@@ -86,9 +83,6 @@ export function FilterSection({
         ))}
       </div>
       <div className="flex items-center gap-2.5 flex-wrap">
-        <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
-          platform /
-        </span>
         {PLATFORMS.map((plat) => (
           <FilterButton
             key={plat.value}
@@ -100,9 +94,6 @@ export function FilterSection({
         ))}
       </div>
       <div className="flex items-center gap-2.5 flex-wrap">
-        <span className="font-mono text-[11px] text-text-tertiary mr-1 tracking-[0.5px]">
-          sort /
-        </span>
         {SORTS.map((s) => (
           <FilterButton
             key={s.value}
