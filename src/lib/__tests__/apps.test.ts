@@ -61,7 +61,7 @@ describe("getAllAppDocumentParams", () => {
 
   it("MemoNow の about/contact/privacy-policy を含む", () => {
     const params = getAllAppDocumentParams();
-    const memoNowParams = params.filter((p) => p.appName === "MemoNow");
+    const memoNowParams = params.filter((p) => p.appName === "memonow");
     expect(memoNowParams).toHaveLength(3);
     const docTypes = memoNowParams.map((p) => p.docType);
     expect(docTypes).toContain("about");
@@ -72,14 +72,14 @@ describe("getAllAppDocumentParams", () => {
 
 describe("getAppForDocument", () => {
   it("正しい app + document ペアを返す", () => {
-    const result = getAppForDocument("MemoNow", "about");
+    const result = getAppForDocument("memonow", "about");
     expect(result).toBeDefined();
     expect(result!.app.slug).toBe("memonow");
     expect(result!.documents.about).toBeDefined();
   });
 
   it("無効な docType で undefined を返す", () => {
-    const result = getAppForDocument("MemoNow", "invalid");
+    const result = getAppForDocument("memonow", "invalid");
     expect(result).toBeUndefined();
   });
 

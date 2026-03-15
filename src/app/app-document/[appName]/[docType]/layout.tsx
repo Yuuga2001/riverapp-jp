@@ -15,15 +15,15 @@ export default async function AppDocumentLayout({
     notFound();
   }
 
-  const displayName = result.documents.appDisplayName;
+  const { slug } = result.app;
 
   return (
     <>
       <style>{`#root-footer { display: none; }`}</style>
       {children}
       <Footer
-        privacyHref={`/app-document/${displayName}/privacy-policy`}
-        contactHref={`/app-document/${displayName}/contact`}
+        privacyHref={`/app-document/${slug}/privacy-policy`}
+        contactHref={`/app-document/${slug}/contact`}
       />
     </>
   );

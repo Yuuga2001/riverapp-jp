@@ -54,7 +54,7 @@ export function getAllAppDocumentParams(): {
       for (const dt of docTypes) {
         if (docs[dt]) {
           params.push({
-            appName: docs.appDisplayName,
+            appName: app.slug,
             docType: dt,
           });
         }
@@ -69,7 +69,7 @@ export function getAppForDocument(
   docType: string
 ): { app: App; documents: AppDocuments } | undefined {
   for (const app of loadApps()) {
-    if (app.documents && app.documents.appDisplayName === appName) {
+    if (app.documents && app.slug === appName) {
       const dt = docType as keyof Omit<AppDocuments, "appDisplayName">;
       if (app.documents[dt]) {
         return { app, documents: app.documents };

@@ -134,13 +134,13 @@ export default async function AppDetailPage({ params }: PageProps) {
           app.documents
             ? [
                 ...(app.documents.about
-                  ? [{ label: `${app.name} について`, href: `/app-document/${app.documents.appDisplayName}/about` }]
+                  ? [{ label: `${app.name} について`, href: `/app-document/${app.slug}/about` }]
                   : []),
                 ...(app.documents["privacy-policy"]
-                  ? [{ label: "プライバシーポリシー", href: `/app-document/${app.documents.appDisplayName}/privacy-policy` }]
+                  ? [{ label: "プライバシーポリシー", href: `/app-document/${app.slug}/privacy-policy` }]
                   : []),
                 ...(app.documents.contact
-                  ? [{ label: "お問い合わせ", href: `/app-document/${app.documents.appDisplayName}/contact` }]
+                  ? [{ label: "お問い合わせ", href: `/app-document/${app.slug}/contact` }]
                   : []),
               ]
             : undefined

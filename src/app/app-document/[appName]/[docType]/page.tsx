@@ -344,7 +344,7 @@ function PrivacyPolicyPage({
               <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
                 本プライバシーポリシーに関するご質問やお問い合わせは、
                 <Link
-                  href={`/app-document/${displayName}/contact`}
+                  href={`/app-document/${app.slug}/contact`}
                   className="text-text-secondary underline"
                 >
                   お問い合わせページ

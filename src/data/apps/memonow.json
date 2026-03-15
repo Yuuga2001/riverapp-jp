@@ -42,7 +42,7 @@
         {"key": "開発", "value": "riverapp.jp"}
       ],
       "links": [
-        {"label": "プライバシーポリシー", "href": "/app-document/MemoNow/privacy-policy", "internal": true},
+        {"label": "プライバシーポリシー", "href": "/app-document/memonow/privacy-policy", "internal": true},
         {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
       ]
     },
