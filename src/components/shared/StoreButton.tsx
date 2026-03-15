@@ -17,11 +17,11 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
 
   if (variant === "detail") {
     const baseClass =
-      "inline-flex items-center gap-1.5 font-mono text-xs text-text-secondary border border-border px-4 py-2 rounded-lg no-underline transition-all duration-150 bg-surface hover:border-border-hover hover:text-text-primary hover:bg-card-hover";
+      "inline-flex items-center gap-1.5 font-mono text-xs text-text-secondary border border-border border-thin px-4 py-2 rounded-lg no-underline transition-all duration-150 bg-surface hover:border-border-hover hover:text-text-primary hover:bg-card-hover";
 
     if (link.disabled) {
       return (
-        <span className={`${baseClass} opacity-40 cursor-default pointer-events-none`} style={{ borderWidth: "0.5px" }}>
+        <span className={`${baseClass} opacity-40 cursor-default pointer-events-none`}>
           <Icon className="w-3.5 h-3.5 shrink-0" />
           {link.label}
         </span>
@@ -29,7 +29,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
     }
 
     return (
-      <a href={link.url} className={baseClass} style={{ borderWidth: "0.5px" }} target="_blank" rel="noopener noreferrer">
+      <a href={link.url} className={baseClass} target="_blank" rel="noopener noreferrer">
         <Icon className="w-3.5 h-3.5 shrink-0" />
         {link.label}
       </a>
@@ -38,11 +38,11 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
 
   // Card variant
   const cardBase =
-    "flex items-center gap-1 font-mono text-[10px] text-text-secondary border border-border px-[9px] py-1 rounded-md no-underline transition-all duration-150 bg-bg hover:border-border-hover hover:text-text-primary";
+    "flex items-center gap-1 font-mono text-[10px] text-text-secondary border border-border border-thin px-[9px] py-1 rounded-md no-underline transition-all duration-150 bg-bg hover:border-border-hover hover:text-text-primary";
 
   if (link.disabled) {
     return (
-      <span className={`${cardBase} opacity-40 cursor-default pointer-events-none`} style={{ borderWidth: "0.5px" }}>
+      <span className={`${cardBase} opacity-40 cursor-default pointer-events-none`}>
         <Icon className="w-2.5 h-2.5 shrink-0" />
         {link.label}
       </span>
@@ -53,8 +53,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
     <a
       href={link.url}
       className={cardBase}
-      style={{ borderWidth: "0.5px" }}
-      target="_blank"
+           target="_blank"
       rel="noopener noreferrer"
       onClick={(e) => e.stopPropagation()}
     >

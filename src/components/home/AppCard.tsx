@@ -22,13 +22,10 @@ export function AppCard({ app, index }: AppCardProps) {
 
   return (
     <div
-      className={`bg-surface flex flex-col cursor-pointer transition-all duration-150 no-underline text-inherit rounded-2xl hover:bg-card-hover hover:border-border-hover opacity-0 animate-fade-up-card max-sm:p-6 ${
+      className={`bg-surface flex flex-col cursor-pointer transition-all duration-150 no-underline text-inherit rounded-2xl hover:bg-card-hover hover:border-border-hover opacity-0 animate-fade-up-card max-sm:p-6 border border-solid border-border border-thin ${
         app.comingSoon ? "relative overflow-hidden" : ""
       }`}
       style={{
-        borderWidth: "0.5px",
-        borderStyle: "solid",
-        borderColor: "var(--color-border)",
         padding: "28px",
         animationDelay: `${(index + 1) * 0.05}s`,
       }}

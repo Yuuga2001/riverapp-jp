@@ -399,7 +399,7 @@ export const apps: App[] = [
     promoText:
       "X（旧Twitter）のポストURLを貼り付けるだけで、動画を簡単にダウンロード。最高画質のMP4を自動選択し、ワンクリックで保存できます。登録不要・完全無料の動画保存ツールです。",
     tags: ["英語対応", "スマホ/PC両対応", "業務効率化"],
-    detailTags: ["英語対応", "スマホ/PC両対応", "業務効率化"],
+    detailTags: ["Webアプリ", "英語対応", "スマホ/PC両対応", "業務効率化"],
     storeLinksCard: [
       {
         type: "web",

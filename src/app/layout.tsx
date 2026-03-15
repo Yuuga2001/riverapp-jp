@@ -20,7 +20,19 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "riverapp.jp — アプリ個人開発",
-  description: "個人開発アプリのポートフォリオサイト",
+  description:
+    "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+  keywords: ["個人開発", "アプリ", "ゲーム", "Web", "iOS", "Android", "ポートフォリオ"],
+  authors: [{ name: "riverapp.jp" }],
+  openGraph: {
+    title: "riverapp.jp — アプリ個人開発",
+    description:
+      "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+    url: "https://riverapp.jp",
+    siteName: "riverapp.jp",
+    locale: "ja_JP",
+    type: "website",
+  },
   icons: {
     icon: "/favicon.svg",
     apple: "/apple-touch-icon.png",

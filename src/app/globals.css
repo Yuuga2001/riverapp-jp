@@ -92,3 +92,20 @@
   }
   .description-content li + li { margin-top: 4px; }
 }
+
+/* ===== Utilities ===== */
+@layer utilities {
+  .border-thin { border-width: 0.5px; }
+  .border-t-thin { border-top-width: 0.5px; }
+  .border-b-thin { border-bottom-width: 0.5px; }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

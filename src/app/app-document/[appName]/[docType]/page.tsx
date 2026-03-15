@@ -146,7 +146,6 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
                 ? "border-t border-b border-border"
                 : "border-b border-border"
             }`}
-            style={{ borderWidth: "0.5px" }}
           >
             <span className="text-[14px] font-normal text-text-primary min-w-[140px] shrink-0 max-sm:min-w-0">
               {feature.name}
@@ -175,8 +174,7 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
               i === 0
                 ? "border-t border-b border-border"
                 : "border-b border-border"
-            }`}
-            style={{ borderWidth: "0.5px" }}
+            } border-thin`}
           >
             <span className="font-normal text-text-secondary min-w-[120px] shrink-0">
               {item.key}
@@ -194,8 +192,7 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
         <li>
           <Link
             href="/app-document/QuickNote/privacy-policy"
-            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group"
-            style={{ borderWidth: "0.5px" }}
+            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
           >
             <span>プライバシーポリシー</span>
             <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
@@ -207,9 +204,8 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
           <a
             href="https://riverapp.jp"
             target="_blank"
-            rel="noopener"
-            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-b border-border transition-colors duration-150 hover:text-text-secondary group"
-            style={{ borderWidth: "0.5px" }}
+            rel="noopener noreferrer"
+            className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
           >
             <span>riverapp.jp</span>
             <span className="text-[13px] text-text-tertiary transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
@@ -245,9 +241,8 @@ function ContactPage({ app }: { app: { name: string } }) {
           <a
             href="https://forms.gle/68uVrDj6ACmN9PNu8"
             target="_blank"
-            rel="noopener"
-            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group"
-            style={{ borderWidth: "0.5px" }}
+            rel="noopener noreferrer"
+            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
           >
             <div className="flex flex-col gap-1">
               <span className="text-[15px] font-normal">
@@ -265,8 +260,7 @@ function ContactPage({ app }: { app: { name: string } }) {
         <li>
           <a
             href="mailto:riverapp.jp@gmail.com"
-            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-b border-border transition-colors duration-150 hover:text-text-secondary group"
-            style={{ borderWidth: "0.5px" }}
+            className="flex items-center justify-between py-[18px] no-underline text-text-primary border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
           >
             <div className="flex flex-col gap-1">
               <span className="text-[15px] font-normal">

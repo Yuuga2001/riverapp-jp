@@ -9,8 +9,7 @@ export function Footer({ privacyHref = "#", contactHref = "#" }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border max-w-[960px] mx-auto px-8 py-6 flex justify-between items-center max-sm:px-5 max-sm:flex-col max-sm:gap-3 max-sm:text-center"
-            style={{ borderTopWidth: "0.5px" }}>
+    <footer className="border-t border-border border-t-thin max-w-[960px] mx-auto px-8 py-6 flex justify-between items-center max-sm:px-5 max-sm:flex-col max-sm:gap-3 max-sm:text-center">
       <span className="font-mono text-[11px] text-text-tertiary">
         &copy; {year} riverapp.jp
       </span>

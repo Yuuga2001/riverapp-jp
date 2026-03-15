@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { App } from "@/types/app";
 import { Badge } from "@/components/shared/Badge";
 import { Tag } from "@/components/shared/Tag";
@@ -12,9 +13,11 @@ export function AppHeader({ app }: AppHeaderProps) {
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-10 max-sm:px-5 max-sm:pt-8 max-sm:pb-8">
       <div className="flex items-start gap-7 max-sm:flex-col max-sm:items-start max-sm:gap-5">
         {/* Icon */}
-        <img
+        <Image
           src={`/images/apps/${app.slug}/icon.png`}
           alt={`${app.name} アイコン`}
+          width={96}
+          height={96}
           className="w-24 h-24 rounded-[22px] shrink-0 shadow-[0_2px_8px_rgba(0,0,0,0.06)] max-sm:w-[72px] max-sm:h-[72px] max-sm:rounded-[18px]"
         />
 
@@ -28,8 +31,7 @@ export function AppHeader({ app }: AppHeaderProps) {
             <Badge category={app.category} />
             {app.comingSoon && (
               <span
-                className="font-mono text-[10px] font-medium text-text-tertiary px-2.5 py-[3px] rounded-xl tracking-[0.5px] uppercase"
-                style={{ border: "0.5px solid var(--color-border)" }}
+                className="font-mono text-[10px] font-medium text-text-tertiary px-2.5 py-[3px] rounded-xl tracking-[0.5px] uppercase border border-border border-thin"
               >
                 Coming Soon
               </span>

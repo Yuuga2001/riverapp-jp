@@ -21,8 +21,7 @@ export async function DescriptionSection({ slug }: DescriptionSectionProps) {
 
   return (
     <section
-      className="mx-auto max-w-[960px] px-8 pt-10 pb-12 max-sm:px-5"
-      style={{ borderTop: "0.5px solid var(--color-border)" }}
+      className="mx-auto max-w-[960px] px-8 pt-10 pb-12 max-sm:px-5 border-t border-border border-t-thin"
     >
       <h2 className="font-mono text-[11px] text-text-tertiary tracking-[1.5px] uppercase mb-5 font-normal">
         description

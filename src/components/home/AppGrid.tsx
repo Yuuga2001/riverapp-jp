@@ -15,11 +15,8 @@ export function AppGrid({ apps, showComingSoon }: AppGridProps) {
         ))}
         {showComingSoon && (
           <div
-            className="flex items-center justify-center bg-bg cursor-default rounded-2xl min-h-[200px] opacity-0 animate-fade-up-card"
+            className="flex items-center justify-center bg-bg cursor-default rounded-2xl min-h-[200px] opacity-0 animate-fade-up-card border border-solid border-border border-thin"
             style={{
-              borderWidth: "0.5px",
-              borderStyle: "solid",
-              borderColor: "var(--color-border)",
               animationDelay: `${(apps.length + 1) * 0.05}s`,
             }}
           >

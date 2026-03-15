@@ -7,8 +7,7 @@ interface LinksSectionProps {
 export function LinksSection({ links }: LinksSectionProps) {
   return (
     <section
-      className="mx-auto max-w-[960px] px-8 pt-10 pb-16 max-sm:px-5"
-      style={{ borderTop: "0.5px solid var(--color-border)" }}
+      className="mx-auto max-w-[960px] px-8 pt-10 pb-16 max-sm:px-5 border-t border-border border-t-thin"
     >
       <h2 className="font-mono text-[11px] text-text-tertiary tracking-[1.5px] uppercase mb-5 font-normal">
         links
@@ -18,13 +17,9 @@ export function LinksSection({ links }: LinksSectionProps) {
           <li key={link.url}>
             <a
               href={link.url}
-              className="group flex justify-between items-center py-4 no-underline transition-all duration-150"
-              style={{
-                borderBottom: "0.5px solid var(--color-border)",
-                ...(i === 0
-                  ? { borderTop: "0.5px solid var(--color-border)" }
-                  : {}),
-              }}
+              className={`group flex justify-between items-center py-4 no-underline transition-all duration-150 border-b border-border border-b-thin ${
+                i === 0 ? "border-t border-t-thin" : ""
+              }`}
               target="_blank"
               rel="noopener noreferrer"
             >

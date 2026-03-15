@@ -36,12 +36,12 @@ function FilterButton({
 }) {
   return (
     <button
-      className={`font-mono text-[11px] px-3.5 py-[5px] rounded-[20px] cursor-pointer transition-all duration-150 tracking-[0.2px] ${
+      className={`font-mono text-[11px] px-3.5 py-[5px] rounded-[20px] cursor-pointer transition-all duration-150 tracking-[0.2px] border border-solid border-thin ${
         active
           ? "bg-text-primary text-bg border-text-primary"
           : "bg-transparent text-text-secondary border-border hover:border-border-hover hover:text-text-primary"
       }`}
-      style={{ borderWidth: "0.5px", borderStyle: "solid" }}
+      aria-pressed={active}
       onClick={onClick}
     >
       {children}
@@ -57,8 +57,8 @@ export function FilterSection({
 }: FilterSectionProps) {
   return (
     <div
-      className="max-w-[960px] mx-auto flex flex-col gap-2.5 border-b border-border mb-12 max-sm:px-5"
-      style={{ padding: "0 32px 24px", borderBottomWidth: "0.5px" }}
+      className="max-w-[960px] mx-auto flex flex-col gap-2.5 border-b border-border border-b-thin mb-12 max-sm:px-5"
+      style={{ padding: "0 32px 24px" }}
       id="apps"
     >
       <div className="flex items-center gap-2 flex-wrap">

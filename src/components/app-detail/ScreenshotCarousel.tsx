@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface ScreenshotCarouselProps {
   paths: string[];
 }
@@ -19,11 +21,13 @@ export function ScreenshotCarousel({ paths }: ScreenshotCarouselProps) {
       >
         {duplicated.map((src, i) => (
           <div key={`${src}-${i}`} className="shrink-0">
-            <img
+            <Image
               src={src}
               alt={`スクリーンショット ${(i % paths.length) + 1}`}
-              className="h-[420px] w-auto rounded-2xl block max-sm:h-[320px] max-sm:rounded-xl"
-              style={{ border: "0.5px solid var(--color-border)" }}
+              height={420}
+              width={0}
+              className="h-[420px] w-auto rounded-2xl block max-sm:h-[320px] max-sm:rounded-xl border border-border border-thin"
+              style={{ width: "auto" }}
             />
           </div>
         ))}
