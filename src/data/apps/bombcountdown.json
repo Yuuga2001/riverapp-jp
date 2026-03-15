@@ -1,5 +1,6 @@
 {
   "slug": "bombcountdown",
+  "createdAt": "2026-01-24",
   "name": "BombCountdown",
   "category": "game",
   "platforms": ["web"],

@@ -1,5 +1,6 @@
 {
   "slug": "puzzlepanel",
+  "createdAt": "2026-01-15",
   "name": "パズルパネル",
   "category": "game",
   "platforms": ["web"],

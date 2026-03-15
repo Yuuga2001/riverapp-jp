@@ -91,6 +91,7 @@ export interface App {
   storeGroupsDetail: StoreGroup[];
   links?: ExternalLink[];
   comingSoon?: boolean;
+  createdAt: string;
   ogDescription?: string;
   description?: string;
   documents?: AppDocuments;

@@ -1,5 +1,6 @@
 {
   "slug": "branchnamegenerator",
+  "createdAt": "2026-01-12",
   "name": "Git Branch Name Generator",
   "category": "app",
   "platforms": ["web"],

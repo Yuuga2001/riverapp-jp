@@ -1,5 +1,6 @@
 {
   "slug": "hexlide",
+  "createdAt": "2026-01-11",
   "name": "HEXLIDE",
   "category": "game",
   "platforms": ["web", "ios", "android"],
