@@ -19,6 +19,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://riverapp.jp"),
   title: "riverapp.jp — アプリ個人開発",
   description:
     "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
@@ -37,6 +38,9 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -47,6 +51,20 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${dmMono.variable} ${notoSansJP.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "riverapp.jp",
+              url: "https://riverapp.jp",
+              description:
+                "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+              inLanguage: "ja",
+            }),
+          }}
+        />
         <Navbar />
         {children}
         <div id="root-footer">

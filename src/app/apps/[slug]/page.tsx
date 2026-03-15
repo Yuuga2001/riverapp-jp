@@ -34,11 +34,14 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `/apps/${slug}`,
+    },
     openGraph: {
       title,
       description,
-      images: [`https://riverapp.jp/images/apps/${slug}/icon.png`],
-      url: `https://riverapp.jp/apps/${slug}`,
+      images: [`/images/apps/${slug}/icon.png`],
+      url: `/apps/${slug}`,
       type: "website",
     },
   };
@@ -55,8 +58,59 @@ export default async function AppDetailPage({ params }: PageProps) {
 
   const screenshots = getScreenshotPaths(slug);
 
+  const platformMap: Record<string, string> = {
+    web: "Web",
+    ios: "iOS",
+    android: "Android",
+  };
+
+  const softwareJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: app.name,
+    description: app.ogDescription ?? app.shortDescription,
+    applicationCategory:
+      app.category === "game" ? "GameApplication" : "UtilitiesApplication",
+    operatingSystem: app.platforms.map((p) => platformMap[p] ?? p).join(", "),
+    offers: { "@type": "Offer", price: "0", priceCurrency: "JPY" },
+    image: `https://riverapp.jp/images/apps/${slug}/icon.png`,
+    url: `https://riverapp.jp/apps/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "トップ",
+        item: "https://riverapp.jp",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "apps",
+        item: "https://riverapp.jp/#apps",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: app.name,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Breadcrumb appName={app.name} />
       <AppHeader app={app} />
       <PromoSection text={app.promoText} />

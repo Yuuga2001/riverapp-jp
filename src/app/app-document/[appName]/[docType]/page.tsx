@@ -39,7 +39,21 @@ export async function generateMetadata({
     ? `${displayName} の${docTitle}`
     : `${displayName} — 「ちょっとメモ。」そんな時に、これだけでいい。`;
 
-  return { title, description };
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/app-document/${appName}/${docType}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/app-document/${appName}/${docType}`,
+      siteName: "riverapp.jp",
+      locale: "ja_JP",
+      type: "article",
+    },
+  };
 }
 
 /* ---------- Page ---------- */
