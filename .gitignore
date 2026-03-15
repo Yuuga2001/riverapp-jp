@@ -17,3 +17,7 @@ next-env.d.ts
 
 # old static site (temporary during migration)
 /_old
+
+# test artifacts
+/test-results/
+/playwright-report/
