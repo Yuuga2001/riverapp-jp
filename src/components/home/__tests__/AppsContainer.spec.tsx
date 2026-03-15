@@ -13,7 +13,7 @@ describe("AppsContainer", () => {
     expect(screen.getByText("HEXLIDE")).toBeInTheDocument();
     expect(screen.getByText("TileOut")).toBeInTheDocument();
     expect(screen.getByText("SakaMap")).toBeInTheDocument();
-    expect(screen.getByText("QuickNote")).toBeInTheDocument();
+    expect(screen.getByText("MemoNow")).toBeInTheDocument();
   });
 
   it("「ゲーム」クリック後、game カテゴリのみ表示", async () => {

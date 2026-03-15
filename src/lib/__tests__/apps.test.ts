@@ -59,9 +59,9 @@ describe("getAllAppDocumentParams", () => {
     expect(params[0]).toHaveProperty("docType");
   });
 
-  it("QuickNote の about/contact/privacy-policy を含む", () => {
+  it("MemoNow の about/contact/privacy-policy を含む", () => {
     const params = getAllAppDocumentParams();
-    const quickNoteParams = params.filter((p) => p.appName === "QuickNote");
+    const quickNoteParams = params.filter((p) => p.appName === "MemoNow");
     expect(quickNoteParams).toHaveLength(3);
     const docTypes = quickNoteParams.map((p) => p.docType);
     expect(docTypes).toContain("about");
@@ -72,14 +72,14 @@ describe("getAllAppDocumentParams", () => {
 
 describe("getAppForDocument", () => {
   it("正しい app + document ペアを返す", () => {
-    const result = getAppForDocument("QuickNote", "about");
+    const result = getAppForDocument("MemoNow", "about");
     expect(result).toBeDefined();
     expect(result!.app.slug).toBe("widgetmemo");
     expect(result!.document.type).toBe("about");
   });
 
   it("無効な docType で undefined を返す", () => {
-    const result = getAppForDocument("QuickNote", "invalid");
+    const result = getAppForDocument("MemoNow", "invalid");
     expect(result).toBeUndefined();
   });
 

@@ -215,7 +215,7 @@ function AboutPage({ app }: { app: { slug: string; name: string } }) {
       <ul>
         <li>
           <Link
-            href="/app-document/QuickNote/privacy-policy"
+            href="/app-document/MemoNow/privacy-policy"
             className="flex items-center justify-between py-3.5 no-underline text-text-primary text-[14px] font-normal border-t border-b border-border transition-colors duration-150 hover:text-text-secondary group border-thin"
           >
             <span>プライバシーポリシー</span>
@@ -407,7 +407,7 @@ function PrivacyPolicyPage({ app }: { app: { name: string } }) {
         <p className="text-[14px] font-light text-text-secondary leading-[1.8]">
           本プライバシーポリシーに関するご質問やお問い合わせは、
           <Link
-            href="/app-document/QuickNote/contact"
+            href="/app-document/MemoNow/contact"
             className="text-text-secondary underline"
           >
             お問い合わせページ

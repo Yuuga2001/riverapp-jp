@@ -530,7 +530,7 @@ export const apps: App[] = [
   },
   {
     slug: "widgetmemo",
-    name: "QuickNote",
+    name: "MemoNow",
     category: "app",
     platforms: ["ios"],
     shortDescription:
@@ -565,9 +565,9 @@ export const apps: App[] = [
     ogDescription:
       "ホーム画面やロック画面のウィジェットに常時表示できる、シンプルな一枚メモアプリ",
     documents: [
-      { type: "about", appDisplayName: "QuickNote" },
-      { type: "contact", appDisplayName: "QuickNote" },
-      { type: "privacy-policy", appDisplayName: "QuickNote" },
+      { type: "about", appDisplayName: "MemoNow" },
+      { type: "contact", appDisplayName: "MemoNow" },
+      { type: "privacy-policy", appDisplayName: "MemoNow" },
     ],
   },
 ];
