@@ -28,6 +28,7 @@ export async function generateMetadata({
   const result = getAppForDocument(decodedAppName, docType);
   if (!result) return {};
 
+  const { app } = result;
   const displayName = result.document.appDisplayName;
   const docTitle = docTitles[docType];
 
@@ -38,6 +39,8 @@ export async function generateMetadata({
   const description = docTitle
     ? `${displayName} の${docTitle}`
     : `${displayName} — 「ちょっとメモ。」そんな時に、これだけでいい。`;
+
+  const ogImage = `/images/apps/${app.slug}/icon.png`;
 
   return {
     title,
@@ -52,6 +55,13 @@ export async function generateMetadata({
       siteName: "riverapp.jp",
       locale: "ja_JP",
       type: "article",
+      images: [ogImage],
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }

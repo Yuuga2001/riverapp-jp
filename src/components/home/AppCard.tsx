@@ -29,7 +29,16 @@ export function AppCard({ app, index }: AppCardProps) {
         padding: "28px",
         animationDelay: `${(index + 1) * 0.05}s`,
       }}
+      role="link"
+      tabIndex={0}
+      aria-label={`${app.name} の詳細を見る`}
       onClick={handleClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          router.push(`/apps/${app.slug}`);
+        }
+      }}
     >
       {app.comingSoon && (
         <div

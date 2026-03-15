@@ -22,17 +22,25 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://riverapp.jp"),
   title: "riverapp.jp — アプリ個人開発",
   description:
-    "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+    "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。アイデアをカタチにする、10個以上のオリジナルアプリを紹介。",
   keywords: ["個人開発", "アプリ", "ゲーム", "Web", "iOS", "Android", "ポートフォリオ"],
   authors: [{ name: "riverapp.jp" }],
   openGraph: {
     title: "riverapp.jp — アプリ個人開発",
     description:
-      "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+      "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。アイデアをカタチにする、10個以上のオリジナルアプリを紹介。",
     url: "https://riverapp.jp",
     siteName: "riverapp.jp",
     locale: "ja_JP",
     type: "website",
+    images: ["/apple-touch-icon.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: "riverapp.jp — アプリ個人開発",
+    description:
+      "個人開発アプリのポートフォリオサイト。ゲーム・ユーティリティなど、Web・iOS・Android向けアプリを公開しています。",
+    images: ["/apple-touch-icon.png"],
   },
   icons: {
     icon: "/favicon.svg",

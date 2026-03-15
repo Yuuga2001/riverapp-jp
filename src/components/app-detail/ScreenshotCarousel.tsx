@@ -28,6 +28,7 @@ export function ScreenshotCarousel({ paths }: ScreenshotCarouselProps) {
               width={0}
               className="h-[420px] w-auto rounded-2xl block max-sm:h-[320px] max-sm:rounded-xl border border-border border-thin"
               style={{ width: "auto" }}
+              loading="lazy"
             />
           </div>
         ))}

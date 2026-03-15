@@ -44,6 +44,12 @@ export async function generateMetadata({
       url: `/apps/${slug}`,
       type: "website",
     },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: [`/images/apps/${slug}/icon.png`],
+    },
   };
 }
 
@@ -72,6 +78,7 @@ export default async function AppDetailPage({ params }: PageProps) {
     applicationCategory:
       app.category === "game" ? "GameApplication" : "UtilitiesApplication",
     operatingSystem: app.platforms.map((p) => platformMap[p] ?? p).join(", "),
+    author: { "@type": "Person", name: "riverapp.jp", url: "https://riverapp.jp" },
     offers: { "@type": "Offer", price: "0", priceCurrency: "JPY" },
     image: `https://riverapp.jp/images/apps/${slug}/icon.png`,
     url: `https://riverapp.jp/apps/${slug}`,
