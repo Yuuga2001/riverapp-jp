@@ -10,7 +10,7 @@
   "tags": ["多言語対応", "スマホ/PC両対応", "1〜2人用", "オンライン対戦", "ボードゲーム", "戦略ゲーム"],
   "detailTags": ["多言語対応", "スマホ/PC両対応", "iOSアプリ", "Androidアプリ", "Webアプリ", "1〜2人用", "オンライン対戦", "ボードゲーム", "戦略ゲーム"],
   "storeLinksCard": [
-    {"type": "app-store", "url": "https://apps.apple.com/app/hexlide/id000000", "label": "App Store"},
+    {"type": "app-store", "url": "https://apps.apple.com/us/app/hexlide/id6760407718", "label": "App Store"},
     {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.hexlide", "label": "Google Play"},
     {"type": "web", "url": "https://hexlide.riverapp.jp", "label": "Webアプリ"}
   ],
@@ -18,7 +18,7 @@
     {
       "label": "スマホアプリをダウンロード",
       "links": [
-        {"type": "app-store", "url": "https://apps.apple.com/app/hexlide/id000000", "label": "App Store"},
+        {"type": "app-store", "url": "https://apps.apple.com/us/app/hexlide/id6760407718", "label": "App Store"},
         {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.hexlide", "label": "Google Play"}
       ]
     },
