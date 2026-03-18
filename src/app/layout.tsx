@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Noto_Sans_JP } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
@@ -78,6 +79,7 @@ export default function RootLayout({
         <div id="root-footer">
           <Footer />
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
