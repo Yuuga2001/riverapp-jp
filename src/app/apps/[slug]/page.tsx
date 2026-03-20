@@ -134,13 +134,26 @@ export default async function AppDetailPage({ params }: PageProps) {
           app.documents
             ? [
                 ...(app.documents.about
-                  ? [{ label: `${app.name} について`, href: `/app-document/${app.slug}/about` }]
+                  ? [{
+                      label: `${app.name} について`,
+                      href: `/app-document/${app.slug}/about`,
+                      translationKey: "appDetail.about",
+                      translationVars: { name: app.name },
+                    }]
                   : []),
                 ...(app.documents["privacy-policy"]
-                  ? [{ label: "プライバシーポリシー", href: `/app-document/${app.slug}/privacy-policy` }]
+                  ? [{
+                      label: "プライバシーポリシー",
+                      href: `/app-document/${app.slug}/privacy-policy`,
+                      translationKey: "appDocument.privacyPolicy",
+                    }]
                   : []),
                 ...(app.documents.contact
-                  ? [{ label: "お問い合わせ", href: `/app-document/${app.slug}/contact` }]
+                  ? [{
+                      label: "お問い合わせ",
+                      href: `/app-document/${app.slug}/contact`,
+                      translationKey: "appDocument.contact",
+                    }]
                   : []),
               ]
             : undefined

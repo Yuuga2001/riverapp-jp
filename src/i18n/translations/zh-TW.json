@@ -13,8 +13,12 @@
     "oldest": "最早發佈",
     "newest": "最新發佈"
   },
-  "appGrid": { "developing": "開發中..." },
-  "appCard": { "viewDetail": "查看{name}的詳情" },
+  "appGrid": {
+    "developing": "開發中..."
+  },
+  "appCard": {
+    "viewDetail": "查看{name}的詳情"
+  },
   "about": {
     "name": "@River",
     "role1": "獨立開發者",
@@ -29,13 +33,19 @@
     "twitterDesc": "@riverappjp — 歡迎私訊",
     "profileAlt": "River"
   },
-  "breadcrumb": { "top": "首頁" },
+  "breadcrumb": {
+    "top": "首頁"
+  },
   "notFound": {
     "title": "找不到頁面",
     "description": "您造訪的頁面不存在或已被移動。",
     "backToTop": "返回首頁"
   },
-  "appDetail": { "iconAlt": "{name}圖示", "comingSoon": "Coming Soon" },
+  "appDetail": {
+    "iconAlt": "{name}圖示",
+    "comingSoon": "Coming Soon",
+    "about": "關於 {name}"
+  },
   "storeLabels": {
     "downloadMobileApp": "下載行動應用程式",
     "playInBrowser": "在瀏覽器中立即遊玩",
@@ -73,12 +83,38 @@
     "contactLink": "聯絡頁面",
     "contactBodyEnd": "與我們聯絡。",
     "sections": [
-      { "title": "簡介", "body": "riverapp.jp（以下簡稱「本網站」）是展示獨立開發應用程式的作品集網站。本頁面說明了本網站如何處理個人資訊。請注意，本網站上列出的每個應用程式可能有各自獨立的隱私權政策，詳情請參閱各應用程式的詳情頁面。" },
-      { "title": "收集的資訊", "body": "本網站可能會為改善服務而自動收集以下資訊。", "bullets": ["存取紀錄（IP位址、瀏覽器資訊、來源URL、瀏覽頁面等）", "透過Vercel Analytics收集的網站使用資料（已匿名化）"] },
-      { "title": "Cookie的使用", "body": "本網站可能會基於分析目的使用Cookie。您可以在瀏覽器設定中停用Cookie，但部分功能可能無法正常運作。" },
-      { "title": "使用目的", "body": "收集的資訊用於以下目的。", "bullets": ["網站使用狀況的分析與改善", "回覆諮詢"] },
-      { "title": "向第三方提供", "body": "除法律要求外，我們不會向第三方提供收集的資訊。" },
-      { "title": "政策變更", "body": "本政策可能會在未事先通知的情況下進行變更。修訂後的政策在本頁面發佈後立即生效。" }
+      {
+        "title": "簡介",
+        "body": "riverapp.jp（以下簡稱「本網站」）是展示獨立開發應用程式的作品集網站。本頁面說明了本網站如何處理個人資訊。請注意，本網站上列出的每個應用程式可能有各自獨立的隱私權政策，詳情請參閱各應用程式的詳情頁面。"
+      },
+      {
+        "title": "收集的資訊",
+        "body": "本網站可能會為改善服務而自動收集以下資訊。",
+        "bullets": [
+          "存取紀錄（IP位址、瀏覽器資訊、來源URL、瀏覽頁面等）",
+          "透過Vercel Analytics收集的網站使用資料（已匿名化）"
+        ]
+      },
+      {
+        "title": "Cookie的使用",
+        "body": "本網站可能會基於分析目的使用Cookie。您可以在瀏覽器設定中停用Cookie，但部分功能可能無法正常運作。"
+      },
+      {
+        "title": "使用目的",
+        "body": "收集的資訊用於以下目的。",
+        "bullets": [
+          "網站使用狀況的分析與改善",
+          "回覆諮詢"
+        ]
+      },
+      {
+        "title": "向第三方提供",
+        "body": "除法律要求外，我們不會向第三方提供收集的資訊。"
+      },
+      {
+        "title": "政策變更",
+        "body": "本政策可能會在未事先通知的情況下進行變更。修訂後的政策在本頁面發佈後立即生效。"
+      }
     ]
   },
   "appDocument": {
@@ -90,5 +126,7 @@
     "privacyContactBodyEnd": "與我們聯絡。",
     "lastUpdated": "最後更新：{date}"
   },
-  "languageSwitcher": { "label": "語言" }
+  "languageSwitcher": {
+    "label": "語言"
+  }
 }

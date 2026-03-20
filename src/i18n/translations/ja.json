@@ -43,7 +43,8 @@
   },
   "appDetail": {
     "iconAlt": "{name} アイコン",
-    "comingSoon": "Coming Soon"
+    "comingSoon": "Coming Soon",
+    "about": "{name} について"
   },
   "storeLabels": {
     "downloadMobileApp": "スマホアプリをダウンロード",

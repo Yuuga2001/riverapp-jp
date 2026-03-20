@@ -1,8 +1,15 @@
+"use client";
+
 import type { ExternalLink } from "@/types/app";
+import { useTranslation } from "@/i18n/context";
 
 interface DocumentLink {
   label: string;
   href: string;
+  /** Translation key — if provided, label is used as fallback */
+  translationKey?: string;
+  /** Variables for translation interpolation */
+  translationVars?: Record<string, string>;
 }
 
 interface LinksSectionProps {
@@ -11,8 +18,15 @@ interface LinksSectionProps {
 }
 
 export function LinksSection({ links = [], documentLinks = [] }: LinksSectionProps) {
+  const t = useTranslation();
+
   const allItems = [
-    ...documentLinks.map((l) => ({ label: l.label, href: l.href })),
+    ...documentLinks.map((l) => ({
+      label: l.translationKey
+        ? t(l.translationKey, l.translationVars)
+        : l.label,
+      href: l.href,
+    })),
     ...links.map((l) => ({ label: l.label, href: l.url })),
   ];
 

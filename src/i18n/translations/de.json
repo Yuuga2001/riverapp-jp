@@ -1,22 +1,132 @@
 {
-  "hero": { "label": "Indie-Entwickler", "heading1": "Spiele, Tools,", "heading2": "mobile Apps.", "heading3": "Ich baue alle möglichen Dinge.", "description": "Ich entwickle Apps unabhängig. iOS, Android und Web-Apps — Ideen werden Wirklichkeit." },
-  "filter": { "all": "Alle", "game": "Spiele", "app": "Apps", "oldest": "Älteste zuerst", "newest": "Neueste zuerst" },
-  "appGrid": { "developing": "In Entwicklung..." },
-  "appCard": { "viewDetail": "Details zu {name} anzeigen" },
-  "about": { "name": "@River", "role1": "Indie-Entwickler", "role2": "Programmierer", "role3": "20er", "bio1": "Ich bin ein Indie-Entwickler. Ich baue alles, von Spielen bis zu nützlichen Tools — was mir gerade einfällt.", "bio2": "Ich entwickle hauptsächlich mobile Apps (iOS/Android), erstelle aber auch Web-Apps und PC-Tools. Es freut mich, wenn die Leute sie nutzen.", "bio3": "Kontaktieren Sie mich gerne bei Arbeitsanfragen, Kooperationen oder sonstigen Fragen.", "contactForm": "Kontaktformular", "contactFormDesc": "Über Google Forms absenden", "email": "E-Mail", "twitterDesc": "@riverappjp — DMs willkommen", "profileAlt": "River" },
-  "breadcrumb": { "top": "Startseite" },
-  "notFound": { "title": "Seite nicht gefunden", "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.", "backToTop": "Zurück zur Startseite" },
-  "appDetail": { "iconAlt": "{name}-Symbol", "comingSoon": "Coming Soon" },
-  "storeLabels": { "downloadMobileApp": "Mobile App herunterladen", "playInBrowser": "Jetzt im Browser spielen", "downloadFromStore": "Aus dem Store herunterladen", "useInBrowser": "Jetzt im Browser nutzen" },
-  "tags": { "multiLanguage": "Mehrsprachig", "englishSupport": "Englisch unterstützt", "japaneseOnly": "Nur Japanisch", "mobileAndPC": "Mobil & PC", "mobileOnly": "Nur Mobil", "pcOnly": "Nur PC", "iosApp": "iOS-App", "androidApp": "Android-App", "webApp": "Web-App", "singlePlayer": "Einzelspieler", "oneToTwo": "1-2 Spieler", "multiplayer": "Mehrspieler", "onlineBattle": "Online-Kampf", "actionGame": "Actionspiel", "puzzleGame": "Puzzlespiel", "boardGame": "Brettspiel", "strategyGame": "Strategiespiel", "battleRoyale": "Battle Royale", "productivity": "Produktivität", "fandom": "Fandom", "travel": "Reisen" },
-  "privacyPolicy": { "title": "Datenschutzerklärung", "lastUpdated": "Letzte Aktualisierung: {date}", "contactTitle": "Kontakt", "contactBody": "Wenn Sie Fragen zu dieser Richtlinie haben, kontaktieren Sie uns bitte über ", "contactLink": "unsere Kontaktseite", "contactBodyEnd": ".", "sections": [
-    { "title": "Einleitung", "body": "riverapp.jp (\u201Ediese Website\u201C) ist eine Portfolio-Website für unabhängig entwickelte Apps. Diese Seite erklärt, wie wir personenbezogene Daten auf dieser Website behandeln. Bitte beachten Sie, dass jede auf dieser Website gelistete App eine eigene Datenschutzerklärung haben kann, die auf der jeweiligen Detailseite der App zu finden ist." },
-    { "title": "Erhobene Informationen", "body": "Diese Website kann zur Verbesserung des Dienstes automatisch die folgenden Informationen erheben.", "bullets": ["Zugriffsprotokolle (IP-Adresse, Browserinformationen, Referrer-URL, aufgerufene Seiten usw.)", "Website-Nutzungsdaten über Vercel Analytics (anonymisiert)"] },
-    { "title": "Verwendung von Cookies", "body": "Diese Website kann Cookies zu Analysezwecken verwenden. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, aber einige Funktionen funktionieren möglicherweise nicht einwandfrei." },
-    { "title": "Verwendungszweck", "body": "Die erhobenen Informationen werden für folgende Zwecke verwendet.", "bullets": ["Analyse und Verbesserung der Website-Nutzung", "Beantwortung von Anfragen"] },
-    { "title": "Weitergabe an Dritte", "body": "Wir geben erhobene Informationen nicht an Dritte weiter, es sei denn, dies ist gesetzlich vorgeschrieben." },
-    { "title": "Änderungen dieser Richtlinie", "body": "Diese Richtlinie kann ohne vorherige Ankündigung geändert werden. Die überarbeitete Richtlinie tritt mit der Veröffentlichung auf dieser Seite in Kraft." }
-  ]},
-  "appDocument": { "contact": "Kontakt", "privacyPolicy": "Datenschutzerklärung", "contactIntro": " — Wenn Sie Fragen haben, einen Fehler melden oder Funktionswünsche äußern möchten, kontaktieren Sie uns gerne über einen der folgenden Wege.", "privacyContactBody": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte über ", "privacyContactLink": "die Kontaktseite", "privacyContactBodyEnd": ".", "lastUpdated": "Letzte Aktualisierung: {date}" },
-  "languageSwitcher": { "label": "Sprache" }
+  "hero": {
+    "label": "Indie-Entwickler",
+    "heading1": "Spiele, Tools,",
+    "heading2": "mobile Apps.",
+    "heading3": "Ich baue alle möglichen Dinge.",
+    "description": "Ich entwickle Apps unabhängig. iOS, Android und Web-Apps — Ideen werden Wirklichkeit."
+  },
+  "filter": {
+    "all": "Alle",
+    "game": "Spiele",
+    "app": "Apps",
+    "oldest": "Älteste zuerst",
+    "newest": "Neueste zuerst"
+  },
+  "appGrid": {
+    "developing": "In Entwicklung..."
+  },
+  "appCard": {
+    "viewDetail": "Details zu {name} anzeigen"
+  },
+  "about": {
+    "name": "@River",
+    "role1": "Indie-Entwickler",
+    "role2": "Programmierer",
+    "role3": "20er",
+    "bio1": "Ich bin ein Indie-Entwickler. Ich baue alles, von Spielen bis zu nützlichen Tools — was mir gerade einfällt.",
+    "bio2": "Ich entwickle hauptsächlich mobile Apps (iOS/Android), erstelle aber auch Web-Apps und PC-Tools. Es freut mich, wenn die Leute sie nutzen.",
+    "bio3": "Kontaktieren Sie mich gerne bei Arbeitsanfragen, Kooperationen oder sonstigen Fragen.",
+    "contactForm": "Kontaktformular",
+    "contactFormDesc": "Über Google Forms absenden",
+    "email": "E-Mail",
+    "twitterDesc": "@riverappjp — DMs willkommen",
+    "profileAlt": "River"
+  },
+  "breadcrumb": {
+    "top": "Startseite"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+    "backToTop": "Zurück zur Startseite"
+  },
+  "appDetail": {
+    "iconAlt": "{name}-Symbol",
+    "comingSoon": "Coming Soon",
+    "about": "Über {name}"
+  },
+  "storeLabels": {
+    "downloadMobileApp": "Mobile App herunterladen",
+    "playInBrowser": "Jetzt im Browser spielen",
+    "downloadFromStore": "Aus dem Store herunterladen",
+    "useInBrowser": "Jetzt im Browser nutzen"
+  },
+  "tags": {
+    "multiLanguage": "Mehrsprachig",
+    "englishSupport": "Englisch unterstützt",
+    "japaneseOnly": "Nur Japanisch",
+    "mobileAndPC": "Mobil & PC",
+    "mobileOnly": "Nur Mobil",
+    "pcOnly": "Nur PC",
+    "iosApp": "iOS-App",
+    "androidApp": "Android-App",
+    "webApp": "Web-App",
+    "singlePlayer": "Einzelspieler",
+    "oneToTwo": "1-2 Spieler",
+    "multiplayer": "Mehrspieler",
+    "onlineBattle": "Online-Kampf",
+    "actionGame": "Actionspiel",
+    "puzzleGame": "Puzzlespiel",
+    "boardGame": "Brettspiel",
+    "strategyGame": "Strategiespiel",
+    "battleRoyale": "Battle Royale",
+    "productivity": "Produktivität",
+    "fandom": "Fandom",
+    "travel": "Reisen"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Letzte Aktualisierung: {date}",
+    "contactTitle": "Kontakt",
+    "contactBody": "Wenn Sie Fragen zu dieser Richtlinie haben, kontaktieren Sie uns bitte über ",
+    "contactLink": "unsere Kontaktseite",
+    "contactBodyEnd": ".",
+    "sections": [
+      {
+        "title": "Einleitung",
+        "body": "riverapp.jp („diese Website“) ist eine Portfolio-Website für unabhängig entwickelte Apps. Diese Seite erklärt, wie wir personenbezogene Daten auf dieser Website behandeln. Bitte beachten Sie, dass jede auf dieser Website gelistete App eine eigene Datenschutzerklärung haben kann, die auf der jeweiligen Detailseite der App zu finden ist."
+      },
+      {
+        "title": "Erhobene Informationen",
+        "body": "Diese Website kann zur Verbesserung des Dienstes automatisch die folgenden Informationen erheben.",
+        "bullets": [
+          "Zugriffsprotokolle (IP-Adresse, Browserinformationen, Referrer-URL, aufgerufene Seiten usw.)",
+          "Website-Nutzungsdaten über Vercel Analytics (anonymisiert)"
+        ]
+      },
+      {
+        "title": "Verwendung von Cookies",
+        "body": "Diese Website kann Cookies zu Analysezwecken verwenden. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, aber einige Funktionen funktionieren möglicherweise nicht einwandfrei."
+      },
+      {
+        "title": "Verwendungszweck",
+        "body": "Die erhobenen Informationen werden für folgende Zwecke verwendet.",
+        "bullets": [
+          "Analyse und Verbesserung der Website-Nutzung",
+          "Beantwortung von Anfragen"
+        ]
+      },
+      {
+        "title": "Weitergabe an Dritte",
+        "body": "Wir geben erhobene Informationen nicht an Dritte weiter, es sei denn, dies ist gesetzlich vorgeschrieben."
+      },
+      {
+        "title": "Änderungen dieser Richtlinie",
+        "body": "Diese Richtlinie kann ohne vorherige Ankündigung geändert werden. Die überarbeitete Richtlinie tritt mit der Veröffentlichung auf dieser Seite in Kraft."
+      }
+    ]
+  },
+  "appDocument": {
+    "contact": "Kontakt",
+    "privacyPolicy": "Datenschutzerklärung",
+    "contactIntro": " — Wenn Sie Fragen haben, einen Fehler melden oder Funktionswünsche äußern möchten, kontaktieren Sie uns gerne über einen der folgenden Wege.",
+    "privacyContactBody": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte über ",
+    "privacyContactLink": "die Kontaktseite",
+    "privacyContactBodyEnd": ".",
+    "lastUpdated": "Letzte Aktualisierung: {date}"
+  },
+  "languageSwitcher": {
+    "label": "Sprache"
+  }
 }

@@ -1,22 +1,132 @@
 {
-  "hero": { "label": "nhà phát triển độc lập", "heading1": "Game, công cụ,", "heading2": "ứng dụng di động.", "heading3": "Xây dựng đủ thứ.", "description": "Tôi phát triển ứng dụng một cách độc lập. iOS, Android và ứng dụng web — biến ý tưởng thành hiện thực." },
-  "filter": { "all": "Tất cả", "game": "Game", "app": "Ứng dụng", "oldest": "Cũ nhất trước", "newest": "Mới nhất trước" },
-  "appGrid": { "developing": "Đang phát triển..." },
-  "appCard": { "viewDetail": "Xem chi tiết {name}" },
-  "about": { "name": "@River", "role1": "Nhà phát triển độc lập", "role2": "Lập trình viên", "role3": "Ngoài 20 tuổi", "bio1": "Tôi là một nhà phát triển độc lập. Tôi xây dựng mọi thứ từ game đến công cụ tiện ích — bất cứ thứ gì nghĩ ra.", "bio2": "Tôi chủ yếu phát triển ứng dụng di động (iOS/Android), nhưng cũng tạo ứng dụng web và công cụ PC. Tôi rất vui khi mọi người sử dụng chúng.", "bio3": "Hãy liên hệ nếu bạn có nhu cầu hợp tác, công việc hoặc bất kỳ câu hỏi nào.", "contactForm": "Biểu mẫu liên hệ", "contactFormDesc": "Gửi qua Google Forms", "email": "Email", "twitterDesc": "@riverappjp — Nhắn tin thoải mái", "profileAlt": "River" },
-  "breadcrumb": { "top": "Trang chủ" },
-  "notFound": { "title": "Không tìm thấy trang", "description": "Trang bạn đang tìm không tồn tại hoặc có thể đã được di chuyển.", "backToTop": "Về trang chủ" },
-  "appDetail": { "iconAlt": "Biểu tượng {name}", "comingSoon": "Coming Soon" },
-  "storeLabels": { "downloadMobileApp": "Tải ứng dụng di động", "playInBrowser": "Chơi ngay trên trình duyệt", "downloadFromStore": "Tải từ cửa hàng", "useInBrowser": "Dùng ngay trên trình duyệt" },
-  "tags": { "multiLanguage": "Đa ngôn ngữ", "englishSupport": "Hỗ trợ tiếng Anh", "japaneseOnly": "Chỉ tiếng Nhật", "mobileAndPC": "Di động & PC", "mobileOnly": "Chỉ di động", "pcOnly": "Chỉ PC", "iosApp": "Ứng dụng iOS", "androidApp": "Ứng dụng Android", "webApp": "Ứng dụng web", "singlePlayer": "Một người chơi", "oneToTwo": "1-2 người chơi", "multiplayer": "Nhiều người chơi", "onlineBattle": "Đối chiến trực tuyến", "actionGame": "Game hành động", "puzzleGame": "Game giải đố", "boardGame": "Game cờ bàn", "strategyGame": "Game chiến thuật", "battleRoyale": "Battle royale", "productivity": "Năng suất", "fandom": "Fandom", "travel": "Du lịch" },
-  "privacyPolicy": { "title": "Chính sách bảo mật", "lastUpdated": "Cập nhật lần cuối: {date}", "contactTitle": "Liên hệ", "contactBody": "Nếu bạn có câu hỏi về chính sách này, vui lòng liên hệ với chúng tôi qua ", "contactLink": "trang liên hệ", "contactBodyEnd": ".", "sections": [
-    { "title": "Giới thiệu", "body": "riverapp.jp (\"trang web này\") là trang portfolio cho các ứng dụng được phát triển độc lập. Trang này giải thích cách chúng tôi xử lý thông tin cá nhân trên trang web này. Xin lưu ý rằng mỗi ứng dụng được liệt kê trên trang web này có thể có chính sách bảo mật riêng, có thể được tìm thấy trên trang chi tiết của từng ứng dụng." },
-    { "title": "Thông tin chúng tôi thu thập", "body": "Trang web này có thể tự động thu thập các thông tin sau nhằm mục đích cải thiện dịch vụ.", "bullets": ["Nhật ký truy cập (địa chỉ IP, thông tin trình duyệt, URL giới thiệu, các trang đã xem, v.v.)", "Dữ liệu sử dụng trang web qua Vercel Analytics (ẩn danh)"] },
-    { "title": "Sử dụng cookie", "body": "Trang web này có thể sử dụng cookie cho mục đích phân tích. Bạn có thể tắt cookie trong cài đặt trình duyệt, nhưng một số tính năng có thể không hoạt động bình thường." },
-    { "title": "Mục đích sử dụng", "body": "Thông tin thu thập được sử dụng cho các mục đích sau.", "bullets": ["Phân tích và cải thiện việc sử dụng trang web", "Phản hồi các yêu cầu"] },
-    { "title": "Tiết lộ cho bên thứ ba", "body": "Chúng tôi không cung cấp thông tin thu thập cho bên thứ ba trừ khi pháp luật yêu cầu." },
-    { "title": "Thay đổi chính sách này", "body": "Chính sách này có thể thay đổi mà không cần thông báo trước. Chính sách sửa đổi có hiệu lực khi được đăng tải trên trang này." }
-  ]},
-  "appDocument": { "contact": "Liên hệ", "privacyPolicy": "Chính sách bảo mật", "contactIntro": " — Nếu bạn có câu hỏi, muốn báo lỗi hoặc yêu cầu tính năng, hãy liên hệ với chúng tôi qua bất kỳ phương thức nào dưới đây.", "privacyContactBody": "Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua ", "privacyContactLink": "trang liên hệ", "privacyContactBodyEnd": ".", "lastUpdated": "Cập nhật lần cuối: {date}" },
-  "languageSwitcher": { "label": "Ngôn ngữ" }
+  "hero": {
+    "label": "nhà phát triển độc lập",
+    "heading1": "Game, công cụ,",
+    "heading2": "ứng dụng di động.",
+    "heading3": "Xây dựng đủ thứ.",
+    "description": "Tôi phát triển ứng dụng một cách độc lập. iOS, Android và ứng dụng web — biến ý tưởng thành hiện thực."
+  },
+  "filter": {
+    "all": "Tất cả",
+    "game": "Game",
+    "app": "Ứng dụng",
+    "oldest": "Cũ nhất trước",
+    "newest": "Mới nhất trước"
+  },
+  "appGrid": {
+    "developing": "Đang phát triển..."
+  },
+  "appCard": {
+    "viewDetail": "Xem chi tiết {name}"
+  },
+  "about": {
+    "name": "@River",
+    "role1": "Nhà phát triển độc lập",
+    "role2": "Lập trình viên",
+    "role3": "Ngoài 20 tuổi",
+    "bio1": "Tôi là một nhà phát triển độc lập. Tôi xây dựng mọi thứ từ game đến công cụ tiện ích — bất cứ thứ gì nghĩ ra.",
+    "bio2": "Tôi chủ yếu phát triển ứng dụng di động (iOS/Android), nhưng cũng tạo ứng dụng web và công cụ PC. Tôi rất vui khi mọi người sử dụng chúng.",
+    "bio3": "Hãy liên hệ nếu bạn có nhu cầu hợp tác, công việc hoặc bất kỳ câu hỏi nào.",
+    "contactForm": "Biểu mẫu liên hệ",
+    "contactFormDesc": "Gửi qua Google Forms",
+    "email": "Email",
+    "twitterDesc": "@riverappjp — Nhắn tin thoải mái",
+    "profileAlt": "River"
+  },
+  "breadcrumb": {
+    "top": "Trang chủ"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn đang tìm không tồn tại hoặc có thể đã được di chuyển.",
+    "backToTop": "Về trang chủ"
+  },
+  "appDetail": {
+    "iconAlt": "Biểu tượng {name}",
+    "comingSoon": "Coming Soon",
+    "about": "Về {name}"
+  },
+  "storeLabels": {
+    "downloadMobileApp": "Tải ứng dụng di động",
+    "playInBrowser": "Chơi ngay trên trình duyệt",
+    "downloadFromStore": "Tải từ cửa hàng",
+    "useInBrowser": "Dùng ngay trên trình duyệt"
+  },
+  "tags": {
+    "multiLanguage": "Đa ngôn ngữ",
+    "englishSupport": "Hỗ trợ tiếng Anh",
+    "japaneseOnly": "Chỉ tiếng Nhật",
+    "mobileAndPC": "Di động & PC",
+    "mobileOnly": "Chỉ di động",
+    "pcOnly": "Chỉ PC",
+    "iosApp": "Ứng dụng iOS",
+    "androidApp": "Ứng dụng Android",
+    "webApp": "Ứng dụng web",
+    "singlePlayer": "Một người chơi",
+    "oneToTwo": "1-2 người chơi",
+    "multiplayer": "Nhiều người chơi",
+    "onlineBattle": "Đối chiến trực tuyến",
+    "actionGame": "Game hành động",
+    "puzzleGame": "Game giải đố",
+    "boardGame": "Game cờ bàn",
+    "strategyGame": "Game chiến thuật",
+    "battleRoyale": "Battle royale",
+    "productivity": "Năng suất",
+    "fandom": "Fandom",
+    "travel": "Du lịch"
+  },
+  "privacyPolicy": {
+    "title": "Chính sách bảo mật",
+    "lastUpdated": "Cập nhật lần cuối: {date}",
+    "contactTitle": "Liên hệ",
+    "contactBody": "Nếu bạn có câu hỏi về chính sách này, vui lòng liên hệ với chúng tôi qua ",
+    "contactLink": "trang liên hệ",
+    "contactBodyEnd": ".",
+    "sections": [
+      {
+        "title": "Giới thiệu",
+        "body": "riverapp.jp (\"trang web này\") là trang portfolio cho các ứng dụng được phát triển độc lập. Trang này giải thích cách chúng tôi xử lý thông tin cá nhân trên trang web này. Xin lưu ý rằng mỗi ứng dụng được liệt kê trên trang web này có thể có chính sách bảo mật riêng, có thể được tìm thấy trên trang chi tiết của từng ứng dụng."
+      },
+      {
+        "title": "Thông tin chúng tôi thu thập",
+        "body": "Trang web này có thể tự động thu thập các thông tin sau nhằm mục đích cải thiện dịch vụ.",
+        "bullets": [
+          "Nhật ký truy cập (địa chỉ IP, thông tin trình duyệt, URL giới thiệu, các trang đã xem, v.v.)",
+          "Dữ liệu sử dụng trang web qua Vercel Analytics (ẩn danh)"
+        ]
+      },
+      {
+        "title": "Sử dụng cookie",
+        "body": "Trang web này có thể sử dụng cookie cho mục đích phân tích. Bạn có thể tắt cookie trong cài đặt trình duyệt, nhưng một số tính năng có thể không hoạt động bình thường."
+      },
+      {
+        "title": "Mục đích sử dụng",
+        "body": "Thông tin thu thập được sử dụng cho các mục đích sau.",
+        "bullets": [
+          "Phân tích và cải thiện việc sử dụng trang web",
+          "Phản hồi các yêu cầu"
+        ]
+      },
+      {
+        "title": "Tiết lộ cho bên thứ ba",
+        "body": "Chúng tôi không cung cấp thông tin thu thập cho bên thứ ba trừ khi pháp luật yêu cầu."
+      },
+      {
+        "title": "Thay đổi chính sách này",
+        "body": "Chính sách này có thể thay đổi mà không cần thông báo trước. Chính sách sửa đổi có hiệu lực khi được đăng tải trên trang này."
+      }
+    ]
+  },
+  "appDocument": {
+    "contact": "Liên hệ",
+    "privacyPolicy": "Chính sách bảo mật",
+    "contactIntro": " — Nếu bạn có câu hỏi, muốn báo lỗi hoặc yêu cầu tính năng, hãy liên hệ với chúng tôi qua bất kỳ phương thức nào dưới đây.",
+    "privacyContactBody": "Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua ",
+    "privacyContactLink": "trang liên hệ",
+    "privacyContactBodyEnd": ".",
+    "lastUpdated": "Cập nhật lần cuối: {date}"
+  },
+  "languageSwitcher": {
+    "label": "Ngôn ngữ"
+  }
 }

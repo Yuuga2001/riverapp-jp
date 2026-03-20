@@ -43,7 +43,8 @@
   },
   "appDetail": {
     "iconAlt": "{name} icon",
-    "comingSoon": "Coming Soon"
+    "comingSoon": "Coming Soon",
+    "about": "About {name}"
   },
   "storeLabels": {
     "downloadMobileApp": "Download the mobile app",
