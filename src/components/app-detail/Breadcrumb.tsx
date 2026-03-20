@@ -1,17 +1,22 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslation } from "@/i18n/context";
 
 interface BreadcrumbProps {
   appName: string;
 }
 
 export function Breadcrumb({ appName }: BreadcrumbProps) {
+  const t = useTranslation();
+
   return (
     <div className="mx-auto max-w-[960px] px-8 pt-5 font-mono text-[11px] text-text-tertiary tracking-[0.3px] max-sm:px-5 max-sm:pt-4">
       <Link
         href="/"
         className="text-text-tertiary no-underline transition-colors duration-150 hover:text-text-secondary"
       >
-        トップ
+        {t("breadcrumb.top")}
       </Link>
       <span className="mx-1.5 text-border">/</span>
       <Link

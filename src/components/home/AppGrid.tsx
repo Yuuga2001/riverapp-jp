@@ -1,5 +1,8 @@
+"use client";
+
 import type { App } from "@/types/app";
 import { AppCard } from "./AppCard";
+import { useTranslation } from "@/i18n/context";
 
 interface AppGridProps {
   apps: App[];
@@ -7,6 +10,8 @@ interface AppGridProps {
 }
 
 export function AppGrid({ apps, showComingSoon }: AppGridProps) {
+  const t = useTranslation();
+
   return (
     <section className="max-w-[960px] mx-auto max-sm:px-5" style={{ padding: "0 32px 80px" }}>
       <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1 max-sm:gap-3">
@@ -22,7 +27,7 @@ export function AppGrid({ apps, showComingSoon }: AppGridProps) {
           >
             <div className="font-mono text-xs text-text-tertiary tracking-[0.3px] text-center">
               <span className="inline-block w-[5px] h-[5px] rounded-full bg-text-tertiary mr-2 animate-pulse-dot" />
-              開発中...
+              {t("appGrid.developing")}
             </div>
           </div>
         )}

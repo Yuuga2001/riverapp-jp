@@ -1,8 +1,14 @@
-import { AppCountAnimation } from "./AppCountAnimation";
-import { getAllApps } from "@/lib/apps";
+"use client";
 
-export function Hero() {
-  const appCount = getAllApps().length;
+import { AppCountAnimation } from "./AppCountAnimation";
+import { useTranslation } from "@/i18n/context";
+
+interface HeroProps {
+  appCount: number;
+}
+
+export function Hero({ appCount }: HeroProps) {
+  const t = useTranslation();
 
   return (
     <section
@@ -11,17 +17,17 @@ export function Hero() {
     >
       <div>
         <p className="font-mono text-[11px] font-normal text-text-tertiary tracking-[1.5px] uppercase mb-5">
-          indie developer
+          {t("hero.label")}
         </p>
         <h1 className="text-[36px] font-normal leading-[1.35] tracking-[-0.8px] text-text-primary mb-5 max-sm:text-[26px]">
-          {"ゲーム、便利ツール、"}
+          {t("hero.heading1")}
           <br />
-          {"スマホアプリ。"}
+          {t("hero.heading2")}
           <br />
-          <em className="not-italic text-text-tertiary">いろいろ作ってます。</em>
+          <em className="not-italic text-text-tertiary">{t("hero.heading3")}</em>
         </h1>
         <p className="text-sm text-text-secondary leading-[1.8] max-w-[360px]">
-          個人でアプリ作っています。iOS・Android・Webアプリ、アイデアをカタチにします。
+          {t("hero.description")}
         </p>
       </div>
       <div className="flex flex-col items-end gap-3 pb-1 max-sm:flex-row max-sm:items-start max-sm:gap-6">

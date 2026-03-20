@@ -8,7 +8,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Hero />
+      <Hero appCount={apps.length} />
       <AppsContainer apps={apps} />
       <AboutSection />
     </>

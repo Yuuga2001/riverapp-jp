@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "label": "独立开发者",
+    "heading1": "游戏、工具、",
+    "heading2": "手机应用。",
+    "heading3": "什么都做的开发者。",
+    "description": "..."
+  },
+  "filter": {
+    "all": "全部",
+    "game": "游戏",
+    "app": "应用",
+    "oldest": "最早发布",
+    "newest": "最新发布"
+  },
+  "appGrid": { "developing": "开发中..." },
+  "appCard": { "viewDetail": "查看{name}的详情" },
+  "about": {
+    "name": "@River",
+    "role1": "独立开发者",
+    "role2": "程序员",
+    "role3": "20多岁",
+    "bio1": "我是一名独立开发者。从游戏到实用工具，想到什么就做什么。",
+    "bio2": "主要开发移动应用（iOS/Android），也会制作网页应用和PC工具。大家用到的时候我就很开心。",
+    "bio3": "工作咨询、合作洽谈或其他问题，欢迎随时联系我。",
+    "contactForm": "联系表单",
+    "contactFormDesc": "通过Google表单提交",
+    "email": "邮箱",
+    "twitterDesc": "@riverappjp — 欢迎私信",
+    "profileAlt": "River"
+  },
+  "breadcrumb": { "top": "首页" },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "您访问的页面不存在或已被移动。",
+    "backToTop": "返回首页"
+  },
+  "appDetail": { "iconAlt": "{name}图标", "comingSoon": "Coming Soon" },
+  "storeLabels": {
+    "downloadMobileApp": "下载移动应用",
+    "playInBrowser": "在浏览器中立即游玩",
+    "downloadFromStore": "从商店下载",
+    "useInBrowser": "在浏览器中立即使用"
+  },
+  "tags": {
+    "multiLanguage": "多语言",
+    "englishSupport": "支持英语",
+    "japaneseOnly": "仅限日语",
+    "mobileAndPC": "手机和电脑",
+    "mobileOnly": "仅限手机",
+    "pcOnly": "仅限电脑",
+    "iosApp": "iOS应用",
+    "androidApp": "Android应用",
+    "webApp": "网页应用",
+    "singlePlayer": "单人游戏",
+    "oneToTwo": "1-2人",
+    "multiplayer": "多人游戏",
+    "onlineBattle": "在线对战",
+    "actionGame": "动作游戏",
+    "puzzleGame": "益智游戏",
+    "boardGame": "桌游",
+    "strategyGame": "策略游戏",
+    "battleRoyale": "大逃杀",
+    "productivity": "效率工具",
+    "fandom": "粉丝社区",
+    "travel": "旅行"
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：{date}",
+    "contactTitle": "联系我们",
+    "contactBody": "如果您对本政策有任何疑问，请通过",
+    "contactLink": "联系页面",
+    "contactBodyEnd": "与我们联系。",
+    "sections": [
+      { "title": "简介", "body": "riverapp.jp（以下简称「本网站」）是展示独立开发应用的作品集网站。本页面说明了本网站如何处理个人信息。请注意，本网站上列出的每个应用可能有各自独立的隐私政策，详情请参阅各应用的详情页面。" },
+      { "title": "收集的信息", "body": "本网站可能会为改善服务而自动收集以下信息。", "bullets": ["访问日志（IP地址、浏览器信息、来源URL、浏览页面等）", "通过Vercel Analytics收集的网站使用数据（已匿名化）"] },
+      { "title": "Cookie的使用", "body": "本网站可能会出于分析目的使用Cookie。您可以在浏览器设置中禁用Cookie，但部分功能可能无法正常使用。" },
+      { "title": "使用目的", "body": "收集的信息用于以下目的。", "bullets": ["网站使用情况的分析和改善", "回复咨询"] },
+      { "title": "向第三方提供", "body": "除法律要求外，我们不会向第三方提供收集的信息。" },
+      { "title": "政策变更", "body": "本政策可能会在不事先通知的情况下进行变更。修订后的政策在本页面发布后即时生效。" }
+    ]
+  },
+  "appDocument": {
+    "contact": "联系我们",
+    "privacyPolicy": "隐私政策",
+    "contactIntro": " — 如果您有任何疑问、想要报告问题或提出功能需求，请通过以下任意方式联系我们。",
+    "privacyContactBody": "如果您对本隐私政策有任何疑问，请通过",
+    "privacyContactLink": "联系页面",
+    "privacyContactBodyEnd": "与我们联系。",
+    "lastUpdated": "最后更新：{date}"
+  },
+  "languageSwitcher": { "label": "语言" }
+}

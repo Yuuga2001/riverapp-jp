@@ -2,6 +2,7 @@
 
 import type { AppCategory, Platform } from "@/types/app";
 import type { SortOrder } from "./AppsContainer";
+import { useTranslation } from "@/i18n/context";
 
 type CategoryFilter = "all" | AppCategory;
 type PlatformFilter = "all" | Platform;
@@ -14,19 +15,6 @@ interface FilterSectionProps {
   onPlatformChange: (platform: PlatformFilter) => void;
   onSortChange: (sort: SortOrder) => void;
 }
-
-const CATEGORIES: { value: CategoryFilter; label: string }[] = [
-  { value: "all", label: "すべて" },
-  { value: "game", label: "ゲーム" },
-  { value: "app", label: "アプリ" },
-];
-
-const PLATFORMS: { value: PlatformFilter; label: string }[] = [
-  { value: "all", label: "すべて" },
-  { value: "web", label: "Web" },
-  { value: "ios", label: "iOS" },
-  { value: "android", label: "Android" },
-];
 
 function FilterButton({
   active,
@@ -52,11 +40,6 @@ function FilterButton({
   );
 }
 
-const SORTS: { value: SortOrder; label: string }[] = [
-  { value: "oldest", label: "古い順" },
-  { value: "newest", label: "新しい順" },
-];
-
 export function FilterSection({
   activeCategory,
   activePlatform,
@@ -65,6 +48,26 @@ export function FilterSection({
   onPlatformChange,
   onSortChange,
 }: FilterSectionProps) {
+  const t = useTranslation();
+
+  const CATEGORIES: { value: CategoryFilter; label: string }[] = [
+    { value: "all", label: t("filter.all") },
+    { value: "game", label: t("filter.game") },
+    { value: "app", label: t("filter.app") },
+  ];
+
+  const PLATFORMS: { value: PlatformFilter; label: string }[] = [
+    { value: "all", label: t("filter.all") },
+    { value: "web", label: "Web" },
+    { value: "ios", label: "iOS" },
+    { value: "android", label: "Android" },
+  ];
+
+  const SORTS: { value: SortOrder; label: string }[] = [
+    { value: "oldest", label: t("filter.oldest") },
+    { value: "newest", label: t("filter.newest") },
+  ];
+
   return (
     <div
       className="max-w-[960px] mx-auto flex flex-col gap-4 border-b border-border border-b-thin mb-14 max-sm:px-5"

@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "label": "인디 개발자",
+    "heading1": "게임, 도구,",
+    "heading2": "모바일 앱.",
+    "heading3": "뭐든지 만드는 개발자.",
+    "description": "..."
+  },
+  "filter": {
+    "all": "전체",
+    "game": "게임",
+    "app": "앱",
+    "oldest": "오래된 순",
+    "newest": "최신 순"
+  },
+  "appGrid": { "developing": "개발 중..." },
+  "appCard": { "viewDetail": "{name} 상세 보기" },
+  "about": {
+    "name": "@리버",
+    "role1": "인디 개발자",
+    "role2": "프로그래머",
+    "role3": "20대",
+    "bio1": "인디 개발자입니다. 게임부터 유틸리티 도구까지, 떠오르는 것은 뭐든 만듭니다.",
+    "bio2": "주로 모바일 앱(iOS/Android)을 개발하지만, 웹 앱이나 PC 도구도 만들고 있습니다. 사용해 주시면 기쁩니다.",
+    "bio3": "업무 의뢰, 협업, 기타 문의 사항이 있으시면 편하게 연락해 주세요.",
+    "contactForm": "문의 양식",
+    "contactFormDesc": "Google 양식으로 제출",
+    "email": "이메일",
+    "twitterDesc": "@riverappjp — DM 환영",
+    "profileAlt": "River"
+  },
+  "breadcrumb": { "top": "홈" },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "찾으시는 페이지가 존재하지 않거나 이동되었을 수 있습니다.",
+    "backToTop": "홈으로 돌아가기"
+  },
+  "appDetail": { "iconAlt": "{name} 아이콘", "comingSoon": "Coming Soon" },
+  "storeLabels": {
+    "downloadMobileApp": "모바일 앱 다운로드",
+    "playInBrowser": "브라우저에서 바로 플레이",
+    "downloadFromStore": "스토어에서 다운로드",
+    "useInBrowser": "브라우저에서 바로 사용"
+  },
+  "tags": {
+    "multiLanguage": "다국어",
+    "englishSupport": "영어 지원",
+    "japaneseOnly": "일본어만",
+    "mobileAndPC": "모바일 & PC",
+    "mobileOnly": "모바일 전용",
+    "pcOnly": "PC 전용",
+    "iosApp": "iOS 앱",
+    "androidApp": "Android 앱",
+    "webApp": "웹 앱",
+    "singlePlayer": "싱글 플레이어",
+    "oneToTwo": "1-2인",
+    "multiplayer": "멀티 플레이어",
+    "onlineBattle": "온라인 대전",
+    "actionGame": "액션 게임",
+    "puzzleGame": "퍼즐 게임",
+    "boardGame": "보드 게임",
+    "strategyGame": "전략 게임",
+    "battleRoyale": "배틀로얄",
+    "productivity": "생산성",
+    "fandom": "팬덤",
+    "travel": "여행"
+  },
+  "privacyPolicy": {
+    "title": "개인정보 처리방침",
+    "lastUpdated": "최종 업데이트: {date}",
+    "contactTitle": "문의",
+    "contactBody": "본 방침에 대해 궁금한 점이 있으시면 ",
+    "contactLink": "문의 페이지",
+    "contactBodyEnd": "를 통해 연락해 주세요.",
+    "sections": [
+      { "title": "소개", "body": "riverapp.jp(이하 \"본 사이트\")는 독자적으로 개발한 앱을 소개하는 포트폴리오 사이트입니다. 이 페이지에서는 본 사이트에서의 개인정보 처리 방법에 대해 설명합니다. 본 사이트에 게재된 각 앱에는 별도의 개인정보 처리방침이 있을 수 있으며, 각 앱의 상세 페이지에서 확인하실 수 있습니다." },
+      { "title": "수집하는 정보", "body": "본 사이트는 서비스 개선을 위해 다음 정보를 자동으로 수집할 수 있습니다.", "bullets": ["접속 로그(IP 주소, 브라우저 정보, 리퍼러 URL, 열람 페이지 등)", "Vercel Analytics를 통한 사이트 이용 데이터(익명화 처리됨)"] },
+      { "title": "쿠키 사용", "body": "본 사이트는 분석 목적으로 쿠키를 사용할 수 있습니다. 브라우저 설정에서 쿠키를 비활성화할 수 있지만, 일부 기능이 정상적으로 작동하지 않을 수 있습니다." },
+      { "title": "이용 목적", "body": "수집된 정보는 다음 목적으로 사용됩니다.", "bullets": ["사이트 이용 현황 분석 및 개선", "문의 대응"] },
+      { "title": "제3자 제공", "body": "법률에서 요구하는 경우를 제외하고, 수집된 정보를 제3자에게 제공하지 않습니다." },
+      { "title": "방침 변경", "body": "본 방침은 사전 통지 없이 변경될 수 있습니다. 개정된 방침은 본 페이지에 게시된 시점부터 효력이 발생합니다." }
+    ]
+  },
+  "appDocument": {
+    "contact": "문의",
+    "privacyPolicy": "개인정보 처리방침",
+    "contactIntro": " — 궁금한 점, 버그 신고, 기능 요청 등이 있으시면 아래 방법으로 편하게 연락해 주세요.",
+    "privacyContactBody": "본 개인정보 처리방침에 대해 궁금한 점이 있으시면 ",
+    "privacyContactLink": "문의 페이지",
+    "privacyContactBodyEnd": "를 통해 연락해 주세요.",
+    "lastUpdated": "최종 업데이트: {date}"
+  },
+  "languageSwitcher": { "label": "언어" }
+}

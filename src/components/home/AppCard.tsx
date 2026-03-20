@@ -6,6 +6,7 @@ import type { App } from "@/types/app";
 import { Badge } from "@/components/shared/Badge";
 import { Tag } from "@/components/shared/Tag";
 import { StoreButton } from "@/components/shared/StoreButton";
+import { useTranslation } from "@/i18n/context";
 
 interface AppCardProps {
   app: App;
@@ -14,6 +15,7 @@ interface AppCardProps {
 
 export function AppCard({ app, index }: AppCardProps) {
   const router = useRouter();
+  const t = useTranslation();
 
   const handleClick = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest("a")) return;
@@ -31,7 +33,7 @@ export function AppCard({ app, index }: AppCardProps) {
       }}
       role="link"
       tabIndex={0}
-      aria-label={`${app.name} の詳細を見る`}
+      aria-label={t("appCard.viewDetail", { name: app.name })}
       onClick={handleClick}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {

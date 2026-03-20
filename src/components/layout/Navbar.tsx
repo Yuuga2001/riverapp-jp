@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Navbar() {
   return (
@@ -7,18 +10,21 @@ export function Navbar() {
         <Link href="/" className="font-mono text-[13px] font-normal text-text-primary tracking-[-0.2px] no-underline">
           riverapp<span className="text-text-tertiary">.jp</span>
         </Link>
-        <ul className="flex gap-7 list-none">
-          <li>
-            <Link href="/#apps" className="font-mono text-xs text-text-secondary no-underline tracking-[0.3px] transition-colors duration-150 hover:text-text-primary">
-              apps
-            </Link>
-          </li>
-          <li>
-            <Link href="/#about" className="font-mono text-xs text-text-secondary no-underline tracking-[0.3px] transition-colors duration-150 hover:text-text-primary">
-              about
-            </Link>
-          </li>
-        </ul>
+        <div className="flex items-center gap-5">
+          <ul className="flex gap-7 list-none">
+            <li>
+              <Link href="/#apps" className="font-mono text-xs text-text-secondary no-underline tracking-[0.3px] transition-colors duration-150 hover:text-text-primary">
+                apps
+              </Link>
+            </li>
+            <li>
+              <Link href="/#about" className="font-mono text-xs text-text-secondary no-underline tracking-[0.3px] transition-colors duration-150 hover:text-text-primary">
+                about
+              </Link>
+            </li>
+          </ul>
+          <LanguageSwitcher />
+        </div>
       </div>
     </nav>
   );

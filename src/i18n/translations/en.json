@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "label": "indie developer",
+    "heading1": "Games, useful tools,",
+    "heading2": "mobile apps.",
+    "heading3": "I build all kinds of things.",
+    "description": "I'm an indie app developer. I bring ideas to life across iOS, Android, and the web."
+  },
+  "filter": {
+    "all": "All",
+    "game": "Games",
+    "app": "Apps",
+    "oldest": "Oldest first",
+    "newest": "Newest first"
+  },
+  "appGrid": {
+    "developing": "In development..."
+  },
+  "appCard": {
+    "viewDetail": "View details for {name}"
+  },
+  "about": {
+    "name": "@River",
+    "role1": "Indie Developer",
+    "role2": "Programmer",
+    "role3": "20s",
+    "bio1": "I'm an indie developer. I build whatever comes to mind, from games to handy tools.",
+    "bio2": "I mainly develop mobile apps (iOS / Android), but also build web apps and PC tools. It makes me happy when people use what I create.",
+    "bio3": "Feel free to reach out for work inquiries, collaborations, or any other questions.",
+    "contactForm": "Contact Form",
+    "contactFormDesc": "Submit via Google Forms",
+    "email": "Email",
+    "twitterDesc": "@riverappjp — Feel free to DM",
+    "profileAlt": "River"
+  },
+  "breadcrumb": {
+    "top": "Home"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or may have been moved.",
+    "backToTop": "Back to Home"
+  },
+  "appDetail": {
+    "iconAlt": "{name} icon",
+    "comingSoon": "Coming Soon"
+  },
+  "storeLabels": {
+    "downloadMobileApp": "Download the mobile app",
+    "playInBrowser": "Play now in your browser",
+    "downloadFromStore": "Download from store",
+    "useInBrowser": "Use now in your browser"
+  },
+  "tags": {
+    "multiLanguage": "Multi-language",
+    "englishSupport": "English supported",
+    "japaneseOnly": "Japanese only",
+    "mobileAndPC": "Mobile & PC",
+    "mobileOnly": "Mobile only",
+    "pcOnly": "PC only",
+    "iosApp": "iOS App",
+    "androidApp": "Android App",
+    "webApp": "Web App",
+    "singlePlayer": "Single player",
+    "oneToTwo": "1-2 players",
+    "multiplayer": "Multiplayer",
+    "onlineBattle": "Online PvP",
+    "actionGame": "Action game",
+    "puzzleGame": "Puzzle game",
+    "boardGame": "Board game",
+    "strategyGame": "Strategy game",
+    "battleRoyale": "Battle royale",
+    "productivity": "Productivity",
+    "fandom": "Fandom",
+    "travel": "Travel"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: {date}",
+    "contactTitle": "Contact Us",
+    "contactBody": "If you have any questions about this policy, please reach out via our ",
+    "contactLink": "contact page",
+    "contactBodyEnd": ".",
+    "sections": [
+      {
+        "title": "Introduction",
+        "body": "riverapp.jp (hereinafter referred to as \"this site\") is a portfolio site for independently developed apps. This page describes how personal information is handled on this site. Each app listed on this site may have its own individual privacy policy. Please refer to the detail page of each app for its specific privacy policy."
+      },
+      {
+        "title": "Information We Collect",
+        "body": "This site may automatically collect the following information for the purpose of improving our services.",
+        "bullets": [
+          "Access logs (IP address, browser information, referrer URL, pages viewed, etc.)",
+          "Site usage data collected by Vercel Analytics (anonymized)"
+        ]
+      },
+      {
+        "title": "Use of Cookies",
+        "body": "This site may use cookies for analytics purposes. You can disable cookies through your browser settings, but please note that some features may not function properly."
+      },
+      {
+        "title": "Purpose of Use",
+        "body": "The information collected is used for the following purposes.",
+        "bullets": [
+          "Analyzing and improving site usage",
+          "Responding to inquiries"
+        ]
+      },
+      {
+        "title": "Disclosure to Third Parties",
+        "body": "We do not disclose collected information to third parties, except as required by law."
+      },
+      {
+        "title": "Changes to This Policy",
+        "body": "This policy may be updated without prior notice. Any changes will take effect as soon as they are posted on this page."
+      }
+    ]
+  },
+  "appDocument": {
+    "contact": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "contactIntro": "If you have any questions, bug reports, or feature requests regarding this app, please feel free to reach out using any of the methods below.",
+    "privacyContactBody": "If you have any questions about this privacy policy, please visit our ",
+    "privacyContactLink": "contact page",
+    "privacyContactBodyEnd": ".",
+    "lastUpdated": "Last updated: {date}"
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  }
+}

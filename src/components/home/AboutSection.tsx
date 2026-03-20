@@ -1,24 +1,29 @@
-import Image from "next/image";
+"use client";
 
-const CONTACT_LINKS = [
-  {
-    label: "お問い合わせフォーム",
-    description: "Google フォームから送信",
-    href: "https://forms.gle/ViY1GUM7m2dvTNh58",
-  },
-  {
-    label: "メール",
-    description: "riverapp.jp@gmail.com",
-    href: "mailto:riverapp.jp@gmail.com",
-  },
-  {
-    label: "X (Twitter)",
-    description: "@riverappjp — DMもお気軽に",
-    href: "https://x.com/riverappjp?s=21&t=rxmNAbxxmw8o6ALQKsDg0g",
-  },
-];
+import Image from "next/image";
+import { useTranslation } from "@/i18n/context";
 
 export function AboutSection() {
+  const t = useTranslation();
+
+  const CONTACT_LINKS = [
+    {
+      label: t("about.contactForm"),
+      description: t("about.contactFormDesc"),
+      href: "https://forms.gle/ViY1GUM7m2dvTNh58",
+    },
+    {
+      label: t("about.email"),
+      description: "riverapp.jp@gmail.com",
+      href: "mailto:riverapp.jp@gmail.com",
+    },
+    {
+      label: "X (Twitter)",
+      description: t("about.twitterDesc"),
+      href: "https://x.com/riverappjp?s=21&t=rxmNAbxxmw8o6ALQKsDg0g",
+    },
+  ];
+
   return (
     <section
       className="max-w-[960px] mx-auto grid grid-cols-[1fr_2fr] gap-12 items-start opacity-0 animate-fade-up max-sm:grid-cols-1 max-sm:gap-6 max-sm:px-5 max-sm:py-10"
@@ -35,24 +40,24 @@ export function AboutSection() {
       <div className="flex flex-col gap-3 max-sm:flex-row max-sm:items-center max-sm:gap-4">
         <Image
           src="/apple-touch-icon.png"
-          alt="リバー"
+          alt={t("about.profileAlt")}
           width={64}
           height={64}
           className="rounded-full"
         />
         <div className="flex flex-col gap-1">
           <span className="text-[15px] font-medium text-text-primary">
-            @リバー
+            {t("about.name")}
           </span>
           <div className="flex flex-col gap-0.5 max-sm:flex-row max-sm:gap-2">
             <span className="font-mono text-[11px] text-text-tertiary tracking-[0.3px]">
-              個人開発者
+              {t("about.role1")}
             </span>
             <span className="font-mono text-[11px] text-text-tertiary tracking-[0.3px]">
-              プログラマー
+              {t("about.role2")}
             </span>
             <span className="font-mono text-[11px] text-text-tertiary tracking-[0.3px]">
-              20代
+              {t("about.role3")}
             </span>
           </div>
         </div>
@@ -61,16 +66,9 @@ export function AboutSection() {
       {/* Right column — Bio + Contact */}
       <div>
         <div className="text-sm text-text-secondary leading-[1.9]">
-          <p>
-            個人開発者です。ゲームから便利ツールまで、思いついたものをとにかく作っています。
-          </p>
-          <p className="mt-4">
-            スマホアプリ（iOS /
-            Android）をメインに、WebアプリやPCツールもつくります。使ってくれる人がいると嬉しいです。
-          </p>
-          <p className="mt-4">
-            お仕事のご依頼・コラボレーション・その他お問い合わせなど、お気軽にご連絡ください。
-          </p>
+          <p>{t("about.bio1")}</p>
+          <p className="mt-4">{t("about.bio2")}</p>
+          <p className="mt-4">{t("about.bio3")}</p>
         </div>
 
         {/* Contact links */}

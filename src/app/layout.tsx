@@ -3,6 +3,7 @@ import { DM_Mono, Noto_Sans_JP } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { I18nProvider } from "@/i18n/context";
 import "./globals.css";
 
 const dmMono = DM_Mono({
@@ -58,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${dmMono.variable} ${notoSansJP.variable}`}>
+    <html lang="ja" className={`${dmMono.variable} ${notoSansJP.variable}`} suppressHydrationWarning>
       <body>
         <script
           type="application/ld+json"
@@ -74,11 +75,13 @@ export default function RootLayout({
             }),
           }}
         />
-        <Navbar />
-        {children}
-        <div id="root-footer">
-          <Footer />
-        </div>
+        <I18nProvider>
+          <Navbar />
+          {children}
+          <div id="root-footer">
+            <Footer />
+          </div>
+        </I18nProvider>
         <SpeedInsights />
       </body>
     </html>
