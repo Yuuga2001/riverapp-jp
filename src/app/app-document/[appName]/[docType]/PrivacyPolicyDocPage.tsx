@@ -2,12 +2,11 @@
 
 import Link from "next/link";
 import type { App, PrivacyPolicyDocument, AppDocuments } from "@/types/app";
-import { useTranslation } from "@/i18n/context";
-import { useLocale } from "@/i18n/context";
+import { useTranslation, useLocale, useLocalizedApp } from "@/i18n/context";
 
 export function PrivacyPolicyDocPage({
-  app,
-  privacy,
+  app: rawApp,
+  privacy: jaPrivacy,
   documents,
 }: {
   app: App;
@@ -16,6 +15,8 @@ export function PrivacyPolicyDocPage({
 }) {
   const t = useTranslation();
   const { locale } = useLocale();
+  const app = useLocalizedApp(rawApp);
+  const privacy = app.documents?.["privacy-policy"] ?? jaPrivacy;
 
   // Format lastUpdated based on locale
   const formattedDate = (() => {
@@ -45,7 +46,7 @@ export function PrivacyPolicyDocPage({
         const body = section.body.replace(/\{appName\}/g, app.name);
 
         // Special handling for contact section
-        const isContactSection = section.title === "お問い合わせ";
+        const isContactSection = section.title === "お問い合わせ" || section.title === "Contact";
 
         return (
           <div key={section.title} className="mb-8">

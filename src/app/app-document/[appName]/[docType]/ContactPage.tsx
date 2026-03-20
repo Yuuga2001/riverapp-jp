@@ -1,16 +1,18 @@
 "use client";
 
 import type { App, ContactDocument } from "@/types/app";
-import { useTranslation } from "@/i18n/context";
+import { useTranslation, useLocalizedApp } from "@/i18n/context";
 
 export function ContactPage({
-  app,
-  contact,
+  app: rawApp,
+  contact: jaContact,
 }: {
   app: App;
   contact: ContactDocument;
 }) {
   const t = useTranslation();
+  const app = useLocalizedApp(rawApp);
+  const contact = app.documents?.contact ?? jaContact;
 
   return (
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-16 max-sm:px-5 max-sm:pt-8 max-sm:pb-12 animate-fade-up">

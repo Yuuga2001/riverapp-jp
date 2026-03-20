@@ -6,16 +6,17 @@ import type { App } from "@/types/app";
 import { Badge } from "@/components/shared/Badge";
 import { Tag } from "@/components/shared/Tag";
 import { StoreButton } from "@/components/shared/StoreButton";
-import { useTranslation } from "@/i18n/context";
+import { useTranslation, useLocalizedApp } from "@/i18n/context";
 
 interface AppCardProps {
   app: App;
   index: number;
 }
 
-export function AppCard({ app, index }: AppCardProps) {
+export function AppCard({ app: rawApp, index }: AppCardProps) {
   const router = useRouter();
   const t = useTranslation();
+  const app = useLocalizedApp(rawApp);
 
   const handleClick = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest("a")) return;

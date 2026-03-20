@@ -24,5 +24,14 @@
     {"label": "今すぐプレイ", "url": "https://color-countdown.riverapp.jp", "external": true}
   ],
   "ogDescription": "次々現れる爆弾を爆発する前に色別に仕分けろ！究極の判断力アクション",
-  "description": "### BombCountdownについて\n\nBombCountdownは、画面上に次々と出現する爆弾を、爆発するまでの制限時間内に正しい色のゾーンへドラッグして仕分ける、反射神経系アクションゲームです。ネオンが光るダークな演出の中、一瞬の判断ミスがゲームオーバーに直結するスリリングな体験を楽しめます。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 直感的なドラッグ操作でサクサクプレイ\n- 時間経過で加速する動的な難易度\n- ネオン＆パーティクルの迫力ある演出\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 画面上に爆弾が出現し、カウントダウンが始まる\n2. 爆弾をドラッグして、同じ色のゾーンに投げ込む\n3. 正しい色に仕分ければスコア+1\n4. 間違った色に入れるか、制限時間が切れるとゲームオーバー\n\n### 難易度の仕組み\n\nゲームが進むにつれ、爆弾の出現間隔がどんどん短くなります。序盤は余裕を持って仕分けられますが、後半は複数の爆弾を同時にさばく瞬時の判断力が求められます。どこまでスコアを伸ばせるか挑戦しましょう。\n\n### ゲームオーバー条件\n\n- **時間切れ** — 爆弾のカウントダウンがゼロになると爆発\n- **色間違い** — 爆弾を間違った色のゾーンに入れてしまう"
+  "description": "### BombCountdownについて\n\nBombCountdownは、画面上に次々と出現する爆弾を、爆発するまでの制限時間内に正しい色のゾーンへドラッグして仕分ける、反射神経系アクションゲームです。ネオンが光るダークな演出の中、一瞬の判断ミスがゲームオーバーに直結するスリリングな体験を楽しめます。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 直感的なドラッグ操作でサクサクプレイ\n- 時間経過で加速する動的な難易度\n- ネオン＆パーティクルの迫力ある演出\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 画面上に爆弾が出現し、カウントダウンが始まる\n2. 爆弾をドラッグして、同じ色のゾーンに投げ込む\n3. 正しい色に仕分ければスコア+1\n4. 間違った色に入れるか、制限時間が切れるとゲームオーバー\n\n### 難易度の仕組み\n\nゲームが進むにつれ、爆弾の出現間隔がどんどん短くなります。序盤は余裕を持って仕分けられますが、後半は複数の爆弾を同時にさばく瞬時の判断力が求められます。どこまでスコアを伸ばせるか挑戦しましょう。\n\n### ゲームオーバー条件\n\n- **時間切れ** — 爆弾のカウントダウンがゼロになると爆発\n- **色間違い** — 爆弾を間違った色のゾーンに入れてしまう",
+  "en": {
+    "shortDescription": "Sort the bombs into their matching colored boxes before they explode! Drag bombs to the correct color zones within the time limit in this high-speed action game that tests your reflexes and judgment.",
+    "subtitle": "Bomb sorting action",
+    "promoText": "Sort the bombs into their matching colored boxes before they explode! Drag bombs to the correct color zones within the time limit in this high-speed action game that tests your reflexes and judgment.",
+    "description": "### About BombCountdown\n\nBombCountdown is a reflex-based action game where you sort bombs appearing on screen by dragging them to the correct color zones before their countdown expires. In a dark neon-lit atmosphere, a single misjudgment leads to game over — enjoy the thrilling experience.\n\n### Features\n\n- Play free in your browser right now\n- Intuitive drag controls for smooth gameplay\n- Dynamic difficulty that accelerates over time\n- Impressive neon and particle effects\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Bombs appear on screen and countdowns begin\n2. Drag bombs to their matching color zones\n3. Correct sorting scores +1\n4. Wrong color or expired countdown means game over\n\n### Difficulty System\n\nAs the game progresses, bombs appear at shorter intervals. Early on you can sort with ease, but later you'll need split-second judgment to handle multiple bombs simultaneously. See how high you can score.\n\n### Game Over Conditions\n\n- **Time's up** — A bomb's countdown reaches zero and explodes\n- **Wrong color** — A bomb is placed in the wrong color zone",
+    "linkLabels": {
+      "今すぐプレイ": "Play Now"
+    }
+  }
 }

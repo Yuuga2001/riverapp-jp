@@ -1,5 +1,9 @@
+"use client";
+
 import type { StoreLink } from "@/types/app";
 import { AppleIcon, GooglePlayIcon, WebIcon } from "./icons";
+import { useLocale } from "@/i18n/context";
+import { STORE_BUTTON_LABEL_MAP } from "@/i18n/config";
 
 const ICON_MAP = {
   "app-store": AppleIcon,
@@ -13,7 +17,11 @@ interface StoreButtonProps {
 }
 
 export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
+  const { locale } = useLocale();
   const Icon = ICON_MAP[link.type];
+  const label = locale === "en"
+    ? (STORE_BUTTON_LABEL_MAP[link.label] ?? link.label)
+    : link.label;
 
   if (variant === "detail") {
     const baseClass =
@@ -23,7 +31,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
       return (
         <span className={`${baseClass} opacity-40 cursor-default pointer-events-none`}>
           <Icon className="w-3.5 h-3.5 shrink-0" />
-          {link.label}
+          {label}
         </span>
       );
     }
@@ -31,7 +39,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
     return (
       <a href={link.url} className={baseClass} target="_blank" rel="noopener noreferrer">
         <Icon className="w-3.5 h-3.5 shrink-0" />
-        {link.label}
+        {label}
       </a>
     );
   }
@@ -44,7 +52,7 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
     return (
       <span className={`${cardBase} opacity-40 cursor-default pointer-events-none`}>
         <Icon className="w-2.5 h-2.5 shrink-0" />
-        {link.label}
+        {label}
       </span>
     );
   }
@@ -53,12 +61,12 @@ export function StoreButton({ link, variant = "card" }: StoreButtonProps) {
     <a
       href={link.url}
       className={cardBase}
-           target="_blank"
+      target="_blank"
       rel="noopener noreferrer"
       onClick={(e) => e.stopPropagation()}
     >
       <Icon className="w-2.5 h-2.5 shrink-0" />
-      {link.label}
+      {label}
     </a>
   );
 }

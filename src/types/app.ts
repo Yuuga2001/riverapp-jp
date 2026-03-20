@@ -75,6 +75,20 @@ export interface AppDocuments {
   "privacy-policy"?: PrivacyPolicyDocument;
 }
 
+/** English translations for app content fields */
+export interface AppEnContent {
+  name?: string;
+  shortDescription?: string;
+  subtitle?: string;
+  promoText?: string;
+  description?: string;
+  ogDescription?: string;
+  /** Map of Japanese link label → English label */
+  linkLabels?: Record<string, string>;
+  /** English document translations (same structure as AppDocuments) */
+  documents?: AppDocuments;
+}
+
 // --- Main App type ---
 
 export interface App {
@@ -95,4 +109,5 @@ export interface App {
   ogDescription?: string;
   description?: string;
   documents?: AppDocuments;
+  en?: AppEnContent;
 }

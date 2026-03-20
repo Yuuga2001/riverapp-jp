@@ -1,7 +1,7 @@
 "use client";
 
-import type { ExternalLink } from "@/types/app";
-import { useTranslation } from "@/i18n/context";
+import type { App, ExternalLink } from "@/types/app";
+import { useTranslation, useLocalizedApp } from "@/i18n/context";
 
 interface DocumentLink {
   label: string;
@@ -13,12 +13,14 @@ interface DocumentLink {
 }
 
 interface LinksSectionProps {
-  links?: ExternalLink[];
+  app: App;
   documentLinks?: DocumentLink[];
 }
 
-export function LinksSection({ links = [], documentLinks = [] }: LinksSectionProps) {
+export function LinksSection({ app: rawApp, documentLinks = [] }: LinksSectionProps) {
   const t = useTranslation();
+  const app = useLocalizedApp(rawApp);
+  const links: ExternalLink[] = app.links ?? [];
 
   const allItems = [
     ...documentLinks.map((l) => ({

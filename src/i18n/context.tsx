@@ -8,6 +8,7 @@ import {
   useState,
 } from "react";
 import type { Locale } from "./config";
+import type { App } from "@/types/app";
 import { COOKIE_NAME, DEFAULT_LOCALE, SUPPORTED_LOCALES } from "./config";
 import jaTranslations from "./translations/ja.json";
 
@@ -64,30 +65,14 @@ async function loadTranslations(locale: Locale): Promise<Translations> {
   const cached = translationCache.get(locale);
   if (cached) return cached;
 
-  const loaders: Record<string, () => Promise<{ default: Translations }>> = {
-    en: () => import("./translations/en.json"),
-    "zh-CN": () => import("./translations/zh-CN.json"),
-    "zh-TW": () => import("./translations/zh-TW.json"),
-    ko: () => import("./translations/ko.json"),
-    es: () => import("./translations/es.json"),
-    fr: () => import("./translations/fr.json"),
-    de: () => import("./translations/de.json"),
-    it: () => import("./translations/it.json"),
-    pt: () => import("./translations/pt.json"),
-    ru: () => import("./translations/ru.json"),
-    ar: () => import("./translations/ar.json"),
-    hi: () => import("./translations/hi.json"),
-    th: () => import("./translations/th.json"),
-    vi: () => import("./translations/vi.json"),
-  };
+  if (locale === "en") {
+    const mod = await import("./translations/en.json");
+    const translations = mod.default as Translations;
+    translationCache.set(locale, translations);
+    return translations;
+  }
 
-  const loader = loaders[locale];
-  if (!loader) return jaTranslations as Translations;
-
-  const mod = await loader();
-  const translations = mod.default;
-  translationCache.set(locale, translations);
-  return translations;
+  return jaTranslations as Translations;
 }
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
@@ -107,11 +92,10 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     setMounted(true);
   }, []);
 
-  // Update html lang and dir when locale changes
+  // Update html lang when locale changes
   useEffect(() => {
     if (!mounted) return;
     document.documentElement.lang = locale;
-    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
   }, [locale, mounted]);
 
   const setLocale = useCallback((newLocale: Locale) => {
@@ -161,4 +145,25 @@ export function useTranslation() {
 export function useLocale() {
   const { locale, setLocale } = useI18n();
   return { locale, setLocale };
+}
+
+/** Returns a localized copy of the app — English fields override Japanese when locale is "en" */
+export function useLocalizedApp(app: App): App {
+  const { locale } = useI18n();
+  if (locale === "en" && app.en) {
+    const localized = { ...app, ...app.en };
+    // Translate link labels if linkLabels map is provided
+    if (app.en.linkLabels && app.links) {
+      localized.links = app.links.map((link) => ({
+        ...link,
+        label: app.en!.linkLabels![link.label] ?? link.label,
+      }));
+    }
+    // Merge English documents over Japanese documents
+    if (app.en.documents && app.documents) {
+      localized.documents = { ...app.documents, ...app.en.documents };
+    }
+    return localized;
+  }
+  return app;
 }

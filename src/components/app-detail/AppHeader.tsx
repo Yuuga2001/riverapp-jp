@@ -5,15 +5,16 @@ import type { App } from "@/types/app";
 import { Badge } from "@/components/shared/Badge";
 import { Tag } from "@/components/shared/Tag";
 import { StoreButton } from "@/components/shared/StoreButton";
-import { useTranslation } from "@/i18n/context";
+import { useTranslation, useLocalizedApp } from "@/i18n/context";
 import { STORE_LABEL_MAP } from "@/i18n/config";
 
 interface AppHeaderProps {
   app: App;
 }
 
-export function AppHeader({ app }: AppHeaderProps) {
+export function AppHeader({ app: rawApp }: AppHeaderProps) {
   const t = useTranslation();
+  const app = useLocalizedApp(rawApp);
 
   return (
     <section className="mx-auto max-w-[960px] px-8 pt-12 pb-10 max-sm:px-5 max-sm:pt-8 max-sm:pb-8">

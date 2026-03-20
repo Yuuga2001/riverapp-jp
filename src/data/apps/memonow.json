@@ -112,5 +112,101 @@
       ],
       "lastUpdated": "2026-03-20"
     }
+  },
+  "en": {
+    "shortDescription": "Quick memo. Always visible on your widget. A simple memo app with 4 boards, backup, and Apple Watch support.",
+    "subtitle": "Quick memo. A memo app always visible on your widget",
+    "promoText": "\"Quick memo.\" That's all you need. Display memos on your home screen or lock screen widget at all times. Switch between 4 boards, back up anytime with peace of mind, and auto-sync to Apple Watch. Shopping lists, phone numbers, passwords — keep those little things you don't want to forget always in sight.",
+    "description": "### About MemoNow\n\nMemoNow is a \"memo only\" app with no unnecessary features. The entire screen is a notepad — tap and start typing. What you write is always displayed on your home screen or lock screen widget, so you can check it anytime without opening the app.\n\n### 4 Boards for Different Uses\n\nShopping list, passwords, to-do list, notepad — switch between 4 boards using tabs for different purposes. Board names are fully customizable. You can choose which board to display per widget, allowing multiple memos on your home screen.\n\n### Backup for Peace of Mind\n\nDon't worry about accidentally deleting important memos. Save your current state at any time with the \"Save Current State\" button. Restore past states with a single tap, and the pre-restore state is automatically saved too, so you can operate with confidence.\n\n### Check on Apple Watch\n\nMemos written on iPhone automatically sync to Apple Watch. Just glance at your wrist while out and about to quickly check your memo contents.\n\n### 15 Language Support\n\nSupports 15 languages including English, Japanese, Chinese, Korean, French, German, Spanish, and more. Automatically switches based on your device's language settings.\n\n### Supported Platforms\n\nCompatible with iOS 17.0+ / watchOS 10.0+. Currently preparing for App Store release.",
+    "documents": {
+      "appDisplayName": "MemoNow",
+      "about": {
+        "catchcopy": "\"Quick memo.\" That's all you need.",
+        "subcopy": "The simplest, most intuitive memo app — just one sheet.\nAlways visible on your home screen or lock screen widget for instant access.\nSwitch between 4 boards. Back up with confidence. Auto-sync to Apple Watch.\nShopping lists, phone numbers, passwords — keep those little things you don't want to forget always in sight.",
+        "features": [
+          {"name": "4-Board Memo", "desc": "Switch between 4 boards using tabs. Rename boards freely. Organize by purpose"},
+          {"name": "Always-On Widget", "desc": "Display memo content on your home screen or lock screen at all times. Choose which board to show per widget"},
+          {"name": "Backup & Restore", "desc": "Save your memo state with one tap. Easily restore from past backups, with pre-restore state auto-saved"},
+          {"name": "Apple Watch Support", "desc": "Memos written on iPhone auto-sync to Apple Watch. Check your memos on the go with a quick glance"},
+          {"name": "Undo / Redo", "desc": "One-tap undo and redo for edits. No worries about accidental deletions"},
+          {"name": "Color Customization", "desc": "Customize background color, text color, and font size freely. Beautiful gradient backgrounds available"},
+          {"name": "One-Tap Copy", "desc": "Instantly copy memo content to clipboard with the copy button"},
+          {"name": "15 Languages", "desc": "Supports 15 languages including English, Japanese, Chinese, Korean, French, German, and Spanish. Auto-switches based on device language"},
+          {"name": "Real-Time Sync", "desc": "Widget updates the moment you write a memo. Instant refresh even after closing the app"},
+          {"name": "Usage Guide", "desc": "Built-in interactive help screen. Clear instructions for adding widgets"}
+        ],
+        "info": [
+          {"key": "Supported OS", "value": "iOS 17.0+ / watchOS 10.0+"},
+          {"key": "Price", "value": "Free"},
+          {"key": "Category", "value": "Productivity"},
+          {"key": "Languages", "value": "15 languages supported"},
+          {"key": "Developer", "value": "riverapp.jp"}
+        ],
+        "links": [
+          {"label": "Privacy Policy", "href": "/app-document/memonow/privacy-policy", "internal": true},
+          {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+        ]
+      },
+      "contact": {
+        "methods": [
+          {
+            "label": "Contact Form",
+            "description": "Submit via Google Forms",
+            "url": "https://forms.gle/68uVrDj6ACmN9PNu8",
+            "external": true
+          },
+          {
+            "label": "Contact by Email",
+            "description": "riverapp.jp@gmail.com",
+            "url": "mailto:riverapp.jp@gmail.com",
+            "external": false
+          }
+        ]
+      },
+      "privacy-policy": {
+        "sections": [
+          {
+            "title": "Introduction",
+            "body": "This privacy policy explains how personal information is handled in {appName} (hereinafter \"the App\"). The App respects your privacy and is committed to protecting your personal information."
+          },
+          {
+            "title": "Information Collected",
+            "body": "The App does not collect any personal information.",
+            "bullets": [
+              "Memo content is stored only on your device and is never sent to external servers",
+              "Settings such as font size, background color, and text color are stored only on your device",
+              "Backup data is stored only on your device",
+              "Sync with Apple Watch is performed via direct device-to-device communication without going through external servers",
+              "No account registration or login is required"
+            ]
+          },
+          {
+            "title": "Data Storage",
+            "body": "All data in the App is stored locally in UserDefaults (App Groups) on your device. Data sync to Apple Watch is performed via direct device-to-device communication through the WatchConnectivity framework, without going through external servers. Data is never transmitted over the internet, and the developer cannot access it. Deleting the app will permanently remove all data from your device."
+          },
+          {
+            "title": "Third-Party Sharing",
+            "body": "The App does not provide, sell, or share your data with any third parties."
+          },
+          {
+            "title": "Analytics & Advertising",
+            "body": "The App does not use any analytics tools or advertising SDKs."
+          },
+          {
+            "title": "Children's Privacy",
+            "body": "Since the App does not collect personal information, it can be used safely regardless of age."
+          },
+          {
+            "title": "Policy Changes",
+            "body": "This privacy policy may be updated as needed. Any changes will be posted on this page with the latest content."
+          },
+          {
+            "title": "Contact",
+            "body": "For questions or inquiries regarding this privacy policy, please reach out through the contact page."
+          }
+        ],
+        "lastUpdated": "2026-03-20"
+      }
+    }
   }
 }

@@ -3,11 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { App, AboutDocument, AppDocuments } from "@/types/app";
-import { useTranslation } from "@/i18n/context";
+import { useTranslation, useLocalizedApp } from "@/i18n/context";
 
 export function AboutPage({
-  app,
-  about,
+  app: rawApp,
+  about: jaAbout,
   documents,
 }: {
   app: App;
@@ -15,6 +15,8 @@ export function AboutPage({
   documents: AppDocuments;
 }) {
   const t = useTranslation();
+  const app = useLocalizedApp(rawApp);
+  const about = app.documents?.about ?? jaAbout;
   void documents;
 
   return (

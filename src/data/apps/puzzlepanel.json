@@ -24,5 +24,15 @@
     {"label": "今すぐプレイ", "url": "https://puzzlepanel.riverapp.jp", "external": true}
   ],
   "ogDescription": "タップで反転、規定回数内に目標の形を完成させるロジカルパズル",
-  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。"
+  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。",
+  "en": {
+    "name": "Puzzle Panel",
+    "shortDescription": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels with gradually increasing difficulty.",
+    "subtitle": "Tap to flip, logical puzzle",
+    "promoText": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels, from 4x4 to 8x8 with gradually increasing difficulty.",
+    "description": "### About Puzzle Panel\n\nPuzzle Panel is a brain-training logical puzzle game with an ancient Egyptian stone tablet motif. Memorize the target board pattern and match it by tapping exactly the required number of times.\n\n### Features\n\n- Play free in your browser right now\n- All 100 levels (10 stages)\n- Board sizes from 4x4 to 8x8, gradually expanding\n- Random puzzle generation every time\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Check the target board pattern\n2. Tap panels to flip them (the tapped position and surrounding 3x3 area — 9 tiles total — flip simultaneously)\n3. Clear the level by matching the target pattern when you've used exactly the required number of taps\n\n### Difficulty Progression\n\nAs stages advance, the board grows larger and the required tap count increases. Early levels use a 4x4 board with 1-2 taps, while later levels use an 8x8 board with 9-10 taps, requiring careful strategic thinking.\n\n### Strategic Tips\n\nEach tap affects a 3x3 area of 9 tiles. When multiple taps overlap, panels flip twice and return to their original state. The key is using these overlaps effectively to precisely match the target pattern.",
+    "linkLabels": {
+      "今すぐプレイ": "Play Now"
+    }
+  }
 }

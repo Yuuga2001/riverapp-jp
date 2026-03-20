@@ -120,16 +120,16 @@ export default async function AppDetailPage({ params }: PageProps) {
       />
       <Breadcrumb appName={app.name} />
       <AppHeader app={app} />
-      <PromoSection text={app.promoText} />
+      <PromoSection app={app} />
 
       {screenshots.length > 0 && (
         <ScreenshotCarousel paths={screenshots} />
       )}
 
-      <DescriptionSection slug={slug} />
+      <DescriptionSection app={app} />
 
       <LinksSection
-        links={app.links}
+        app={app}
         documentLinks={
           app.documents
             ? [

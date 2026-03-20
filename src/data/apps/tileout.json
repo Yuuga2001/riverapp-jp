@@ -24,5 +24,14 @@
     {"label": "今すぐプレイ", "url": "https://tileout.riverapp.jp", "external": true}
   ],
   "ogDescription": "タイルをスライドして陣地をつなげる、シンプルで奥深い戦略ボードゲーム",
-  "description": "### TileOutについて\n\nTileOut（タイルアウト）は、盤面上のタイルをスライドさせて戦う戦略ボードゲームです。2人のプレイヤーがそれぞれ異なる方向にしかタイルを動かせないという非対称なルールが、独特な駆け引きと深い戦略性を生み出します。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- AI対戦モード搭載 — 一人でも楽しめる\n- 2人対戦モード — 友達や家族と対面対戦\n- スマートフォン・タブレット・PCに対応\n- 非対称ルールが生む独特の戦略性\n\n### ルール\n\n8x8のチェッカーボード上で、2人のプレイヤーが交互にタイルをスライドさせます。\n\n- Player 1（黒）: 列を上方向にのみスライドできる\n- Player 2（白）: 行を右方向にのみスライドできる\n\n### 勝利条件\n\n自分の色のタイルを10個連結させれば勝利です。孤立したタイルは自動的に盤面から除去されるため、攻めと守りのバランスが重要になります。\n\n### 戦略のポイント\n\n相手のスライド方向を読み、自分の連結を伸ばしつつ相手の連結を断ち切りましょう。一手の判断が盤面全体の勢力図を塗り替える、緊張感あるゲーム展開が楽しめます。"
+  "description": "### TileOutについて\n\nTileOut（タイルアウト）は、盤面上のタイルをスライドさせて戦う戦略ボードゲームです。2人のプレイヤーがそれぞれ異なる方向にしかタイルを動かせないという非対称なルールが、独特な駆け引きと深い戦略性を生み出します。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- AI対戦モード搭載 — 一人でも楽しめる\n- 2人対戦モード — 友達や家族と対面対戦\n- スマートフォン・タブレット・PCに対応\n- 非対称ルールが生む独特の戦略性\n\n### ルール\n\n8x8のチェッカーボード上で、2人のプレイヤーが交互にタイルをスライドさせます。\n\n- Player 1（黒）: 列を上方向にのみスライドできる\n- Player 2（白）: 行を右方向にのみスライドできる\n\n### 勝利条件\n\n自分の色のタイルを10個連結させれば勝利です。孤立したタイルは自動的に盤面から除去されるため、攻めと守りのバランスが重要になります。\n\n### 戦略のポイント\n\n相手のスライド方向を読み、自分の連結を伸ばしつつ相手の連結を断ち切りましょう。一手の判断が盤面全体の勢力図を塗り替える、緊張感あるゲーム展開が楽しめます。",
+  "en": {
+    "shortDescription": "TileOut is a 2-player strategy board game where you slide tiles on an 8x8 board. Players with different movement restrictions outwit each other — connect 10 of your tiles to win. Simple rules create endless mind games.",
+    "subtitle": "Slide and strategize board game",
+    "promoText": "TileOut is a 2-player strategy board game where you slide tiles on an 8x8 board. Players with different movement restrictions outwit each other — connect 10 of your tiles to win. Simple rules create endless mind games.",
+    "description": "### About TileOut\n\nTileOut is a strategy board game where you slide tiles on the board to compete. The asymmetric rules — where each player can only move tiles in different directions — create unique dynamics and deep strategic gameplay.\n\n### Features\n\n- Play free in your browser right now\n- AI mode included — enjoy solo play\n- 2-player mode — play against friends and family\n- Works on smartphones, tablets, and PCs\n- Asymmetric rules create unique strategy\n\n### Rules\n\nOn an 8x8 checkerboard, two players take turns sliding tiles.\n\n- Player 1 (Black): Can only slide columns upward\n- Player 2 (White): Can only slide rows to the right\n\n### Win Condition\n\nConnect 10 tiles of your color to win. Isolated tiles are automatically removed from the board, making the balance between offense and defense crucial.\n\n### Strategic Tips\n\nRead your opponent's slide direction, extend your own connections while cutting off theirs. Every move can reshape the entire board's balance of power, creating tense gameplay.",
+    "linkLabels": {
+      "今すぐプレイ": "Play Now"
+    }
+  }
 }

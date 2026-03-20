@@ -37,5 +37,18 @@
     {"label": "アプリ紹介サイト", "url": "https://hexlide.riverapp.jp/app", "external": true}
   ],
   "ogDescription": "コマだけでなく盤面自体を動かす、六角形グリッドの対戦ボードゲーム",
-  "description": "### HEXLIDEについて\n\nHEXLIDEは、六角形（ヘックス）の盤面を動かしながら戦う2人対戦の戦略ボードゲームです。コマの移動に加えて盤面タイル自体も動かせるため、毎手が読み合いになるのが特徴です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- AI対戦モード搭載 - 一人でも楽しめる\n- 2人対戦モード - 友達や家族と対戦\n- スマートフォン・タブレット・PCに対応\n- シンプルなルールで奥深い戦術性\n\n### 遊び方\n\n各プレイヤーは3つのコマを持ち、それらを連結させることで勝利します。1ターンは2つのフェーズから構成されます：\n\n1. コマを選んで端まで滑らせる\n2. 空いているタイルを別の位置へ移動する\n\n### 勝利条件\n\n自分の3つのコマすべてが隣接した状態（線状、三角形、V字など）を作ると勝利です。\n\n### 戦略のポイント\n\nタイル配置を変えることで盤面全体をコントロールできます。相手のコマを分断したり、自分のコマを近づけたりする戦略的な判断が重要です。"
+  "description": "### HEXLIDEについて\n\nHEXLIDEは、六角形（ヘックス）の盤面を動かしながら戦う2人対戦の戦略ボードゲームです。コマの移動に加えて盤面タイル自体も動かせるため、毎手が読み合いになるのが特徴です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- AI対戦モード搭載 - 一人でも楽しめる\n- 2人対戦モード - 友達や家族と対戦\n- スマートフォン・タブレット・PCに対応\n- シンプルなルールで奥深い戦術性\n\n### 遊び方\n\n各プレイヤーは3つのコマを持ち、それらを連結させることで勝利します。1ターンは2つのフェーズから構成されます：\n\n1. コマを選んで端まで滑らせる\n2. 空いているタイルを別の位置へ移動する\n\n### 勝利条件\n\n自分の3つのコマすべてが隣接した状態（線状、三角形、V字など）を作ると勝利です。\n\n### 戦略のポイント\n\nタイル配置を変えることで盤面全体をコントロールできます。相手のコマを分断したり、自分のコマを近づけたりする戦略的な判断が重要です。",
+  "en": {
+    "shortDescription": "HEXLIDE is a hexagonal grid board game with unique tactics not found in traditional board games. With innovative rules that let you move not just pieces but the board tiles themselves, the strategic possibilities are endless.",
+    "subtitle": "Hexagonal grid board game",
+    "promoText": "HEXLIDE is a hexagonal grid board game with unique tactics not found in traditional board games. With innovative rules that let you move not just pieces but the board tiles themselves, the strategic possibilities are endless.",
+    "description": "### About HEXLIDE\n\nHEXLIDE is a 2-player strategy board game where you battle by moving hexagonal tiles. In addition to moving pieces, you can also move the board tiles themselves, making every move a mind game.\n\n### Features\n\n- Play free in your browser right now\n- AI mode included — enjoy solo play\n- 2-player mode — play against friends and family\n- Works on smartphones, tablets, and PCs\n- Simple rules with deep tactical gameplay\n\n### How to Play\n\nEach player has 3 pieces, and wins by connecting all of them. Each turn consists of two phases:\n\n1. Select a piece and slide it to the edge\n2. Move an empty tile to a different position\n\n### Win Condition\n\nYou win when all 3 of your pieces are adjacent (in a line, triangle, V-shape, etc.).\n\n### Strategic Tips\n\nBy changing tile positions, you can control the entire board. Strategic decisions about splitting your opponent's pieces or bringing your own closer together are key.",
+    "linkLabels": {
+      "今すぐプレイ": "Play Now",
+      "遊び方": "How to Play",
+      "プライバシーポリシー": "Privacy Policy",
+      "お問い合わせ": "Contact",
+      "アプリ紹介サイト": "App Website"
+    }
+  }
 }

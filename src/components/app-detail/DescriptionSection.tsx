@@ -1,12 +1,15 @@
+"use client";
+
 import ReactMarkdown from "react-markdown";
-import { getApp } from "@/lib/apps";
+import type { App } from "@/types/app";
+import { useLocalizedApp } from "@/i18n/context";
 
 interface DescriptionSectionProps {
-  slug: string;
+  app: App;
 }
 
-export function DescriptionSection({ slug }: DescriptionSectionProps) {
-  const app = getApp(slug);
+export function DescriptionSection({ app: rawApp }: DescriptionSectionProps) {
+  const app = useLocalizedApp(rawApp);
 
   if (!app.description) {
     return null;

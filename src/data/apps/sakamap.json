@@ -38,5 +38,19 @@
     {"label": "SakaMap公式X（旧Twitter）", "url": "https://x.com/sakamap8367?s=21&t=rxmNAbxxmw8o6ALQKsDg0g", "external": true}
   ],
   "ogDescription": "坂道グループの聖地巡礼マップ。MV撮影地やロケ地をファンみんなで共有・発見",
-  "description": "### SakaMapについて\n\nSakaMapは、坂道グループ（乃木坂46・櫻坂46・日向坂46）に関連する聖地をGoogle Maps上でかんたんに見つけられるコミュニティ型マップアプリです。MV撮影地、ドラマロケ地、バラエティ番組で訪れた場所など、ファンが実際に巡礼できるスポットを共有できます。\n\n### 主な機能\n\n- Google Mapsベースのインタラクティブな聖地マップ\n- グループ別フィルタリング（乃木坂46 / 櫻坂46 / 日向坂46）\n- 写真付き投稿（最大4枚）でスポットを共有\n- いいね・ブックマーク・コメント機能\n- メンバータグ付けで検索しやすく\n- Googleアカウントでかんたんログイン\n- マイ投稿フィルターで自分の投稿を管理\n- 近くの既存スポットを自動検出（重複防止）\n\n### 対応プラットフォーム\n\niOS・Android・Webの3プラットフォームに対応。スマホアプリはApp StoreとGoogle Playからダウンロードできます。ブラウザからもすぐにアクセスでき、PCでもスマホでも快適に使えます。"
+  "description": "### SakaMapについて\n\nSakaMapは、坂道グループ（乃木坂46・櫻坂46・日向坂46）に関連する聖地をGoogle Maps上でかんたんに見つけられるコミュニティ型マップアプリです。MV撮影地、ドラマロケ地、バラエティ番組で訪れた場所など、ファンが実際に巡礼できるスポットを共有できます。\n\n### 主な機能\n\n- Google Mapsベースのインタラクティブな聖地マップ\n- グループ別フィルタリング（乃木坂46 / 櫻坂46 / 日向坂46）\n- 写真付き投稿（最大4枚）でスポットを共有\n- いいね・ブックマーク・コメント機能\n- メンバータグ付けで検索しやすく\n- Googleアカウントでかんたんログイン\n- マイ投稿フィルターで自分の投稿を管理\n- 近くの既存スポットを自動検出（重複防止）\n\n### 対応プラットフォーム\n\niOS・Android・Webの3プラットフォームに対応。スマホアプリはApp StoreとGoogle Playからダウンロードできます。ブラウザからもすぐにアクセスでき、PCでもスマホでも快適に使えます。",
+  "en": {
+    "shortDescription": "A pilgrimage map for Nogizaka46, Sakurazaka46, and Hinatazaka46. A community map app where fans can share and discover sacred sites. Features photo uploads, likes, bookmarks, and comments.",
+    "subtitle": "Sakamichi group pilgrimage map",
+    "promoText": "Share and discover MV filming locations and drama sites of Nogizaka46, Sakurazaka46, and Hinatazaka46 — a community pilgrimage map app for fans. Post with photos, interact with likes, bookmarks, and comments.",
+    "description": "### About SakaMap\n\nSakaMap is a community map app that makes it easy to find sacred sites related to Sakamichi groups (Nogizaka46, Sakurazaka46, Hinatazaka46) on Google Maps. Share spots that fans can actually visit, including MV filming locations, drama locations, and places featured in variety shows.\n\n### Key Features\n\n- Interactive pilgrimage map based on Google Maps\n- Group filtering (Nogizaka46 / Sakurazaka46 / Hinatazaka46)\n- Share spots with photo uploads (up to 4 photos)\n- Likes, bookmarks, and comments\n- Member tagging for easy searching\n- Easy login with Google account\n- My posts filter to manage your submissions\n- Auto-detection of nearby existing spots (duplicate prevention)\n\n### Supported Platforms\n\nAvailable on iOS, Android, and Web. Mobile apps can be downloaded from the App Store and Google Play. Also accessible from browsers, comfortable to use on both PC and smartphone.",
+    "linkLabels": {
+      "今すぐ使う（Web版）": "Use Now (Web)",
+      "アプリ版 紹介ページ": "App Introduction Page",
+      "このアプリについて": "About This App",
+      "プライバシーポリシー": "Privacy Policy",
+      "お問い合わせ": "Contact",
+      "SakaMap公式X（旧Twitter）": "SakaMap Official X (formerly Twitter)"
+    }
+  }
 }

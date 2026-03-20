@@ -25,5 +25,15 @@
     {"label": "FAQ・使い方", "url": "https://x-video-downloader.riverapp.jp/faq.html", "external": true}
   ],
   "ogDescription": "X（旧Twitter）の動画をワンクリックでダウンロードできる無料Webツール",
-  "description": "### X Video Downloaderについて\n\nX Video Downloaderは、X（旧Twitter）に投稿された動画をかんたんにダウンロードできるWebアプリです。ポストのURLを入力するだけで動画を抽出し、最高画質のMP4ファイルとして保存できます。アカウント登録やソフトのインストールは一切不要です。\n\n### 主な機能\n\n- XのポストURLを貼り付けるだけで動画を抽出\n- 最高ビットレートのMP4を自動選択\n- ワンクリックでダウンロード開始\n- 日本語・英語の2言語に対応\n- スマホ・PC両対応のレスポンシブデザイン\n- 動画はサーバーに保存されないプライバシー配慮設計\n\n### 使い方\n\n1. Xアプリまたはブラウザで動画付きポストのURLをコピー\n2. X Video DownloaderにURLを貼り付け\n3. 「動画を抽出」ボタンをクリック\n4. 表示された動画を確認し「ダウンロード」をクリック\n\n### 注意事項\n\n公開ポストの動画のみ対応しています。非公開アカウントや削除済みポストの動画は取得できません。ダウンロードした動画の利用は、著作権法およびXの利用規約に従ってください。"
+  "description": "### X Video Downloaderについて\n\nX Video Downloaderは、X（旧Twitter）に投稿された動画をかんたんにダウンロードできるWebアプリです。ポストのURLを入力するだけで動画を抽出し、最高画質のMP4ファイルとして保存できます。アカウント登録やソフトのインストールは一切不要です。\n\n### 主な機能\n\n- XのポストURLを貼り付けるだけで動画を抽出\n- 最高ビットレートのMP4を自動選択\n- ワンクリックでダウンロード開始\n- 日本語・英語の2言語に対応\n- スマホ・PC両対応のレスポンシブデザイン\n- 動画はサーバーに保存されないプライバシー配慮設計\n\n### 使い方\n\n1. Xアプリまたはブラウザで動画付きポストのURLをコピー\n2. X Video DownloaderにURLを貼り付け\n3. 「動画を抽出」ボタンをクリック\n4. 表示された動画を確認し「ダウンロード」をクリック\n\n### 注意事項\n\n公開ポストの動画のみ対応しています。非公開アカウントや削除済みポストの動画は取得できません。ダウンロードした動画の利用は、著作権法およびXの利用規約に従ってください。",
+  "en": {
+    "shortDescription": "Just paste an X (formerly Twitter) post URL to easily download videos. Automatically selects the highest quality MP4 and saves with one click. Supports Japanese and English, no registration required — a free tool.",
+    "subtitle": "Save X videos with one click",
+    "promoText": "Just paste an X (formerly Twitter) post URL to easily download videos. Automatically selects the highest quality MP4 and saves with one click. No registration required — a completely free video saving tool.",
+    "description": "### About X Video Downloader\n\nX Video Downloader is a web app that makes it easy to download videos posted on X (formerly Twitter). Simply enter the post URL to extract the video and save it as the highest quality MP4 file. No account registration or software installation required.\n\n### Key Features\n\n- Extract videos by pasting X post URLs\n- Automatically selects the highest bitrate MP4\n- One-click download\n- Supports Japanese and English\n- Responsive design for both mobile and PC\n- Privacy-conscious design — videos are not stored on our servers\n\n### How to Use\n\n1. Copy the URL of a video post from the X app or browser\n2. Paste the URL into X Video Downloader\n3. Click the \"Extract Video\" button\n4. Check the displayed video and click \"Download\"\n\n### Notes\n\nOnly videos from public posts are supported. Videos from private accounts or deleted posts cannot be retrieved. Please use downloaded videos in compliance with copyright laws and X's terms of service.",
+    "linkLabels": {
+      "今すぐ使う": "Use Now",
+      "FAQ・使い方": "FAQ & How to Use"
+    }
+  }
 }
