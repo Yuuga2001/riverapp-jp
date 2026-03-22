@@ -68,11 +68,23 @@ export interface PrivacyPolicyDocument {
   lastUpdated: string;
 }
 
+export interface TermsSection {
+  title: string;
+  body: string;
+  bullets?: string[];
+}
+
+export interface TermsOfServiceDocument {
+  sections: TermsSection[];
+  lastUpdated: string;
+}
+
 export interface AppDocuments {
   appDisplayName: string;
   about?: AboutDocument;
   contact?: ContactDocument;
   "privacy-policy"?: PrivacyPolicyDocument;
+  "terms-of-service"?: TermsOfServiceDocument;
 }
 
 /** English translations for app content fields */

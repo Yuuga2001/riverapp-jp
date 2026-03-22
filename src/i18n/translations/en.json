@@ -128,6 +128,10 @@
     "privacyContactBody": "If you have any questions about this privacy policy, please visit our ",
     "privacyContactLink": "contact page",
     "privacyContactBodyEnd": ".",
+    "termsOfService": "Terms of Service",
+    "termsContactBody": "If you have any questions about these terms of service, please visit our ",
+    "termsContactLink": "contact page",
+    "termsContactBodyEnd": ".",
     "lastUpdated": "Last updated: {date}"
   },
   "languageSwitcher": {

@@ -52,7 +52,7 @@ export function getAllAppDocumentParams(): {
   for (const app of loadApps()) {
     if (app.documents) {
       const docs = app.documents;
-      const docTypes = ["about", "contact", "privacy-policy"] as const;
+      const docTypes = ["about", "contact", "privacy-policy", "terms-of-service"] as const;
       for (const dt of docTypes) {
         if (docs[dt]) {
           params.push({

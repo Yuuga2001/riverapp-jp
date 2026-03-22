@@ -6,11 +6,13 @@ import type {
   AboutDocument,
   ContactDocument,
   PrivacyPolicyDocument,
+  TermsOfServiceDocument,
   AppDocuments,
 } from "@/types/app";
 import { AboutPage } from "./AboutPage";
 import { ContactPage } from "./ContactPage";
 import { PrivacyPolicyDocPage } from "./PrivacyPolicyDocPage";
+import { TermsOfServiceDocPage } from "./TermsOfServiceDocPage";
 
 /* ---------- Static generation ---------- */
 
@@ -24,6 +26,7 @@ const docTitles: Record<string, string> = {
   about: "",
   contact: "お問い合わせ",
   "privacy-policy": "プライバシーポリシー",
+  "terms-of-service": "利用規約",
 };
 
 export async function generateMetadata({
@@ -103,6 +106,15 @@ export default async function AppDocumentPage({
         <PrivacyPolicyDocPage
           app={app}
           privacy={documents["privacy-policy"]}
+          documents={documents}
+        />
+      );
+    case "terms-of-service":
+      if (!documents["terms-of-service"]) notFound();
+      return (
+        <TermsOfServiceDocPage
+          app={app}
+          terms={documents["terms-of-service"]}
           documents={documents}
         />
       );

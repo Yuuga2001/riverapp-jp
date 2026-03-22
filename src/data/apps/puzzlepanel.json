@@ -56,6 +56,7 @@
       ],
       "links": [
         {"label": "プライバシーポリシー", "href": "/app-document/puzzlepanel/privacy-policy", "internal": true},
+        {"label": "利用規約", "href": "/app-document/puzzlepanel/terms-of-service", "internal": true},
         {"label": "お問い合わせ", "href": "/app-document/puzzlepanel/contact", "internal": true},
         {"label": "今すぐプレイ（Web版）", "href": "https://puzzlepanel.riverapp.jp", "external": true},
         {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
@@ -118,6 +119,62 @@
         }
       ],
       "lastUpdated": "2026-03-22"
+    },
+    "terms-of-service": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本利用規約（以下「本規約」）は、{appName}（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく場合、本規約に同意したものとみなします。"
+        },
+        {
+          "title": "サービスの内容",
+          "body": "本アプリは、パネル反転パズルゲームを提供する無料アプリケーションです。",
+          "bullets": [
+            "全100レベル（10ステージ構成）のパズルゲーム",
+            "ゲームの進捗データは端末内にローカル保存されます",
+            "インターネット接続は不要です"
+          ]
+        },
+        {
+          "title": "利用料金",
+          "body": "本アプリは無料でご利用いただけます。アプリ内課金や広告表示は一切ありません。"
+        },
+        {
+          "title": "禁止事項",
+          "body": "本アプリのご利用にあたり、以下の行為を禁止します。",
+          "bullets": [
+            "本アプリの逆コンパイル、リバースエンジニアリング、逆アセンブル",
+            "本アプリの改変、翻案、二次的著作物の作成",
+            "本アプリを利用した営利目的の活動（個人の非商用利用に限ります）",
+            "その他、法令または公序良俗に反する行為"
+          ]
+        },
+        {
+          "title": "知的財産権",
+          "body": "本アプリに関するすべての知的財産権（デザイン、プログラム、コンテンツ等）は、開発者に帰属します。本規約は、本アプリの知的財産権をユーザーに移転するものではありません。"
+        },
+        {
+          "title": "免責事項",
+          "body": "開発者は、本アプリの利用により生じたいかなる損害についても、一切の責任を負いません。また、本アプリの動作を保証するものではなく、予告なくサービスの変更・中断・終了を行う場合があります。"
+        },
+        {
+          "title": "データの取り扱い",
+          "body": "本アプリで保存されるゲームデータ（レベル進捗、盤面状態など）は、すべてお使いの端末内にのみ保存されます。アプリを削除するとすべてのデータが失われます。開発者はデータの復旧について責任を負いません。"
+        },
+        {
+          "title": "利用規約の変更",
+          "body": "開発者は、必要に応じて本規約を変更することがあります。変更後の規約は、本ページに掲載した時点で効力を生じるものとします。"
+        },
+        {
+          "title": "準拠法",
+          "body": "本規約の解釈および適用は、日本法に準拠するものとします。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本利用規約に関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-03-22"
     }
   },
   "en": {
@@ -153,6 +210,7 @@
         ],
         "links": [
           {"label": "Privacy Policy", "href": "/app-document/puzzlepanel/privacy-policy", "internal": true},
+          {"label": "Terms of Service", "href": "/app-document/puzzlepanel/terms-of-service", "internal": true},
           {"label": "Contact", "href": "/app-document/puzzlepanel/contact", "internal": true},
           {"label": "Play Now (Web)", "href": "https://puzzlepanel.riverapp.jp", "external": true},
           {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
@@ -212,6 +270,62 @@
           {
             "title": "Contact",
             "body": "For questions or inquiries regarding this privacy policy, please reach out through the contact page."
+          }
+        ],
+        "lastUpdated": "2026-03-22"
+      },
+      "terms-of-service": {
+        "sections": [
+          {
+            "title": "Introduction",
+            "body": "These Terms of Service (hereinafter \"these Terms\") set forth the conditions for using {appName} (hereinafter \"the App\"). By using the App, you are deemed to have agreed to these Terms."
+          },
+          {
+            "title": "Service Description",
+            "body": "The App is a free application that provides a panel-flipping puzzle game.",
+            "bullets": [
+              "100 levels across 10 stages of puzzle gameplay",
+              "Game progress data is stored locally on your device",
+              "No internet connection is required"
+            ]
+          },
+          {
+            "title": "Pricing",
+            "body": "The App is available free of charge. There are no in-app purchases or advertisements."
+          },
+          {
+            "title": "Prohibited Activities",
+            "body": "The following activities are prohibited when using the App.",
+            "bullets": [
+              "Decompiling, reverse engineering, or disassembling the App",
+              "Modifying, adapting, or creating derivative works of the App",
+              "Using the App for commercial purposes (limited to personal non-commercial use)",
+              "Any other activities that violate laws or public order and morals"
+            ]
+          },
+          {
+            "title": "Intellectual Property",
+            "body": "All intellectual property rights related to the App (design, programs, content, etc.) belong to the developer. These Terms do not transfer any intellectual property rights of the App to the user."
+          },
+          {
+            "title": "Disclaimer",
+            "body": "The developer shall not be liable for any damages arising from the use of the App. The developer does not guarantee the operation of the App and may change, suspend, or terminate the service without prior notice."
+          },
+          {
+            "title": "Data Handling",
+            "body": "All game data saved by the App (level progress, board state, etc.) is stored solely on your device. Deleting the app will result in the loss of all data. The developer is not responsible for data recovery."
+          },
+          {
+            "title": "Changes to Terms",
+            "body": "The developer may modify these Terms as needed. Any changes will take effect as soon as they are posted on this page."
+          },
+          {
+            "title": "Governing Law",
+            "body": "The interpretation and application of these Terms shall be governed by the laws of Japan."
+          },
+          {
+            "title": "Contact",
+            "body": "For questions or inquiries regarding these Terms of Service, please reach out through the contact page."
           }
         ],
         "lastUpdated": "2026-03-22"
