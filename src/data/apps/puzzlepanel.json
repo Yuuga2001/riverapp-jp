@@ -3,14 +3,15 @@
   "createdAt": "2026-01-15",
   "name": "パズルパネル",
   "category": "game",
-  "platforms": ["web"],
+  "platforms": ["web", "ios"],
   "shortDescription": "パネルをタップすると周囲3×3が一斉に反転。規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズルゲームです。全100レベル、段階的に難易度が上昇します。",
   "subtitle": "タップで反転、ロジカルパズル",
   "promoText": "パネルをタップすると周囲3×3が一斉に反転。規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズルゲームです。全100レベル、4×4から8×8まで段階的に難易度が上昇します。",
-  "tags": ["日本語のみ", "スマホ/PC両対応", "1人用", "パズルゲーム"],
-  "detailTags": ["日本語のみ", "スマホ/PC両対応", "Webアプリ", "1人用", "パズルゲーム"],
+  "tags": ["日本語のみ", "スマホ/PC両対応", "1人用", "パズルゲーム", "iOSアプリ"],
+  "detailTags": ["日本語のみ", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "1人用", "パズルゲーム"],
   "storeLinksCard": [
-    {"type": "web", "url": "https://puzzlepanel.riverapp.jp", "label": "Webアプリ"}
+    {"type": "web", "url": "https://puzzlepanel.riverapp.jp", "label": "Webアプリ"},
+    {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
   ],
   "storeGroupsDetail": [
     {
@@ -18,21 +19,203 @@
       "links": [
         {"type": "web", "url": "https://puzzlepanel.riverapp.jp", "label": "Webアプリ"}
       ]
+    },
+    {
+      "label": "ストアからダウンロード",
+      "links": [
+        {"type": "app-store", "url": "", "label": "App Store — 準備中", "disabled": true}
+      ]
     }
   ],
   "links": [
     {"label": "今すぐプレイ", "url": "https://puzzlepanel.riverapp.jp", "external": true}
   ],
-  "ogDescription": "タップで反転、規定回数内に目標の形を完成させるロジカルパズル",
-  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。",
+  "ogDescription": "タップで反転、規定回数内に目標の形を完成させるロジカルパズル。全100レベル。ブラウザ＆iOS対応。",
+  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応（準備中）\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。",
+  "documents": {
+    "appDisplayName": "パズルパネル",
+    "about": {
+      "catchcopy": "タップで反転。頭脳で攻略。",
+      "subcopy": "パネルをタップすると、周囲3×3が一斉に反転。\n規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズル。\n全100レベル、10ステージ構成。4×4から8×8まで段階的に難易度が上昇。\n毎回異なるランダム問題で、何度でも新鮮に楽しめます。",
+      "features": [
+        {"name": "3×3反転パズル", "desc": "タップした位置と周囲3×3の計9マスが同時に反転。シンプルなルールながら、奥深い戦略性を楽しめます"},
+        {"name": "全100レベル", "desc": "10ステージ×各5〜10レベルの全100問。クリアするたびに次のレベルへ自動進行"},
+        {"name": "段階的な難易度", "desc": "序盤は4×4盤面で1タップ、終盤は8×8盤面で10タップ。自然にステップアップできる難易度設計"},
+        {"name": "ランダム問題生成", "desc": "毎回異なる問題がランダムに生成されるため、何度でも新鮮にプレイ可能"},
+        {"name": "途中再開対応", "desc": "アプリを閉じても進捗を自動保存。いつでも中断したところから再開できます"},
+        {"name": "ブラウザ版あり", "desc": "Webブラウザでもプレイ可能。スマートフォン・タブレット・PC、どこからでもアクセス"},
+        {"name": "完全無料・広告なし", "desc": "課金・広告は一切なし。純粋にパズルだけを楽しめます"},
+        {"name": "オフライン対応", "desc": "インターネット接続不要。通信環境を気にせず、いつでもどこでもプレイ可能"}
+      ],
+      "info": [
+        {"key": "対応OS", "value": "iOS 17.0 以降 / Web（モダンブラウザ）"},
+        {"key": "価格", "value": "無料"},
+        {"key": "カテゴリ", "value": "パズルゲーム"},
+        {"key": "言語", "value": "日本語"},
+        {"key": "開発", "value": "riverapp.jp"}
+      ],
+      "links": [
+        {"label": "プライバシーポリシー", "href": "/app-document/puzzlepanel/privacy-policy", "internal": true},
+        {"label": "お問い合わせ", "href": "/app-document/puzzlepanel/contact", "internal": true},
+        {"label": "今すぐプレイ（Web版）", "href": "https://puzzlepanel.riverapp.jp", "external": true},
+        {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+      ]
+    },
+    "contact": {
+      "methods": [
+        {
+          "label": "お問い合わせフォーム",
+          "description": "Google フォームから送信",
+          "url": "https://forms.gle/DwuVuH2LnMcFteLp9",
+          "external": true
+        },
+        {
+          "label": "メールで問い合わせ",
+          "description": "riverapp.jp@gmail.com",
+          "url": "mailto:riverapp.jp@gmail.com",
+          "external": false
+        }
+      ]
+    },
+    "privacy-policy": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本プライバシーポリシーは、{appName}（以下「本アプリ」）における個人情報の取り扱いについて説明するものです。本アプリは、お客様のプライバシーを尊重し、個人情報の保護に努めます。"
+        },
+        {
+          "title": "収集する情報",
+          "body": "本アプリは、個人情報を一切収集しません。",
+          "bullets": [
+            "ゲームの進捗データ（レベル、盤面状態、失敗回数など）はお使いの端末内にのみ保存され、外部サーバーへの送信は行いません",
+            "アカウント登録やログインは不要です",
+            "分析ツールや広告SDKは一切使用していません"
+          ]
+        },
+        {
+          "title": "データの保存",
+          "body": "本アプリのすべてのデータは、端末のローカルストレージ（UserDefaults）に保存されます。データはインターネットを通じて送信されることはなく、開発者がアクセスすることもできません。アプリを削除すると、すべてのデータが端末から完全に削除されます。"
+        },
+        {
+          "title": "第三者への提供",
+          "body": "本アプリは、お客様のデータを第三者に提供、販売、共有することはありません。"
+        },
+        {
+          "title": "分析ツール・広告",
+          "body": "本アプリは、分析ツールや広告 SDK を一切使用していません。"
+        },
+        {
+          "title": "お子様のプライバシー",
+          "body": "本アプリは個人情報を収集しないため、年齢を問わず安心してご利用いただけます。"
+        },
+        {
+          "title": "プライバシーポリシーの変更",
+          "body": "本プライバシーポリシーは、必要に応じて更新されることがあります。変更があった場合は、本ページにて最新の内容を掲載します。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本プライバシーポリシーに関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-03-22"
+    }
+  },
   "en": {
     "name": "Puzzle Panel",
     "shortDescription": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels with gradually increasing difficulty.",
     "subtitle": "Tap to flip, logical puzzle",
     "promoText": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels, from 4x4 to 8x8 with gradually increasing difficulty.",
-    "description": "### About Puzzle Panel\n\nPuzzle Panel is a brain-training logical puzzle game with an ancient Egyptian stone tablet motif. Memorize the target board pattern and match it by tapping exactly the required number of times.\n\n### Features\n\n- Play free in your browser right now\n- All 100 levels (10 stages)\n- Board sizes from 4x4 to 8x8, gradually expanding\n- Random puzzle generation every time\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Check the target board pattern\n2. Tap panels to flip them (the tapped position and surrounding 3x3 area — 9 tiles total — flip simultaneously)\n3. Clear the level by matching the target pattern when you've used exactly the required number of taps\n\n### Difficulty Progression\n\nAs stages advance, the board grows larger and the required tap count increases. Early levels use a 4x4 board with 1-2 taps, while later levels use an 8x8 board with 9-10 taps, requiring careful strategic thinking.\n\n### Strategic Tips\n\nEach tap affects a 3x3 area of 9 tiles. When multiple taps overlap, panels flip twice and return to their original state. The key is using these overlaps effectively to precisely match the target pattern.",
+    "description": "### About Puzzle Panel\n\nPuzzle Panel is a brain-training logical puzzle game with an ancient Egyptian stone tablet motif. Memorize the target board pattern and match it by tapping exactly the required number of times.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available (coming soon)\n- All 100 levels (10 stages)\n- Board sizes from 4x4 to 8x8, gradually expanding\n- Random puzzle generation every time\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Check the target board pattern\n2. Tap panels to flip them (the tapped position and surrounding 3x3 area — 9 tiles total — flip simultaneously)\n3. Clear the level by matching the target pattern when you've used exactly the required number of taps\n\n### Difficulty Progression\n\nAs stages advance, the board grows larger and the required tap count increases. Early levels use a 4x4 board with 1-2 taps, while later levels use an 8x8 board with 9-10 taps, requiring careful strategic thinking.\n\n### Strategic Tips\n\nEach tap affects a 3x3 area of 9 tiles. When multiple taps overlap, panels flip twice and return to their original state. The key is using these overlaps effectively to precisely match the target pattern.",
     "linkLabels": {
       "今すぐプレイ": "Play Now"
+    },
+    "documents": {
+      "appDisplayName": "Puzzle Panel",
+      "about": {
+        "catchcopy": "Tap to flip. Think to solve.",
+        "subcopy": "Tap a panel and the surrounding 3×3 area flips at once.\nComplete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle.\n100 levels across 10 stages. Board sizes grow from 4×4 to 8×8.\nRandomly generated puzzles keep every playthrough fresh.",
+        "features": [
+          {"name": "3×3 Flip Puzzle", "desc": "Tapping flips the target position and its surrounding 3×3 area (9 tiles total). Simple rules, deep strategy"},
+          {"name": "100 Levels", "desc": "10 stages with 5–10 levels each, totaling 100 puzzles. Auto-advance to the next level after clearing"},
+          {"name": "Gradual Difficulty", "desc": "Start with a 4×4 board and 1 tap, progress to an 8×8 board with 10 taps. Naturally escalating challenge"},
+          {"name": "Random Generation", "desc": "Each puzzle is randomly generated, so every playthrough feels fresh and new"},
+          {"name": "Resume Anytime", "desc": "Progress is auto-saved. Pick up right where you left off, even after closing the app"},
+          {"name": "Browser Version", "desc": "Also playable in a web browser. Access from your smartphone, tablet, or PC anywhere"},
+          {"name": "Free, No Ads", "desc": "No in-app purchases, no ads. Pure puzzle enjoyment"},
+          {"name": "Offline Ready", "desc": "No internet connection needed. Play anytime, anywhere, without worrying about connectivity"}
+        ],
+        "info": [
+          {"key": "Supported OS", "value": "iOS 17.0+ / Web (modern browsers)"},
+          {"key": "Price", "value": "Free"},
+          {"key": "Category", "value": "Puzzle Game"},
+          {"key": "Language", "value": "Japanese"},
+          {"key": "Developer", "value": "riverapp.jp"}
+        ],
+        "links": [
+          {"label": "Privacy Policy", "href": "/app-document/puzzlepanel/privacy-policy", "internal": true},
+          {"label": "Contact", "href": "/app-document/puzzlepanel/contact", "internal": true},
+          {"label": "Play Now (Web)", "href": "https://puzzlepanel.riverapp.jp", "external": true},
+          {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+        ]
+      },
+      "contact": {
+        "methods": [
+          {
+            "label": "Contact Form",
+            "description": "Submit via Google Forms",
+            "url": "https://forms.gle/DwuVuH2LnMcFteLp9",
+            "external": true
+          },
+          {
+            "label": "Contact by Email",
+            "description": "riverapp.jp@gmail.com",
+            "url": "mailto:riverapp.jp@gmail.com",
+            "external": false
+          }
+        ]
+      },
+      "privacy-policy": {
+        "sections": [
+          {
+            "title": "Introduction",
+            "body": "This privacy policy explains how personal information is handled in {appName} (hereinafter \"the App\"). The App respects your privacy and is committed to protecting your personal information."
+          },
+          {
+            "title": "Information Collected",
+            "body": "The App does not collect any personal information.",
+            "bullets": [
+              "Game progress data (level, board state, failure count, etc.) is stored only on your device and is never sent to external servers",
+              "No account registration or login is required",
+              "No analytics tools or advertising SDKs are used"
+            ]
+          },
+          {
+            "title": "Data Storage",
+            "body": "All data in the App is stored locally on your device (UserDefaults). Data is never transmitted over the internet, and the developer cannot access it. Deleting the app will permanently remove all data from your device."
+          },
+          {
+            "title": "Third-Party Sharing",
+            "body": "The App does not provide, sell, or share your data with any third parties."
+          },
+          {
+            "title": "Analytics & Advertising",
+            "body": "The App does not use any analytics tools or advertising SDKs."
+          },
+          {
+            "title": "Children's Privacy",
+            "body": "Since the App does not collect personal information, it can be used safely regardless of age."
+          },
+          {
+            "title": "Policy Changes",
+            "body": "This privacy policy may be updated as needed. Any changes will be posted on this page with the latest content."
+          },
+          {
+            "title": "Contact",
+            "body": "For questions or inquiries regarding this privacy policy, please reach out through the contact page."
+          }
+        ],
+        "lastUpdated": "2026-03-22"
+      }
     }
   }
 }
