@@ -11,7 +11,7 @@
   "detailTags": ["日本語のみ", "スマホ/PC両対応", "iOSアプリ", "Androidアプリ", "Webアプリ", "推し活", "旅行"],
   "storeLinksCard": [
     {"type": "app-store", "url": "https://apps.apple.com/jp/app/id6759653049", "label": "App Store"},
-    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=com.sakamap.app", "label": "Google Play"},
+    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.sakamap&pcampaignid=web_share", "label": "Google Play"},
     {"type": "web", "url": "https://sakamap.com", "label": "Webアプリ"}
   ],
   "storeGroupsDetail": [
@@ -19,7 +19,7 @@
       "label": "ストアからダウンロード",
       "links": [
         {"type": "app-store", "url": "https://apps.apple.com/jp/app/id6759653049", "label": "App Store"},
-        {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=com.sakamap.app", "label": "Google Play"}
+        {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.sakamap&pcampaignid=web_share", "label": "Google Play"}
       ]
     },
     {
