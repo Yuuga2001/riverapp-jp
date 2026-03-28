@@ -69,4 +69,4 @@ riverapp-jp/
 | Git Branch Name Generator | branchnamegenerator | app | web | 公開中 |
 | X Video Downloader | xvideodownloader | app | web | 公開中 |
 | SakaMap | sakamap | app | web, ios, android | 公開中 |
-| MemoNow | memonow | app | ios | Coming Soon |
+| MemoNow | memonow | app | ios | 公開中 |

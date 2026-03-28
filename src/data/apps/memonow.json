@@ -10,19 +10,18 @@
   "tags": ["15言語対応", "iOSアプリ", "ウィジェット", "メモ", "Apple Watch"],
   "detailTags": ["15言語対応", "iOSアプリ", "ウィジェット", "メモ", "Apple Watch"],
   "storeLinksCard": [
-    {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
+    {"type": "app-store", "url": "https://apps.apple.com/jp/app/id6760604182", "label": "App Store"}
   ],
   "storeGroupsDetail": [
     {
       "label": "ストアからダウンロード",
       "links": [
-        {"type": "app-store", "url": "", "label": "App Store — 準備中", "disabled": true}
+        {"type": "app-store", "url": "https://apps.apple.com/jp/app/id6760604182", "label": "App Store"}
       ]
     }
   ],
-  "comingSoon": true,
   "ogDescription": "ウィジェットに常時表示できる、4ボード・バックアップ対応のシンプルメモアプリ。Apple Watch対応。15言語対応。",
-  "description": "### MemoNowについて\n\nMemoNowは、余計な機能を一切省いた「メモだけ」のアプリです。画面全体がメモ帳で、タップしてすぐ入力。書いた内容はホーム画面やロック画面のウィジェットに常時表示されるので、アプリを開かなくてもいつでも確認できます。\n\n### 4つのボードで使い分け\n\n買い物リスト、合言葉、やることリスト、メモ帳——4つのボードをタブで切り替えて、用途ごとに使い分けられます。ボード名も自由に変更可能。ウィジェットごとに表示するボードを選べるので、ホーム画面に複数のメモを並べることもできます。\n\n### バックアップで安心\n\n大事なメモを誤って消してしまっても安心。「現在の状態を保存」ボタンで好きなタイミングにバックアップ。過去の状態をタップするだけで復元でき、復元前の状態も自動で保存されるので、安心して操作できます。\n\n### Apple Watchでも確認\n\niPhoneで書いたメモは、Apple Watchに自動で同期。外出先で手元をチラッと見るだけで、メモの内容をすぐに確認できます。\n\n### 15言語対応\n\n英語・日本語をはじめ、中国語・韓国語・フランス語・ドイツ語・スペイン語など15言語に対応。端末の言語設定に合わせて自動で切り替わります。\n\n### 対応プラットフォーム\n\niOS 17.0以降 / watchOS 10.0以降に対応。App Storeでの公開に向けて準備中です。",
+  "description": "### MemoNowについて\n\nMemoNowは、余計な機能を一切省いた「メモだけ」のアプリです。画面全体がメモ帳で、タップしてすぐ入力。書いた内容はホーム画面やロック画面のウィジェットに常時表示されるので、アプリを開かなくてもいつでも確認できます。\n\n### 4つのボードで使い分け\n\n買い物リスト、合言葉、やることリスト、メモ帳——4つのボードをタブで切り替えて、用途ごとに使い分けられます。ボード名も自由に変更可能。ウィジェットごとに表示するボードを選べるので、ホーム画面に複数のメモを並べることもできます。\n\n### バックアップで安心\n\n大事なメモを誤って消してしまっても安心。「現在の状態を保存」ボタンで好きなタイミングにバックアップ。過去の状態をタップするだけで復元でき、復元前の状態も自動で保存されるので、安心して操作できます。\n\n### Apple Watchでも確認\n\niPhoneで書いたメモは、Apple Watchに自動で同期。外出先で手元をチラッと見るだけで、メモの内容をすぐに確認できます。\n\n### 15言語対応\n\n英語・日本語をはじめ、中国語・韓国語・フランス語・ドイツ語・スペイン語など15言語に対応。端末の言語設定に合わせて自動で切り替わります。\n\n### 対応プラットフォーム\n\niOS 17.0以降 / watchOS 10.0以降に対応。App Storeで公開中です。",
   "documents": {
     "appDisplayName": "MemoNow",
     "about": {
@@ -117,7 +116,7 @@
     "shortDescription": "Quick memo. Always visible on your widget. A simple memo app with 4 boards, backup, and Apple Watch support.",
     "subtitle": "Quick memo. A memo app always visible on your widget",
     "promoText": "\"Quick memo.\" That's all you need. Display memos on your home screen or lock screen widget at all times. Switch between 4 boards, back up anytime with peace of mind, and auto-sync to Apple Watch. Shopping lists, phone numbers, passwords — keep those little things you don't want to forget always in sight.",
-    "description": "### About MemoNow\n\nMemoNow is a \"memo only\" app with no unnecessary features. The entire screen is a notepad — tap and start typing. What you write is always displayed on your home screen or lock screen widget, so you can check it anytime without opening the app.\n\n### 4 Boards for Different Uses\n\nShopping list, passwords, to-do list, notepad — switch between 4 boards using tabs for different purposes. Board names are fully customizable. You can choose which board to display per widget, allowing multiple memos on your home screen.\n\n### Backup for Peace of Mind\n\nDon't worry about accidentally deleting important memos. Save your current state at any time with the \"Save Current State\" button. Restore past states with a single tap, and the pre-restore state is automatically saved too, so you can operate with confidence.\n\n### Check on Apple Watch\n\nMemos written on iPhone automatically sync to Apple Watch. Just glance at your wrist while out and about to quickly check your memo contents.\n\n### 15 Language Support\n\nSupports 15 languages including English, Japanese, Chinese, Korean, French, German, Spanish, and more. Automatically switches based on your device's language settings.\n\n### Supported Platforms\n\nCompatible with iOS 17.0+ / watchOS 10.0+. Currently preparing for App Store release.",
+    "description": "### About MemoNow\n\nMemoNow is a \"memo only\" app with no unnecessary features. The entire screen is a notepad — tap and start typing. What you write is always displayed on your home screen or lock screen widget, so you can check it anytime without opening the app.\n\n### 4 Boards for Different Uses\n\nShopping list, passwords, to-do list, notepad — switch between 4 boards using tabs for different purposes. Board names are fully customizable. You can choose which board to display per widget, allowing multiple memos on your home screen.\n\n### Backup for Peace of Mind\n\nDon't worry about accidentally deleting important memos. Save your current state at any time with the \"Save Current State\" button. Restore past states with a single tap, and the pre-restore state is automatically saved too, so you can operate with confidence.\n\n### Check on Apple Watch\n\nMemos written on iPhone automatically sync to Apple Watch. Just glance at your wrist while out and about to quickly check your memo contents.\n\n### 15 Language Support\n\nSupports 15 languages including English, Japanese, Chinese, Korean, French, German, Spanish, and more. Automatically switches based on your device's language settings.\n\n### Supported Platforms\n\nCompatible with iOS 17.0+ / watchOS 10.0+. Available on the App Store.",
     "documents": {
       "appDisplayName": "MemoNow",
       "about": {
