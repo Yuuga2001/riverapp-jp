@@ -40,7 +40,16 @@ http://localhost:3000 で確認できます。
 2. `src/data/apps/{slug}.json` を作成
 3. 完了 — ページは自動生成されます
 
-JSONファイルのテンプレートは `src/data/apps/` 内の既存ファイルを参照してください。
+詳細は [docs/adding-apps.md](docs/adding-apps.md) を参照してください。
+
+## ドキュメント
+
+| ドキュメント | 内容 |
+|------------|------|
+| [docs/adding-apps.md](docs/adding-apps.md) | アプリ追加ガイド（JSONフィールド、テンプレート、チェックリスト） |
+| [docs/architecture.md](docs/architecture.md) | アーキテクチャ（データフロー、ページ構成、スタイリング） |
+| [docs/testing.md](docs/testing.md) | テストガイド（3層テスト構成、実行方法、テストの書き方） |
+| [docs/i18n.md](docs/i18n.md) | 国際化ガイド（翻訳の仕組み、追加方法） |
 
 ## ディレクトリ構成
 
