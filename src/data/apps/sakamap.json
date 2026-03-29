@@ -34,6 +34,7 @@
     {"label": "アプリ版 紹介ページ", "url": "https://sakamap.com/app", "external": true},
     {"label": "このアプリについて", "url": "https://sakamap.com/about", "external": true},
     {"label": "プライバシーポリシー", "url": "https://sakamap.com/privacy", "external": true},
+    {"label": "利用規約", "url": "https://sakamap.com/terms", "external": true},
     {"label": "お問い合わせ", "url": "https://forms.gle/HgbJ9u8WKG9jPovE6", "external": true},
     {"label": "SakaMap公式X（旧Twitter）", "url": "https://x.com/sakamap8367?s=21&t=rxmNAbxxmw8o6ALQKsDg0g", "external": true}
   ],
