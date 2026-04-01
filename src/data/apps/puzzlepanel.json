@@ -7,8 +7,8 @@
   "shortDescription": "パネルをタップすると周囲3×3が一斉に反転。規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズルゲームです。全100レベル、段階的に難易度が上昇します。",
   "subtitle": "タップで反転、ロジカルパズル",
   "promoText": "パネルをタップすると周囲3×3が一斉に反転。規定回数ちょうどで目標の形を完成させる、シンプルだけど奥深いロジカルパズルゲームです。全100レベル、4×4から8×8まで段階的に難易度が上昇します。",
-  "tags": ["日本語のみ", "スマホ/PC両対応", "1人用", "パズルゲーム", "iOSアプリ"],
-  "detailTags": ["日本語のみ", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "1人用", "パズルゲーム"],
+  "tags": ["15言語対応", "スマホ/PC両対応", "1人用", "パズルゲーム", "iOSアプリ"],
+  "detailTags": ["15言語対応", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "1人用", "パズルゲーム"],
   "storeLinksCard": [
     {"type": "web", "url": "https://puzzlepanel.riverapp.jp", "label": "Webアプリ"},
     {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
@@ -32,7 +32,7 @@
     {"label": "利用規約", "url": "/app-document/puzzlepanel/terms-of-service", "external": false}
   ],
   "ogDescription": "タップで反転、規定回数内に目標の形を完成させるロジカルパズル。全100レベル。ブラウザ＆iOS対応。",
-  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応（準備中）\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。",
+  "description": "### パズルパネルについて\n\nパズルパネルは、古代エジプトの石板をモチーフにした脳トレ系ロジカルパズルゲームです。目標の盤面パターンを覚え、規定回数ちょうどのタップで操作盤面を一致させることがクリア条件です。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 全100レベル（10ステージ構成）\n- 盤面サイズ4×4〜8×8まで段階的に拡大\n- 毎回異なるランダム問題生成\n- 15言語対応（端末の言語設定に応じて自動切替）\n- プレイ記録の自動保存＆振り返り機能\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### 遊び方\n\n1. 目標の盤面パターンを確認する\n2. パネルをタップして反転させる（タップ位置と周囲3×3の計9マスが同時反転）\n3. 規定タップ回数をちょうど使い切った時に目標と一致すればクリア\n\n### 難易度構成\n\nステージが進むにつれ、盤面が大きくなり規定タップ回数も増加します。序盤は4×4盤面で1〜2タップ、終盤は8×8盤面で9〜10タップと、じっくり考える戦略性が求められます。\n\n### 戦略のポイント\n\n各タップが影響する範囲は3×3の9マス。複数のタップが重なるとパネルが二重に反転して元に戻ります。この重なりをうまく活用して、ぴったり目標形に合わせる論理的思考が鍵です。",
   "documents": {
     "appDisplayName": "パズルパネル",
     "about": {
@@ -44,6 +44,8 @@
         {"name": "段階的な難易度", "desc": "序盤は4×4盤面で1タップ、終盤は8×8盤面で10タップ。自然にステップアップできる難易度設計"},
         {"name": "ランダム問題生成", "desc": "毎回異なる問題がランダムに生成されるため、何度でも新鮮にプレイ可能"},
         {"name": "途中再開対応", "desc": "アプリを閉じても進捗を自動保存。いつでも中断したところから再開できます"},
+        {"name": "プレイ記録", "desc": "ゲーム終了時の結果を自動保存。過去の成績をいつでもリスト形式で振り返れます"},
+        {"name": "15言語対応", "desc": "端末の言語設定に応じて自動的にUIが切り替わります。日本語・英語・中国語・韓国語など15言語をサポート"},
         {"name": "ブラウザ版あり", "desc": "Webブラウザでもプレイ可能。スマートフォン・タブレット・PC、どこからでもアクセス"},
         {"name": "完全無料・広告なし", "desc": "課金・広告は一切なし。純粋にパズルだけを楽しめます"},
         {"name": "オフライン対応", "desc": "インターネット接続不要。通信環境を気にせず、いつでもどこでもプレイ可能"}
@@ -52,7 +54,7 @@
         {"key": "対応OS", "value": "iOS 17.0 以降 / Web（モダンブラウザ）"},
         {"key": "価格", "value": "無料"},
         {"key": "カテゴリ", "value": "パズルゲーム"},
-        {"key": "言語", "value": "日本語"},
+        {"key": "言語", "value": "15言語対応（日本語、英語、中国語、韓国語、フランス語、ドイツ語、スペイン語、ポルトガル語、イタリア語、ロシア語、タイ語、ベトナム語、インドネシア語、ヒンディー語）"},
         {"key": "開発", "value": "riverapp.jp"}
       ],
       "links": [
@@ -89,7 +91,7 @@
           "title": "収集する情報",
           "body": "本アプリは、個人情報を一切収集しません。",
           "bullets": [
-            "ゲームの進捗データ（レベル、盤面状態、失敗回数など）はお使いの端末内にのみ保存され、外部サーバーへの送信は行いません",
+            "ゲームの進捗データ（レベル、盤面状態、失敗回数、プレイ記録など）はお使いの端末内にのみ保存され、外部サーバーへの送信は行いません",
             "アカウント登録やログインは不要です",
             "分析ツールや広告SDKは一切使用していません"
           ]
@@ -119,7 +121,7 @@
           "body": "本プライバシーポリシーに関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
         }
       ],
-      "lastUpdated": "2026-03-22"
+      "lastUpdated": "2026-04-01"
     },
     "terms-of-service": {
       "sections": [
@@ -175,7 +177,7 @@
           "body": "本利用規約に関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
         }
       ],
-      "lastUpdated": "2026-03-22"
+      "lastUpdated": "2026-04-01"
     }
   },
   "en": {
@@ -183,7 +185,7 @@
     "shortDescription": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels with gradually increasing difficulty.",
     "subtitle": "Tap to flip, logical puzzle",
     "promoText": "Tap a panel and the surrounding 3x3 area flips at once. Complete the target pattern in exactly the required number of taps — a simple yet deep logical puzzle game. All 100 levels, from 4x4 to 8x8 with gradually increasing difficulty.",
-    "description": "### About Puzzle Panel\n\nPuzzle Panel is a brain-training logical puzzle game with an ancient Egyptian stone tablet motif. Memorize the target board pattern and match it by tapping exactly the required number of times.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available (coming soon)\n- All 100 levels (10 stages)\n- Board sizes from 4x4 to 8x8, gradually expanding\n- Random puzzle generation every time\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Check the target board pattern\n2. Tap panels to flip them (the tapped position and surrounding 3x3 area — 9 tiles total — flip simultaneously)\n3. Clear the level by matching the target pattern when you've used exactly the required number of taps\n\n### Difficulty Progression\n\nAs stages advance, the board grows larger and the required tap count increases. Early levels use a 4x4 board with 1-2 taps, while later levels use an 8x8 board with 9-10 taps, requiring careful strategic thinking.\n\n### Strategic Tips\n\nEach tap affects a 3x3 area of 9 tiles. When multiple taps overlap, panels flip twice and return to their original state. The key is using these overlaps effectively to precisely match the target pattern.",
+    "description": "### About Puzzle Panel\n\nPuzzle Panel is a brain-training logical puzzle game with an ancient Egyptian stone tablet motif. Memorize the target board pattern and match it by tapping exactly the required number of times.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- All 100 levels (10 stages)\n- Board sizes from 4x4 to 8x8, gradually expanding\n- Random puzzle generation every time\n- 15 languages supported (auto-switches based on device settings)\n- Automatic play record saving & review\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### How to Play\n\n1. Check the target board pattern\n2. Tap panels to flip them (the tapped position and surrounding 3x3 area — 9 tiles total — flip simultaneously)\n3. Clear the level by matching the target pattern when you've used exactly the required number of taps\n\n### Difficulty Progression\n\nAs stages advance, the board grows larger and the required tap count increases. Early levels use a 4x4 board with 1-2 taps, while later levels use an 8x8 board with 9-10 taps, requiring careful strategic thinking.\n\n### Strategic Tips\n\nEach tap affects a 3x3 area of 9 tiles. When multiple taps overlap, panels flip twice and return to their original state. The key is using these overlaps effectively to precisely match the target pattern.",
     "linkLabels": {
       "今すぐプレイ": "Play Now"
     },
@@ -198,6 +200,8 @@
           {"name": "Gradual Difficulty", "desc": "Start with a 4×4 board and 1 tap, progress to an 8×8 board with 10 taps. Naturally escalating challenge"},
           {"name": "Random Generation", "desc": "Each puzzle is randomly generated, so every playthrough feels fresh and new"},
           {"name": "Resume Anytime", "desc": "Progress is auto-saved. Pick up right where you left off, even after closing the app"},
+          {"name": "Play Records", "desc": "Game results are automatically saved. Review your past scores anytime in a list view"},
+          {"name": "15 Languages", "desc": "UI automatically switches based on your device language. Supports Japanese, English, Chinese, Korean, and 11 more languages"},
           {"name": "Browser Version", "desc": "Also playable in a web browser. Access from your smartphone, tablet, or PC anywhere"},
           {"name": "Free, No Ads", "desc": "No in-app purchases, no ads. Pure puzzle enjoyment"},
           {"name": "Offline Ready", "desc": "No internet connection needed. Play anytime, anywhere, without worrying about connectivity"}
@@ -206,7 +210,7 @@
           {"key": "Supported OS", "value": "iOS 17.0+ / Web (modern browsers)"},
           {"key": "Price", "value": "Free"},
           {"key": "Category", "value": "Puzzle Game"},
-          {"key": "Language", "value": "Japanese"},
+          {"key": "Language", "value": "15 languages (Japanese, English, Chinese, Korean, French, German, Spanish, Portuguese, Italian, Russian, Thai, Vietnamese, Indonesian, Hindi)"},
           {"key": "Developer", "value": "riverapp.jp"}
         ],
         "links": [
@@ -243,7 +247,7 @@
             "title": "Information Collected",
             "body": "The App does not collect any personal information.",
             "bullets": [
-              "Game progress data (level, board state, failure count, etc.) is stored only on your device and is never sent to external servers",
+              "Game progress data (level, board state, failure count, play records, etc.) is stored only on your device and is never sent to external servers",
               "No account registration or login is required",
               "No analytics tools or advertising SDKs are used"
             ]
@@ -273,7 +277,7 @@
             "body": "For questions or inquiries regarding this privacy policy, please reach out through the contact page."
           }
         ],
-        "lastUpdated": "2026-03-22"
+        "lastUpdated": "2026-04-01"
       },
       "terms-of-service": {
         "sections": [
@@ -329,7 +333,7 @@
             "body": "For questions or inquiries regarding these Terms of Service, please reach out through the contact page."
           }
         ],
-        "lastUpdated": "2026-03-22"
+        "lastUpdated": "2026-04-01"
       }
     }
   }
