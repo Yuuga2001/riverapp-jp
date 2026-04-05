@@ -3,15 +3,16 @@
   "createdAt": "2026-04-05",
   "name": "Block Panic",
   "category": "game",
-  "platforms": ["web", "ios"],
-  "shortDescription": "テトリスブロックが降り注ぐ中を生き延びろ！最大10人でリアルタイム対戦できるサバイバルアクションゲーム。コインやミステリーアイテムを集めてスコアを稼ごう。Web・iOS クロスプラットフォーム対応。",
+  "platforms": ["web", "ios", "android"],
+  "shortDescription": "テトリスブロックが降り注ぐ中を生き延びろ！最大10人でリアルタイム対戦できるサバイバルアクションゲーム。コインやミステリーアイテムを集めてスコアを稼ごう。Web・iOS・Android クロスプラットフォーム対応。",
   "subtitle": "ブロック落下サバイバルアクション",
-  "promoText": "テトリスブロックが降り注ぐ3つのボード上で生き延びろ！ジャンプで避け、コインを集め、ミステリーアイテムでパワーアップ。最大10人のリアルタイムP2P対戦にも対応。Web版とiOS版のクロスプラットフォーム対戦が可能です。",
-  "tags": ["15言語対応", "スマホ/PC両対応", "オンライン対戦", "アクションゲーム", "iOSアプリ", "クロスプラットフォーム"],
-  "detailTags": ["15言語対応", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "オンライン対戦", "クロスプラットフォーム", "アクションゲーム", "サバイバル", "1〜10人用"],
+  "promoText": "テトリスブロックが降り注ぐ3つのボード上で生き延びろ！ジャンプで避け、コインを集め、ミステリーアイテムでパワーアップ。最大10人のリアルタイムP2P対戦にも対応。Web・iOS・Androidのクロスプラットフォーム対戦が可能です。",
+  "tags": ["15言語対応", "スマホ/PC両対応", "オンライン対戦", "アクションゲーム", "iOSアプリ", "Androidアプリ", "クロスプラットフォーム"],
+  "detailTags": ["15言語対応", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "Androidアプリ", "オンライン対戦", "クロスプラットフォーム", "アクションゲーム", "サバイバル", "1〜10人用"],
   "storeLinksCard": [
     {"type": "web", "url": "https://blockpanic.riverapp.jp", "label": "Webアプリ"},
-    {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
+    {"type": "app-store", "url": "", "label": "App Store", "disabled": true},
+    {"type": "google-play", "url": "", "label": "Google Play", "disabled": true}
   ],
   "storeGroupsDetail": [
     {
@@ -21,9 +22,10 @@
       ]
     },
     {
-      "label": "ストアからダウンロード",
+      "label": "スマホアプリをダウンロード",
       "links": [
-        {"type": "app-store", "url": "", "label": "App Store — 準備中", "disabled": true}
+        {"type": "app-store", "url": "", "label": "App Store — 準備中", "disabled": true},
+        {"type": "google-play", "url": "", "label": "Google Play — 準備中", "disabled": true}
       ]
     }
   ],
@@ -35,16 +37,16 @@
     {"label": "お問い合わせ", "url": "/app-document/blockpanic/contact", "external": false}
   ],
   "ogDescription": "テトリスブロックを避けて生き延びろ！最大10人リアルタイム対戦のサバイバルアクション。Web・iOS対応。",
-  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム（巨大化・縮小・スーパージャンプ・+200ポイント）\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n- 15言語対応（端末の言語設定に応じて自動切替）\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web版とiOS版の間でもクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **+200** — 即座に200ポイント獲得",
+  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム（巨大化・縮小・スーパージャンプ・+200ポイント）\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n- 15言語対応（端末の言語設定に応じて自動切替）\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web・iOS・Androidの間でクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **+200** — 即座に200ポイント獲得",
   "documents": {
     "appDisplayName": "Block Panic",
     "about": {
       "catchcopy": "ブロックを避けろ。生き延びろ。",
-      "subcopy": "テトリス風ブロックが降り注ぐ中、棒人間を操作して生き延びるサバイバルアクション。\n3つのボードを駆け回り、コインやミステリーアイテムを集めてスコアを稼ごう。\n最大10人のリアルタイムP2P対戦に対応。\nWeb版とiOS版のクロスプラットフォーム対戦が可能です。",
+      "subcopy": "テトリス風ブロックが降り注ぐ中、棒人間を操作して生き延びるサバイバルアクション。\n3つのボードを駆け回り、コインやミステリーアイテムを集めてスコアを稼ごう。\n最大10人のリアルタイムP2P対戦に対応。\nWeb・iOS・Androidのクロスプラットフォーム対戦が可能です。",
       "features": [
         {"name": "サバイバルアクション", "desc": "テトリス風ブロックが上から降り注ぐ3つのボード上で、ジャンプと移動を駆使して生き延びます"},
         {"name": "リアルタイム対戦", "desc": "最大10人でリアルタイムP2P対戦。ルームを作成して友達を招待、または既存ルームに参加"},
-        {"name": "クロスプラットフォーム", "desc": "Web版とiOS版の間でクロスプラットフォーム対戦が可能。デバイスを問わず一緒に遊べます"},
+        {"name": "クロスプラットフォーム", "desc": "Web・iOS・Androidの間でクロスプラットフォーム対戦が可能。デバイスを問わず一緒に遊べます"},
         {"name": "コイン収集", "desc": "フィールドに出現するゴールドコインを集めて+100ポイント。10秒ごとにスポーン"},
         {"name": "ミステリーアイテム", "desc": "虹色の?アイテムでランダムパワーアップ。巨大化・縮小・スーパージャンプ・+200ポイント"},
         {"name": "CPU対戦", "desc": "ソロプレイではCPUボットが自動参加。最低5体のキャラクターがフィールドで動き回ります"},
@@ -53,7 +55,7 @@
         {"name": "完全無料・広告なし", "desc": "課金・広告は一切なし。純粋にゲームだけを楽しめます"}
       ],
       "info": [
-        {"key": "対応OS", "value": "iOS 17.0 以降 / Web（モダンブラウザ）"},
+        {"key": "対応OS", "value": "iOS 17.0 以降 / Android 8.0 以降 / Web（モダンブラウザ）"},
         {"key": "価格", "value": "無料"},
         {"key": "カテゴリ", "value": "アクション / サバイバルゲーム"},
         {"key": "プレイ人数", "value": "1〜10人（オンライン対戦時）"},
@@ -144,7 +146,7 @@
           "bullets": [
             "ソロプレイ（CPU対戦）モード",
             "最大10人のリアルタイムオンライン対戦（P2P方式）",
-            "Web版とiOS版のクロスプラットフォーム対戦",
+            "Web・iOS・Androidのクロスプラットフォーム対戦",
             "ゲームのプレイ記録は端末内にローカル保存されます"
           ]
         },
@@ -196,10 +198,10 @@
     }
   },
   "en": {
-    "shortDescription": "Survive the falling Tetris blocks! A survival action game with real-time P2P battles for up to 10 players. Collect coins and mystery items to boost your score. Cross-platform: Web & iOS.",
+    "shortDescription": "Survive the falling Tetris blocks! A survival action game with real-time P2P battles for up to 10 players. Collect coins and mystery items to boost your score. Cross-platform: Web, iOS & Android.",
     "subtitle": "Block-falling survival action",
-    "promoText": "Survive on 3 boards as Tetris blocks rain down! Jump to dodge, collect coins, and grab mystery items for power-ups. Real-time P2P battles with up to 10 players. Cross-platform play between Web and iOS.",
-    "description": "### About Block Panic\n\nBlock Panic is a survival action game where you dodge Tetris-style blocks falling onto 3 side-by-side boards. Control a stick figure character to avoid blocks, collect coins and mystery items, and compete for the highest score.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- Real-time P2P battles with up to 10 players\n- Cross-platform play between Web and iOS\n- 3 Tetris boards side by side for a huge playing field\n- Coin collection (+100 points each)\n- Mystery items (grow, shrink, super jump, +200 points)\n- CPU bot mode for solo play\n- Automatic play record saving\n- 15 languages supported (auto-switches based on device settings)\n\n### How to Play\n\n- ◀ ▶ buttons to move left/right\n- ▲ button to jump\n- Dodge falling Tetris blocks\n- Game over if crushed by a block\n- Score = Survival Time (seconds) + Coin Bonus\n\n### Online Battles\n\nCreate a room from \"ONLINE\" or join an existing room to compete. Uses P2P (peer-to-peer) where the host's browser/device acts as the game server. Cross-platform battles between Web and iOS are fully supported.\n\n### Mystery Items\n\nGrab the rainbow \"?\" items for random power-ups:\n\n- **BIG** — Double your size (10 seconds)\n- **MINI** — Shrink to half size (10 seconds)\n- **JUMP** — Double jump power (10 seconds)\n- **+200** — Instant 200 point bonus",
+    "promoText": "Survive on 3 boards as Tetris blocks rain down! Jump to dodge, collect coins, and grab mystery items for power-ups. Real-time P2P battles with up to 10 players. Cross-platform play between Web, iOS and Android.",
+    "description": "### About Block Panic\n\nBlock Panic is a survival action game where you dodge Tetris-style blocks falling onto 3 side-by-side boards. Control a stick figure character to avoid blocks, collect coins and mystery items, and compete for the highest score.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- Real-time P2P battles with up to 10 players\n- Cross-platform play between Web, iOS and Android\n- 3 Tetris boards side by side for a huge playing field\n- Coin collection (+100 points each)\n- Mystery items (grow, shrink, super jump, +200 points)\n- CPU bot mode for solo play\n- Automatic play record saving\n- 15 languages supported (auto-switches based on device settings)\n\n### How to Play\n\n- ◀ ▶ buttons to move left/right\n- ▲ button to jump\n- Dodge falling Tetris blocks\n- Game over if crushed by a block\n- Score = Survival Time (seconds) + Coin Bonus\n\n### Online Battles\n\nCreate a room from \"ONLINE\" or join an existing room to compete. Uses P2P (peer-to-peer) where the host's browser/device acts as the game server. Cross-platform battles between Web, iOS and Android are fully supported.\n\n### Mystery Items\n\nGrab the rainbow \"?\" items for random power-ups:\n\n- **BIG** — Double your size (10 seconds)\n- **MINI** — Shrink to half size (10 seconds)\n- **JUMP** — Double jump power (10 seconds)\n- **+200** — Instant 200 point bonus",
     "linkLabels": {
       "今すぐプレイ": "Play Now",
       "このアプリについて": "About",
@@ -211,11 +213,11 @@
       "appDisplayName": "Block Panic",
       "about": {
         "catchcopy": "Dodge the blocks. Survive.",
-        "subcopy": "A survival action game where you dodge Tetris-style falling blocks as a stick figure.\nRun across 3 boards, collect coins and mystery items to rack up your score.\nReal-time P2P battles with up to 10 players.\nCross-platform play between Web and iOS.",
+        "subcopy": "A survival action game where you dodge Tetris-style falling blocks as a stick figure.\nRun across 3 boards, collect coins and mystery items to rack up your score.\nReal-time P2P battles with up to 10 players.\nCross-platform play between Web, iOS and Android.",
         "features": [
           {"name": "Survival Action", "desc": "Dodge Tetris-style blocks falling onto 3 boards using jumps and precise movement to survive"},
           {"name": "Real-time Battles", "desc": "P2P battles with up to 10 players. Create rooms and invite friends, or join existing rooms"},
-          {"name": "Cross-Platform", "desc": "Play across Web and iOS. Compete together regardless of device"},
+          {"name": "Cross-Platform", "desc": "Play across Web, iOS and Android. Compete together regardless of device"},
           {"name": "Coin Collection", "desc": "Collect gold coins appearing on the field for +100 points each. Spawns every 10 seconds"},
           {"name": "Mystery Items", "desc": "Rainbow ? items grant random power-ups: grow, shrink, super jump, or +200 points"},
           {"name": "CPU Battles", "desc": "In solo play, CPU bots join automatically. At least 5 characters are always active on the field"},
@@ -224,7 +226,7 @@
           {"name": "Free, No Ads", "desc": "No in-app purchases, no ads. Pure gameplay enjoyment"}
         ],
         "info": [
-          {"key": "Supported OS", "value": "iOS 17.0+ / Web (modern browsers)"},
+          {"key": "Supported OS", "value": "iOS 17.0+ / Android 8.0+ / Web (modern browsers)"},
           {"key": "Price", "value": "Free"},
           {"key": "Category", "value": "Action / Survival Game"},
           {"key": "Players", "value": "1–10 (online battles)"},
@@ -272,7 +274,7 @@
       "terms-of-service": {
         "sections": [
           {"title": "Introduction", "body": "These Terms of Service (hereinafter \"these Terms\") set forth the conditions for using {appName} (hereinafter \"the App\"). By using the App, you are deemed to have agreed to these Terms."},
-          {"title": "Service Description", "body": "The App is a free application providing a block-falling survival action game.", "bullets": ["Solo play (CPU battle) mode", "Real-time online battles with up to 10 players (P2P)", "Cross-platform play between Web and iOS", "Play records are stored locally on your device"]},
+          {"title": "Service Description", "body": "The App is a free application providing a block-falling survival action game.", "bullets": ["Solo play (CPU battle) mode", "Real-time online battles with up to 10 players (P2P)", "Cross-platform play between Web, iOS and Android", "Play records are stored locally on your device"]},
           {"title": "Pricing", "body": "The App is available free of charge. There are no in-app purchases or advertisements."},
           {"title": "Online Battles", "body": "Online battle features are provided via WebRTC P2P (direct device-to-device communication). The room creator's device acts as the game server, so the room automatically closes when the creator exits. Connection quality depends on network conditions. The developer does not guarantee online battle connection quality."},
           {"title": "Prohibited Activities", "body": "The following activities are prohibited when using the App.", "bullets": ["Decompiling, reverse engineering, or disassembling the App", "Modifying, adapting, or creating derivative works", "Using the App for commercial purposes (personal non-commercial use only)", "Actions intended to interfere with other players in online battles", "Any activities violating laws or public order"]},
