@@ -1,0 +1,286 @@
+{
+  "slug": "blockpanic",
+  "createdAt": "2026-04-05",
+  "name": "Block Panic",
+  "category": "game",
+  "platforms": ["web", "ios"],
+  "shortDescription": "テトリスブロックが降り注ぐ中を生き延びろ！最大10人でリアルタイム対戦できるサバイバルアクションゲーム。コインやミステリーアイテムを集めてスコアを稼ごう。Web・iOS クロスプラットフォーム対応。",
+  "subtitle": "ブロック落下サバイバルアクション",
+  "promoText": "テトリスブロックが降り注ぐ3つのボード上で生き延びろ！ジャンプで避け、コインを集め、ミステリーアイテムでパワーアップ。最大10人のリアルタイムP2P対戦にも対応。Web版とiOS版のクロスプラットフォーム対戦が可能です。",
+  "tags": ["スマホ/PC両対応", "オンライン対戦", "アクションゲーム", "iOSアプリ", "クロスプラットフォーム"],
+  "detailTags": ["スマホ/PC両対応", "Webアプリ", "iOSアプリ", "オンライン対戦", "クロスプラットフォーム", "アクションゲーム", "サバイバル", "1〜10人用"],
+  "storeLinksCard": [
+    {"type": "web", "url": "https://blockpanic.riverapp.jp", "label": "Webアプリ"},
+    {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
+  ],
+  "storeGroupsDetail": [
+    {
+      "label": "今すぐブラウザでプレイ",
+      "links": [
+        {"type": "web", "url": "https://blockpanic.riverapp.jp", "label": "Webアプリ"}
+      ]
+    },
+    {
+      "label": "ストアからダウンロード",
+      "links": [
+        {"type": "app-store", "url": "", "label": "App Store — 準備中", "disabled": true}
+      ]
+    }
+  ],
+  "links": [
+    {"label": "今すぐプレイ", "url": "https://blockpanic.riverapp.jp", "external": true},
+    {"label": "このアプリについて", "url": "/app-document/blockpanic/about", "external": false},
+    {"label": "プライバシーポリシー", "url": "/app-document/blockpanic/privacy-policy", "external": false},
+    {"label": "利用規約", "url": "/app-document/blockpanic/terms-of-service", "external": false},
+    {"label": "お問い合わせ", "url": "/app-document/blockpanic/contact", "external": false}
+  ],
+  "ogDescription": "テトリスブロックを避けて生き延びろ！最大10人リアルタイム対戦のサバイバルアクション。Web・iOS対応。",
+  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム（巨大化・縮小・スーパージャンプ・+200ポイント）\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web版とiOS版の間でもクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **+200** — 即座に200ポイント獲得",
+  "documents": {
+    "appDisplayName": "Block Panic",
+    "about": {
+      "catchcopy": "ブロックを避けろ。生き延びろ。",
+      "subcopy": "テトリス風ブロックが降り注ぐ中、棒人間を操作して生き延びるサバイバルアクション。\n3つのボードを駆け回り、コインやミステリーアイテムを集めてスコアを稼ごう。\n最大10人のリアルタイムP2P対戦に対応。\nWeb版とiOS版のクロスプラットフォーム対戦が可能です。",
+      "features": [
+        {"name": "サバイバルアクション", "desc": "テトリス風ブロックが上から降り注ぐ3つのボード上で、ジャンプと移動を駆使して生き延びます"},
+        {"name": "リアルタイム対戦", "desc": "最大10人でリアルタイムP2P対戦。ルームを作成して友達を招待、または既存ルームに参加"},
+        {"name": "クロスプラットフォーム", "desc": "Web版とiOS版の間でクロスプラットフォーム対戦が可能。デバイスを問わず一緒に遊べます"},
+        {"name": "コイン収集", "desc": "フィールドに出現するゴールドコインを集めて+100ポイント。10秒ごとにスポーン"},
+        {"name": "ミステリーアイテム", "desc": "虹色の?アイテムでランダムパワーアップ。巨大化・縮小・スーパージャンプ・+200ポイント"},
+        {"name": "CPU対戦", "desc": "ソロプレイではCPUボットが自動参加。最低5体のキャラクターがフィールドで動き回ります"},
+        {"name": "プレイ記録", "desc": "ゲーム結果を自動保存。日時・スコア・生存時間・モード・名前を記録し、いつでも振り返れます"},
+        {"name": "完全無料・広告なし", "desc": "課金・広告は一切なし。純粋にゲームだけを楽しめます"}
+      ],
+      "info": [
+        {"key": "対応OS", "value": "iOS 17.0 以降 / Web（モダンブラウザ）"},
+        {"key": "価格", "value": "無料"},
+        {"key": "カテゴリ", "value": "アクション / サバイバルゲーム"},
+        {"key": "プレイ人数", "value": "1〜10人（オンライン対戦時）"},
+        {"key": "開発", "value": "riverapp.jp"}
+      ],
+      "links": [
+        {"label": "プライバシーポリシー", "href": "/app-document/blockpanic/privacy-policy", "internal": true},
+        {"label": "利用規約", "href": "/app-document/blockpanic/terms-of-service", "internal": true},
+        {"label": "お問い合わせ", "href": "/app-document/blockpanic/contact", "internal": true},
+        {"label": "今すぐプレイ（Web版）", "href": "https://blockpanic.riverapp.jp", "external": true},
+        {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+      ]
+    },
+    "contact": {
+      "methods": [
+        {
+          "label": "お問い合わせフォーム",
+          "description": "Google フォームから送信",
+          "url": "https://forms.gle/VnHFHTUDhtagSNvn7",
+          "external": true
+        },
+        {
+          "label": "メールで問い合わせ",
+          "description": "riverapp.jp@gmail.com",
+          "url": "mailto:riverapp.jp@gmail.com",
+          "external": false
+        }
+      ]
+    },
+    "privacy-policy": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本プライバシーポリシーは、{appName}（以下「本アプリ」）における個人情報の取り扱いについて説明するものです。本アプリは、お客様のプライバシーを尊重し、個人情報の保護に努めます。"
+        },
+        {
+          "title": "収集する情報",
+          "body": "本アプリは、個人情報を一切収集しません。",
+          "bullets": [
+            "ゲームのプレイ記録（スコア、生存時間、モード、名前など）はお使いの端末内にのみ保存され、外部サーバーへの送信は行いません",
+            "オンライン対戦時のWebRTC通信は端末間で直接行われ（P2P）、開発者のサーバーを経由しません",
+            "ルーム作成時のシグナリングデータ（接続情報）は一時的にサーバーに保存されますが、5分以内に自動削除されます",
+            "アカウント登録やログインは不要です",
+            "分析ツールや広告SDKは一切使用していません"
+          ]
+        },
+        {
+          "title": "データの保存",
+          "body": "本アプリのプレイ記録データは、端末のローカルストレージに保存されます。Web版はブラウザのローカルストレージ、iOS版はUserDefaultsを使用します。データはインターネットを通じて送信されることはなく、開発者がアクセスすることもできません。アプリを削除すると、すべてのデータが端末から完全に削除されます。"
+        },
+        {
+          "title": "オンライン対戦について",
+          "body": "オンライン対戦機能では、WebRTC技術を使用した端末間の直接通信（P2P）を行います。通信されるデータはゲームの操作情報（移動・ジャンプ）とゲーム状態のみであり、個人情報は含まれません。接続確立のためのシグナリングデータはAWS DynamoDBに一時保存されますが、5分以内に自動的に期限切れとなり削除されます。"
+        },
+        {
+          "title": "第三者への提供",
+          "body": "本アプリは、お客様のデータを第三者に提供、販売、共有することはありません。"
+        },
+        {
+          "title": "分析ツール・広告",
+          "body": "本アプリは、分析ツールや広告 SDK を一切使用していません。"
+        },
+        {
+          "title": "お子様のプライバシー",
+          "body": "本アプリは個人情報を収集しないため、年齢を問わず安心してご利用いただけます。"
+        },
+        {
+          "title": "プライバシーポリシーの変更",
+          "body": "本プライバシーポリシーは、必要に応じて更新されることがあります。変更があった場合は、本ページにて最新の内容を掲載します。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本プライバシーポリシーに関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-04-05"
+    },
+    "terms-of-service": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本利用規約（以下「本規約」）は、{appName}（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく場合、本規約に同意したものとみなします。"
+        },
+        {
+          "title": "サービスの内容",
+          "body": "本アプリは、ブロック落下サバイバルアクションゲームを提供する無料アプリケーションです。",
+          "bullets": [
+            "ソロプレイ（CPU対戦）モード",
+            "最大10人のリアルタイムオンライン対戦（P2P方式）",
+            "Web版とiOS版のクロスプラットフォーム対戦",
+            "ゲームのプレイ記録は端末内にローカル保存されます"
+          ]
+        },
+        {
+          "title": "利用料金",
+          "body": "本アプリは無料でご利用いただけます。アプリ内課金や広告表示は一切ありません。"
+        },
+        {
+          "title": "オンライン対戦について",
+          "body": "オンライン対戦機能はWebRTC技術によるP2P（端末間直接通信）方式で提供されます。ルーム作成者の端末がゲームサーバーとして動作するため、ルーム作成者がゲームを終了するとそのルームは自動的に終了します。通信品質やゲーム体験はネットワーク環境に依存します。開発者はオンライン対戦の接続品質を保証するものではありません。"
+        },
+        {
+          "title": "禁止事項",
+          "body": "本アプリのご利用にあたり、以下の行為を禁止します。",
+          "bullets": [
+            "本アプリの逆コンパイル、リバースエンジニアリング、逆アセンブル",
+            "本アプリの改変、翻案、二次的著作物の作成",
+            "本アプリを利用した営利目的の活動（個人の非商用利用に限ります）",
+            "オンライン対戦において他のプレイヤーの妨害を目的とする行為",
+            "その他、法令または公序良俗に反する行為"
+          ]
+        },
+        {
+          "title": "知的財産権",
+          "body": "本アプリに関するすべての知的財産権（デザイン、プログラム、コンテンツ等）は、開発者に帰属します。本規約は、本アプリの知的財産権をユーザーに移転するものではありません。"
+        },
+        {
+          "title": "免責事項",
+          "body": "開発者は、本アプリの利用により生じたいかなる損害についても、一切の責任を負いません。また、本アプリの動作を保証するものではなく、予告なくサービスの変更・中断・終了を行う場合があります。オンライン対戦における通信障害、接続切断等について、開発者は責任を負いません。"
+        },
+        {
+          "title": "データの取り扱い",
+          "body": "本アプリで保存されるゲームデータ（プレイ記録、スコアなど）は、すべてお使いの端末内にのみ保存されます。アプリを削除するとすべてのデータが失われます。開発者はデータの復旧について責任を負いません。"
+        },
+        {
+          "title": "利用規約の変更",
+          "body": "開発者は、必要に応じて本規約を変更することがあります。変更後の規約は、本ページに掲載した時点で効力を生じるものとします。"
+        },
+        {
+          "title": "準拠法",
+          "body": "本規約の解釈および適用は、日本法に準拠するものとします。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本利用規約に関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-04-05"
+    }
+  },
+  "en": {
+    "shortDescription": "Survive the falling Tetris blocks! A survival action game with real-time P2P battles for up to 10 players. Collect coins and mystery items to boost your score. Cross-platform: Web & iOS.",
+    "subtitle": "Block-falling survival action",
+    "promoText": "Survive on 3 boards as Tetris blocks rain down! Jump to dodge, collect coins, and grab mystery items for power-ups. Real-time P2P battles with up to 10 players. Cross-platform play between Web and iOS.",
+    "description": "### About Block Panic\n\nBlock Panic is a survival action game where you dodge Tetris-style blocks falling onto 3 side-by-side boards. Control a stick figure character to avoid blocks, collect coins and mystery items, and compete for the highest score.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- Real-time P2P battles with up to 10 players\n- Cross-platform play between Web and iOS\n- 3 Tetris boards side by side for a huge playing field\n- Coin collection (+100 points each)\n- Mystery items (grow, shrink, super jump, +200 points)\n- CPU bot mode for solo play\n- Automatic play record saving\n\n### How to Play\n\n- ◀ ▶ buttons to move left/right\n- ▲ button to jump\n- Dodge falling Tetris blocks\n- Game over if crushed by a block\n- Score = Survival Time (seconds) + Coin Bonus\n\n### Online Battles\n\nCreate a room from \"ONLINE\" or join an existing room to compete. Uses P2P (peer-to-peer) where the host's browser/device acts as the game server. Cross-platform battles between Web and iOS are fully supported.\n\n### Mystery Items\n\nGrab the rainbow \"?\" items for random power-ups:\n\n- **BIG** — Double your size (10 seconds)\n- **MINI** — Shrink to half size (10 seconds)\n- **JUMP** — Double jump power (10 seconds)\n- **+200** — Instant 200 point bonus",
+    "linkLabels": {
+      "今すぐプレイ": "Play Now",
+      "このアプリについて": "About",
+      "プライバシーポリシー": "Privacy Policy",
+      "利用規約": "Terms of Service",
+      "お問い合わせ": "Contact"
+    },
+    "documents": {
+      "appDisplayName": "Block Panic",
+      "about": {
+        "catchcopy": "Dodge the blocks. Survive.",
+        "subcopy": "A survival action game where you dodge Tetris-style falling blocks as a stick figure.\nRun across 3 boards, collect coins and mystery items to rack up your score.\nReal-time P2P battles with up to 10 players.\nCross-platform play between Web and iOS.",
+        "features": [
+          {"name": "Survival Action", "desc": "Dodge Tetris-style blocks falling onto 3 boards using jumps and precise movement to survive"},
+          {"name": "Real-time Battles", "desc": "P2P battles with up to 10 players. Create rooms and invite friends, or join existing rooms"},
+          {"name": "Cross-Platform", "desc": "Play across Web and iOS. Compete together regardless of device"},
+          {"name": "Coin Collection", "desc": "Collect gold coins appearing on the field for +100 points each. Spawns every 10 seconds"},
+          {"name": "Mystery Items", "desc": "Rainbow ? items grant random power-ups: grow, shrink, super jump, or +200 points"},
+          {"name": "CPU Battles", "desc": "In solo play, CPU bots join automatically. At least 5 characters are always active on the field"},
+          {"name": "Play Records", "desc": "Game results are automatically saved with date, score, survival time, mode, and name for review"},
+          {"name": "Free, No Ads", "desc": "No in-app purchases, no ads. Pure gameplay enjoyment"}
+        ],
+        "info": [
+          {"key": "Supported OS", "value": "iOS 17.0+ / Web (modern browsers)"},
+          {"key": "Price", "value": "Free"},
+          {"key": "Category", "value": "Action / Survival Game"},
+          {"key": "Players", "value": "1–10 (online battles)"},
+          {"key": "Developer", "value": "riverapp.jp"}
+        ],
+        "links": [
+          {"label": "Privacy Policy", "href": "/app-document/blockpanic/privacy-policy", "internal": true},
+          {"label": "Terms of Service", "href": "/app-document/blockpanic/terms-of-service", "internal": true},
+          {"label": "Contact", "href": "/app-document/blockpanic/contact", "internal": true},
+          {"label": "Play Now (Web)", "href": "https://blockpanic.riverapp.jp", "external": true},
+          {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+        ]
+      },
+      "contact": {
+        "methods": [
+          {
+            "label": "Contact Form",
+            "description": "Submit via Google Forms",
+            "url": "https://forms.gle/VnHFHTUDhtagSNvn7",
+            "external": true
+          },
+          {
+            "label": "Contact by Email",
+            "description": "riverapp.jp@gmail.com",
+            "url": "mailto:riverapp.jp@gmail.com",
+            "external": false
+          }
+        ]
+      },
+      "privacy-policy": {
+        "sections": [
+          {"title": "Introduction", "body": "This privacy policy explains how personal information is handled in {appName} (hereinafter \"the App\"). The App respects your privacy and is committed to protecting your personal information."},
+          {"title": "Information Collected", "body": "The App does not collect any personal information.", "bullets": ["Play records (score, survival time, mode, name, etc.) are stored only on your device and never sent to external servers", "WebRTC communication during online battles is direct between devices (P2P) and does not pass through the developer's servers", "Signaling data (connection info) for room creation is temporarily stored on the server but automatically deleted within 5 minutes", "No account registration or login required", "No analytics tools or advertising SDKs are used"]},
+          {"title": "Data Storage", "body": "Play record data is stored in your device's local storage. The Web version uses browser localStorage, and the iOS version uses UserDefaults. Data is never transmitted over the internet, and the developer cannot access it. Deleting the app permanently removes all data."},
+          {"title": "Online Battles", "body": "Online battle features use WebRTC peer-to-peer (P2P) direct communication between devices. Only game operation data (movement, jumps) and game state are transmitted — no personal information is included. Signaling data stored on AWS DynamoDB automatically expires and is deleted within 5 minutes."},
+          {"title": "Third-Party Sharing", "body": "The App does not provide, sell, or share your data with any third parties."},
+          {"title": "Analytics & Advertising", "body": "The App does not use any analytics tools or advertising SDKs."},
+          {"title": "Children's Privacy", "body": "Since the App does not collect personal information, it can be used safely regardless of age."},
+          {"title": "Policy Changes", "body": "This privacy policy may be updated as needed. Any changes will be posted on this page."},
+          {"title": "Contact", "body": "For questions regarding this privacy policy, please reach out through the contact page."}
+        ],
+        "lastUpdated": "2026-04-05"
+      },
+      "terms-of-service": {
+        "sections": [
+          {"title": "Introduction", "body": "These Terms of Service (hereinafter \"these Terms\") set forth the conditions for using {appName} (hereinafter \"the App\"). By using the App, you are deemed to have agreed to these Terms."},
+          {"title": "Service Description", "body": "The App is a free application providing a block-falling survival action game.", "bullets": ["Solo play (CPU battle) mode", "Real-time online battles with up to 10 players (P2P)", "Cross-platform play between Web and iOS", "Play records are stored locally on your device"]},
+          {"title": "Pricing", "body": "The App is available free of charge. There are no in-app purchases or advertisements."},
+          {"title": "Online Battles", "body": "Online battle features are provided via WebRTC P2P (direct device-to-device communication). The room creator's device acts as the game server, so the room automatically closes when the creator exits. Connection quality depends on network conditions. The developer does not guarantee online battle connection quality."},
+          {"title": "Prohibited Activities", "body": "The following activities are prohibited when using the App.", "bullets": ["Decompiling, reverse engineering, or disassembling the App", "Modifying, adapting, or creating derivative works", "Using the App for commercial purposes (personal non-commercial use only)", "Actions intended to interfere with other players in online battles", "Any activities violating laws or public order"]},
+          {"title": "Intellectual Property", "body": "All intellectual property rights related to the App belong to the developer. These Terms do not transfer any intellectual property rights to the user."},
+          {"title": "Disclaimer", "body": "The developer shall not be liable for any damages arising from use of the App. The developer does not guarantee operation and may change, suspend, or terminate the service without prior notice. The developer is not responsible for connection issues or disconnections during online battles."},
+          {"title": "Data Handling", "body": "All game data (play records, scores, etc.) is stored solely on your device. Deleting the app will result in loss of all data. The developer is not responsible for data recovery."},
+          {"title": "Changes to Terms", "body": "The developer may modify these Terms as needed. Changes take effect upon posting on this page."},
+          {"title": "Governing Law", "body": "These Terms shall be governed by the laws of Japan."},
+          {"title": "Contact", "body": "For questions regarding these Terms, please reach out through the contact page."}
+        ],
+        "lastUpdated": "2026-04-05"
+      }
+    }
+  }
+}
