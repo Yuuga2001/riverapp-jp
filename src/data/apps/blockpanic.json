@@ -7,8 +7,8 @@
   "shortDescription": "テトリスブロックが降り注ぐ中を生き延びろ！最大10人でリアルタイム対戦できるサバイバルアクションゲーム。コインやミステリーアイテムを集めてスコアを稼ごう。Web・iOS クロスプラットフォーム対応。",
   "subtitle": "ブロック落下サバイバルアクション",
   "promoText": "テトリスブロックが降り注ぐ3つのボード上で生き延びろ！ジャンプで避け、コインを集め、ミステリーアイテムでパワーアップ。最大10人のリアルタイムP2P対戦にも対応。Web版とiOS版のクロスプラットフォーム対戦が可能です。",
-  "tags": ["スマホ/PC両対応", "オンライン対戦", "アクションゲーム", "iOSアプリ", "クロスプラットフォーム"],
-  "detailTags": ["スマホ/PC両対応", "Webアプリ", "iOSアプリ", "オンライン対戦", "クロスプラットフォーム", "アクションゲーム", "サバイバル", "1〜10人用"],
+  "tags": ["15言語対応", "スマホ/PC両対応", "オンライン対戦", "アクションゲーム", "iOSアプリ", "クロスプラットフォーム"],
+  "detailTags": ["15言語対応", "スマホ/PC両対応", "Webアプリ", "iOSアプリ", "オンライン対戦", "クロスプラットフォーム", "アクションゲーム", "サバイバル", "1〜10人用"],
   "storeLinksCard": [
     {"type": "web", "url": "https://blockpanic.riverapp.jp", "label": "Webアプリ"},
     {"type": "app-store", "url": "", "label": "App Store", "disabled": true}
@@ -35,7 +35,7 @@
     {"label": "お問い合わせ", "url": "/app-document/blockpanic/contact", "external": false}
   ],
   "ogDescription": "テトリスブロックを避けて生き延びろ！最大10人リアルタイム対戦のサバイバルアクション。Web・iOS対応。",
-  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム（巨大化・縮小・スーパージャンプ・+200ポイント）\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web版とiOS版の間でもクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **+200** — 即座に200ポイント獲得",
+  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOSネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム（巨大化・縮小・スーパージャンプ・+200ポイント）\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n- 15言語対応（端末の言語設定に応じて自動切替）\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web版とiOS版の間でもクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **+200** — 即座に200ポイント獲得",
   "documents": {
     "appDisplayName": "Block Panic",
     "about": {
@@ -49,6 +49,7 @@
         {"name": "ミステリーアイテム", "desc": "虹色の?アイテムでランダムパワーアップ。巨大化・縮小・スーパージャンプ・+200ポイント"},
         {"name": "CPU対戦", "desc": "ソロプレイではCPUボットが自動参加。最低5体のキャラクターがフィールドで動き回ります"},
         {"name": "プレイ記録", "desc": "ゲーム結果を自動保存。日時・スコア・生存時間・モード・名前を記録し、いつでも振り返れます"},
+        {"name": "15言語対応", "desc": "端末の言語設定に応じて自動的にUIが切り替わります。アプリ内でも言語を手動選択可能"},
         {"name": "完全無料・広告なし", "desc": "課金・広告は一切なし。純粋にゲームだけを楽しめます"}
       ],
       "info": [
@@ -56,6 +57,7 @@
         {"key": "価格", "value": "無料"},
         {"key": "カテゴリ", "value": "アクション / サバイバルゲーム"},
         {"key": "プレイ人数", "value": "1〜10人（オンライン対戦時）"},
+        {"key": "言語", "value": "15言語対応（日本語、英語、中国語、韓国語、フランス語、ドイツ語、スペイン語、ポルトガル語、イタリア語、ロシア語、タイ語、ベトナム語、インドネシア語、ヒンディー語）"},
         {"key": "開発", "value": "riverapp.jp"}
       ],
       "links": [
@@ -197,7 +199,7 @@
     "shortDescription": "Survive the falling Tetris blocks! A survival action game with real-time P2P battles for up to 10 players. Collect coins and mystery items to boost your score. Cross-platform: Web & iOS.",
     "subtitle": "Block-falling survival action",
     "promoText": "Survive on 3 boards as Tetris blocks rain down! Jump to dodge, collect coins, and grab mystery items for power-ups. Real-time P2P battles with up to 10 players. Cross-platform play between Web and iOS.",
-    "description": "### About Block Panic\n\nBlock Panic is a survival action game where you dodge Tetris-style blocks falling onto 3 side-by-side boards. Control a stick figure character to avoid blocks, collect coins and mystery items, and compete for the highest score.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- Real-time P2P battles with up to 10 players\n- Cross-platform play between Web and iOS\n- 3 Tetris boards side by side for a huge playing field\n- Coin collection (+100 points each)\n- Mystery items (grow, shrink, super jump, +200 points)\n- CPU bot mode for solo play\n- Automatic play record saving\n\n### How to Play\n\n- ◀ ▶ buttons to move left/right\n- ▲ button to jump\n- Dodge falling Tetris blocks\n- Game over if crushed by a block\n- Score = Survival Time (seconds) + Coin Bonus\n\n### Online Battles\n\nCreate a room from \"ONLINE\" or join an existing room to compete. Uses P2P (peer-to-peer) where the host's browser/device acts as the game server. Cross-platform battles between Web and iOS are fully supported.\n\n### Mystery Items\n\nGrab the rainbow \"?\" items for random power-ups:\n\n- **BIG** — Double your size (10 seconds)\n- **MINI** — Shrink to half size (10 seconds)\n- **JUMP** — Double jump power (10 seconds)\n- **+200** — Instant 200 point bonus",
+    "description": "### About Block Panic\n\nBlock Panic is a survival action game where you dodge Tetris-style blocks falling onto 3 side-by-side boards. Control a stick figure character to avoid blocks, collect coins and mystery items, and compete for the highest score.\n\n### Features\n\n- Play free in your browser right now\n- Native iOS app available\n- Real-time P2P battles with up to 10 players\n- Cross-platform play between Web and iOS\n- 3 Tetris boards side by side for a huge playing field\n- Coin collection (+100 points each)\n- Mystery items (grow, shrink, super jump, +200 points)\n- CPU bot mode for solo play\n- Automatic play record saving\n- 15 languages supported (auto-switches based on device settings)\n\n### How to Play\n\n- ◀ ▶ buttons to move left/right\n- ▲ button to jump\n- Dodge falling Tetris blocks\n- Game over if crushed by a block\n- Score = Survival Time (seconds) + Coin Bonus\n\n### Online Battles\n\nCreate a room from \"ONLINE\" or join an existing room to compete. Uses P2P (peer-to-peer) where the host's browser/device acts as the game server. Cross-platform battles between Web and iOS are fully supported.\n\n### Mystery Items\n\nGrab the rainbow \"?\" items for random power-ups:\n\n- **BIG** — Double your size (10 seconds)\n- **MINI** — Shrink to half size (10 seconds)\n- **JUMP** — Double jump power (10 seconds)\n- **+200** — Instant 200 point bonus",
     "linkLabels": {
       "今すぐプレイ": "Play Now",
       "このアプリについて": "About",
@@ -218,6 +220,7 @@
           {"name": "Mystery Items", "desc": "Rainbow ? items grant random power-ups: grow, shrink, super jump, or +200 points"},
           {"name": "CPU Battles", "desc": "In solo play, CPU bots join automatically. At least 5 characters are always active on the field"},
           {"name": "Play Records", "desc": "Game results are automatically saved with date, score, survival time, mode, and name for review"},
+          {"name": "15 Languages", "desc": "UI automatically switches based on your device language. Manual language selection also available in-app"},
           {"name": "Free, No Ads", "desc": "No in-app purchases, no ads. Pure gameplay enjoyment"}
         ],
         "info": [
@@ -225,6 +228,7 @@
           {"key": "Price", "value": "Free"},
           {"key": "Category", "value": "Action / Survival Game"},
           {"key": "Players", "value": "1–10 (online battles)"},
+          {"key": "Language", "value": "15 languages (Japanese, English, Chinese, Korean, French, German, Spanish, Portuguese, Italian, Russian, Thai, Vietnamese, Indonesian, Hindi)"},
           {"key": "Developer", "value": "riverapp.jp"}
         ],
         "links": [
