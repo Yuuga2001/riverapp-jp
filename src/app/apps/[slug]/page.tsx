@@ -148,6 +148,13 @@ export default async function AppDetailPage({ params }: PageProps) {
                       translationKey: "appDocument.privacyPolicy",
                     }]
                   : []),
+                ...(app.documents["terms-of-service"]
+                  ? [{
+                      label: "利用規約",
+                      href: `/app-document/${app.slug}/terms-of-service`,
+                      translationKey: "appDocument.termsOfService",
+                    }]
+                  : []),
                 ...(app.documents.contact
                   ? [{
                       label: "お問い合わせ",
