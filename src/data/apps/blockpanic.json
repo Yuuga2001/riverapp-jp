@@ -1,7 +1,7 @@
 {
   "slug": "blockpanic",
   "createdAt": "2026-04-05",
-  "name": "Block Panic",
+  "name": "ブロックパニック",
   "category": "game",
   "platforms": ["web", "ios", "android"],
   "shortDescription": "テトリスブロックが降り注ぐ中を生き延びろ！最大10人でリアルタイム対戦できるサバイバルアクションゲーム。コインやミステリーアイテムを集めてスコアを稼ごう。Web・iOS・Android クロスプラットフォーム対応。",
@@ -33,9 +33,9 @@
     {"label": "今すぐプレイ", "url": "https://blockpanic.riverapp.jp", "external": true}
   ],
   "ogDescription": "テトリスブロックを避けて生き延びろ！最大10人リアルタイム対戦のサバイバルアクション。Web・iOS対応。",
-  "description": "### Block Panic について\n\nBlock Panic は、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOS / Android ネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS ↔ Android クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム8種（巨大化・縮小・スーパージャンプ・加速・低速・暗闇・COIN RUSH・+200）\n- 効果バッジHUD — 発動中の効果名と残り時間プログレスバーを常時表示\n- 分かりやすいエラー表現 — オフライン / ルーム不存在 / 満員など状況別に表示\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n- 15言語対応（端末の言語設定に応じて自動切替）\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web・iOS・Androidの間でクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム（8種）\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **SPEED** — 移動速度が2倍（10秒間）\n- **SLOW** — 移動速度が半分（10秒間）\n- **BLIND** — 視界がプレイヤー周囲に制限される（10秒間）\n- **COIN RUSH** — 10秒間、2秒ごとにコインが降ってくる（合計5個）\n- **+200** — 即座に200ポイント獲得",
+  "description": "### ブロックパニックについて\n\nブロックパニックは、テトリス風のブロックが上から降り注ぐ3つのボード上で生き延びるサバイバルアクションゲームです。棒人間キャラクターを操作してブロックを避け、コインやミステリーアイテムを集めてスコアを競います。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- iOS / Android ネイティブアプリ対応\n- 最大10人のリアルタイムP2P対戦\n- Web ↔ iOS ↔ Android クロスプラットフォーム対戦\n- 3つのテトリスボードが並ぶ広大なフィールド\n- コイン収集（+100ポイント）\n- ミステリーアイテム8種（巨大化・縮小・スーパージャンプ・加速・低速・暗闇・COIN RUSH・+200）\n- 効果バッジHUD — 発動中の効果名と残り時間プログレスバーを常時表示\n- 分かりやすいエラー表現 — オフライン / ルーム不存在 / 満員など状況別に表示\n- CPU対戦モード搭載\n- プレイ記録の自動保存\n- 15言語対応（端末の言語設定に応じて自動切替）\n\n### 遊び方\n\n- ◀ ▶ ボタンで左右移動\n- ▲ ボタンでジャンプ\n- 落下するテトリスブロックを避ける\n- ブロックに潰されたらゲームオーバー\n- スコア = 生存時間（秒）+ コインボーナス\n\n### オンライン対戦\n\n「ONLINE」からルームを作成するか、既存のルームに参加して対戦。ホストのブラウザ/端末がゲームサーバーとして動作するP2P方式で、Web・iOS・Androidの間でクロスプラットフォーム対戦が可能です。\n\n### ミステリーアイテム（8種）\n\n虹色の「?」アイテムを取ると、ランダムで以下の効果が発動します：\n\n- **BIG** — 体が2倍に巨大化（10秒間）\n- **MINI** — 体が半分に縮小（10秒間）\n- **JUMP** — ジャンプ力が2倍（10秒間）\n- **SPEED** — 移動速度が2倍（10秒間）\n- **SLOW** — 移動速度が半分（10秒間）\n- **BLIND** — 視界がプレイヤー周囲に制限される（10秒間）\n- **COIN RUSH** — 10秒間、2秒ごとにコインが降ってくる（合計5個）\n- **+200** — 即座に200ポイント獲得",
   "documents": {
-    "appDisplayName": "Block Panic",
+    "appDisplayName": "ブロックパニック",
     "about": {
       "catchcopy": "ブロックを避けろ。生き延びろ。",
       "subcopy": "テトリス風ブロックが降り注ぐ中、棒人間を操作して生き延びるサバイバルアクション。\n3つのボードを駆け回り、コインやミステリーアイテムを集めてスコアを稼ごう。\n最大10人のリアルタイムP2P対戦に対応。\nWeb・iOS・Androidのクロスプラットフォーム対戦が可能です。",
@@ -196,6 +196,7 @@
     }
   },
   "en": {
+    "name": "Block Panic",
     "shortDescription": "Survive the falling Tetris blocks! A survival action game with real-time P2P battles for up to 10 players. Collect coins and mystery items to boost your score. Cross-platform: Web, iOS & Android.",
     "subtitle": "Block-falling survival action",
     "promoText": "Survive on 3 boards as Tetris blocks rain down! Jump to dodge, collect coins, and grab mystery items for power-ups. Real-time P2P battles with up to 10 players. Cross-platform play between Web, iOS and Android.",
