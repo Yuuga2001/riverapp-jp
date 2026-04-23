@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface ScreenshotCarouselProps {
   paths: string[];
@@ -9,15 +9,13 @@ interface ScreenshotCarouselProps {
 
 export function ScreenshotCarousel({ paths }: ScreenshotCarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [userInteracted, setUserInteracted] = useState(false);
-
-  const displayPaths = userInteracted ? paths : [...paths, ...paths];
+  const duplicated = [...paths, ...paths];
 
   useEffect(() => {
-    if (userInteracted) return;
     const el = trackRef.current;
     if (!el) return;
 
+    let paused = false;
     let rafId = 0;
     let last = performance.now();
     let remainder = 0;
@@ -26,40 +24,39 @@ export function ScreenshotCarousel({ paths }: ScreenshotCarouselProps) {
     const step = (now: number) => {
       const dt = (now - last) / 1000;
       last = now;
-      remainder += pxPerSec * dt;
-      const advance = Math.floor(remainder);
-      if (advance > 0) {
-        el.scrollLeft += advance;
-        remainder -= advance;
-      }
-      const halfWidth = el.scrollWidth / 2;
-      if (halfWidth > 0 && el.scrollLeft >= halfWidth) {
-        el.scrollLeft -= halfWidth;
+      if (!paused) {
+        remainder += pxPerSec * dt;
+        const advance = Math.floor(remainder);
+        if (advance > 0) {
+          el.scrollLeft += advance;
+          remainder -= advance;
+        }
+        const halfWidth = el.scrollWidth / 2;
+        if (halfWidth > 0 && el.scrollLeft >= halfWidth) {
+          el.scrollLeft -= halfWidth;
+        }
       }
       rafId = requestAnimationFrame(step);
     };
     rafId = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(rafId);
-  }, [userInteracted]);
 
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    const takeOver = () => {
-      const halfWidth = el.scrollWidth / 2;
-      if (halfWidth > 0 && el.scrollLeft >= halfWidth) {
-        el.scrollLeft -= halfWidth;
-      }
-      setUserInteracted(true);
+    const onEnter = () => {
+      paused = true;
     };
-    const opts: AddEventListenerOptions = { passive: true, once: true };
-    el.addEventListener("pointerdown", takeOver, opts);
-    el.addEventListener("touchstart", takeOver, opts);
-    el.addEventListener("wheel", takeOver, opts);
+    const onLeave = () => {
+      paused = false;
+      remainder = 0;
+    };
+
+    el.addEventListener("pointerenter", onEnter);
+    el.addEventListener("pointerleave", onLeave);
+    el.addEventListener("pointercancel", onLeave);
+
     return () => {
-      el.removeEventListener("pointerdown", takeOver);
-      el.removeEventListener("touchstart", takeOver);
-      el.removeEventListener("wheel", takeOver);
+      cancelAnimationFrame(rafId);
+      el.removeEventListener("pointerenter", onEnter);
+      el.removeEventListener("pointerleave", onLeave);
+      el.removeEventListener("pointercancel", onLeave);
     };
   }, []);
 
@@ -69,7 +66,7 @@ export function ScreenshotCarousel({ paths }: ScreenshotCarouselProps) {
         ref={trackRef}
         className="screenshots-track flex gap-3 overflow-x-auto"
       >
-        {displayPaths.map((src, i) => (
+        {duplicated.map((src, i) => (
           <div key={`${src}-${i}`} className="shrink-0">
             <Image
               src={src}
