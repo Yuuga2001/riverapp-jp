@@ -35,10 +35,6 @@
     50% { opacity: 1; }
   }
 
-  @keyframes scroll-left {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
 }
 
 /* ===== Base ===== */
@@ -59,13 +55,12 @@
 /* ===== Screenshot Carousel ===== */
 @layer components {
   .screenshots-track {
-    display: flex;
-    gap: 12px;
-    width: max-content;
-    animation: scroll-left var(--scroll-duration, 30s) linear infinite;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: auto;
   }
-  .screenshots-track:hover {
-    animation-play-state: paused;
+  .screenshots-track::-webkit-scrollbar {
+    display: none;
   }
 }
 
