@@ -12,7 +12,7 @@
   "storeLinksCard": [
     {"type": "web", "url": "https://blockpanic.riverapp.jp", "label": "Webアプリ"},
     {"type": "app-store", "url": "https://apps.apple.com/app/blockpanic/id6761756050", "label": "App Store"},
-    {"type": "google-play", "url": "", "label": "Google Play", "disabled": true}
+    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.blockpanic", "label": "Google Play"}
   ],
   "storeGroupsDetail": [
     {
@@ -25,7 +25,7 @@
       "label": "スマホアプリをダウンロード",
       "links": [
         {"type": "app-store", "url": "https://apps.apple.com/app/blockpanic/id6761756050", "label": "App Store"},
-        {"type": "google-play", "url": "", "label": "Google Play — 準備中", "disabled": true}
+        {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=jp.riverapp.blockpanic", "label": "Google Play"}
       ]
     }
   ],
