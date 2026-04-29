@@ -4,11 +4,11 @@
   "name": "CircleTactics",
   "category": "game",
   "platforms": ["web"],
-  "shortDescription": "○×ゲームを進化させた戦略的ボードゲーム。4人対戦、4×4盤面、3サイズのコマ、2種類の勝利条件で奥深い駆け引きを楽しもう。1人のプレイヤーが3体のAIに挑む、新感覚の頭脳バトルです。",
+  "shortDescription": "○×ゲームを進化させた4人対戦の戦略ボードゲーム。ローカル対戦・オンライン対戦に対応。4×4盤面、3サイズのコマ、2種類の勝利条件で奥深い駆け引きを楽しもう。",
   "subtitle": "○×ゲームを進化させた戦略ボードゲーム",
-  "promoText": "○×ゲームを進化させた戦略的ボードゲーム。4人対戦、4×4盤面、3サイズのコマ、2種類の勝利条件で奥深い駆け引きを楽しもう。1人のプレイヤーが3体のAIに挑む、新感覚の頭脳バトルです。",
-  "tags": ["英語対応", "スマホ/PC両対応", "1人用", "ボードゲーム", "戦略ゲーム"],
-  "detailTags": ["英語対応", "スマホ/PC両対応", "Webアプリ", "1人用", "ボードゲーム", "戦略ゲーム"],
+  "promoText": "○×ゲームを進化させた4人対戦の戦略ボードゲーム。ローカル対戦・オンライン対戦に対応。4×4盤面、3サイズのコマ、2種類の勝利条件で奥深い駆け引きを楽しもう。",
+  "tags": ["英語対応", "スマホ/PC両対応", "オンライン対戦", "ローカル対戦", "ボードゲーム", "戦略ゲーム"],
+  "detailTags": ["英語対応", "スマホ/PC両対応", "Webアプリ", "オンライン対戦", "ローカル対戦", "ボードゲーム", "戦略ゲーム"],
   "storeLinksCard": [
     {"type": "web", "url": "https://circle-tactics.riverapp.jp", "label": "Webアプリ"}
   ],
@@ -23,13 +23,13 @@
   "links": [
     {"label": "今すぐプレイ", "url": "https://circle-tactics.riverapp.jp", "external": true}
   ],
-  "ogDescription": "○×ゲームを進化させた4人対戦の戦略ボードゲーム",
-  "description": "### CircleTacticsについて\n\nCircleTacticsは、誰もが知る○×ゲーム（三目並べ）を大胆に進化させた戦略ボードゲームです。従来の2人対戦・3×3マスのシンプルなゲームから、4人対戦・4×4マス・3サイズのコマ・2種類の勝利条件という要素を加え、より奥深い駆け引きと戦略性を実現しました。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- 4人対戦 — 1人のプレイヤーが3体のAIに挑戦\n- 3サイズのコマ（小・中・大）で戦略的な配置\n- 2種類の勝利条件で多彩な戦術\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### ルール\n\n4人のプレイヤーが順番にコマを配置します。各プレイヤーは小・中・大の3サイズのコマを各5個ずつ持ち、1つのマスには各サイズ1個ずつ配置できます。\n\n### 勝利条件\n\n- **セル勝利** — 1つのマスに自分のコマを小・中・大の3つすべて揃える\n- **ボード勝利** — 4×4盤面で自分のコマが存在するマスを縦・横・斜めに4つ揃える\n\n### 戦略のポイント\n\n1つのマスに異なるプレイヤーのコマが共存するため、単純な陣取りでは勝てません。セル勝利を狙いながらボード勝利の布石を打つ、あるいは相手のセル勝利を阻止しつつ自分の列を伸ばすなど、複数の勝利条件を同時に意識した判断が求められます。",
+  "ogDescription": "○×ゲームを進化させた4人対戦の戦略ボードゲーム。オンライン対戦にも対応",
+  "description": "### CircleTacticsについて\n\nCircleTacticsは、誰もが知る○×ゲーム（三目並べ）を大胆に進化させた戦略ボードゲームです。従来の2人対戦・3×3マスのシンプルなゲームから、4人対戦・4×4マス・3サイズのコマ・2種類の勝利条件という要素を加え、より奥深い駆け引きと戦略性を実現しました。\n\n### ゲームの特徴\n\n- ブラウザで今すぐ無料プレイ可能\n- **ローカル対戦** — 最大4人まで同じ端末で対戦（AI対戦も可）\n- **オンライン対戦** — ルームコードを共有して離れた相手とリアルタイム対戦\n- 3サイズのコマ（小・中・大）で戦略的な配置\n- 2種類の勝利条件で多彩な戦術\n- スマートフォン・タブレット・PCに対応\n- 登録不要・完全無料\n\n### ルール\n\n4人のプレイヤーが順番にコマを配置します。各プレイヤーは小・中・大の3サイズのコマを各4個ずつ持ち、1つのマスには各サイズ1個ずつ配置できます。\n\n### 勝利条件\n\n- **セル勝利** — 1つのマスに自分のコマを小・中・大の3つすべて揃える\n- **ボード勝利** — 4×4盤面で自分のコマが存在するマスを縦・横・斜めに4つ揃える\n\n### 対戦モード\n\n**ローカル対戦**では1〜4人のプレイヤー席を自由に設定し、空いた席はAIが担当します。友人・家族と同じ端末で気軽に楽しめます。\n\n**オンライン対戦**では6桁のルームコードを使ってリアルタイムマッチングが可能です。ルームを作成してコードを共有するか、コードを入力して参加するだけで、遠く離れた相手とすぐに対戦できます。\n\n### 戦略のポイント\n\n1つのマスに異なるプレイヤーのコマが共存するため、単純な陣取りでは勝てません。セル勝利を狙いながらボード勝利の布石を打つ、あるいは相手のセル勝利を阻止しつつ自分の列を伸ばすなど、複数の勝利条件を同時に意識した判断が求められます。",
   "en": {
-    "shortDescription": "A strategic board game that evolves tic-tac-toe. With 4 players, a 4x4 board, 3 piece sizes, and 2 win conditions, enjoy deep tactical gameplay. One player challenges 3 AIs in this fresh brain battle.",
+    "shortDescription": "A strategic board game that evolves tic-tac-toe. Supports local and online multiplayer. Enjoy deep tactical gameplay with a 4x4 board, 3 piece sizes, and 2 win conditions.",
     "subtitle": "An evolved tic-tac-toe strategy board game",
-    "promoText": "A strategic board game that evolves tic-tac-toe. With 4 players, a 4x4 board, 3 piece sizes, and 2 win conditions, enjoy deep tactical gameplay. One player challenges 3 AIs in this fresh brain battle.",
-    "description": "### About CircleTactics\n\nCircleTactics is a strategy board game that boldly evolves the classic tic-tac-toe. From the traditional 2-player, 3x3 simple game, it adds 4 players, a 4x4 board, 3 piece sizes, and 2 win conditions for deeper strategy and tactics.\n\n### Features\n\n- Play free in your browser right now\n- 4-player battle — one player challenges 3 AIs\n- 3 piece sizes (small, medium, large) for strategic placement\n- 2 win conditions for diverse tactics\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### Rules\n\n4 players take turns placing pieces. Each player has 5 pieces of each size (small, medium, large), and each cell can hold one piece of each size.\n\n### Win Conditions\n\n- **Cell Victory** — Place all 3 sizes (small, medium, large) of your pieces in a single cell\n- **Board Victory** — Align 4 cells containing your pieces vertically, horizontally, or diagonally on the 4x4 board\n\n### Strategic Tips\n\nSince different players' pieces can coexist in one cell, simple territory control won't win. You must simultaneously consider multiple win conditions — aiming for cell victories while laying groundwork for board victories, or blocking opponents' cell victories while extending your own lines.",
+    "promoText": "A strategic board game that evolves tic-tac-toe. Supports local and online multiplayer. Enjoy deep tactical gameplay with a 4x4 board, 3 piece sizes, and 2 win conditions.",
+    "description": "### About CircleTactics\n\nCircleTactics is a strategy board game that boldly evolves the classic tic-tac-toe. From the traditional 2-player, 3x3 simple game, it adds 4 players, a 4x4 board, 3 piece sizes, and 2 win conditions for deeper strategy and tactics.\n\n### Features\n\n- Play free in your browser right now\n- **Local play** — Up to 4 players on the same device (AI fills open seats)\n- **Online play** — Share a room code for real-time matches with remote players\n- 3 piece sizes (small, medium, large) for strategic placement\n- 2 win conditions for diverse tactics\n- Works on smartphones, tablets, and PCs\n- No registration required — completely free\n\n### Rules\n\n4 players take turns placing pieces. Each player has 4 pieces of each size (small, medium, large), and each cell can hold one piece of each size.\n\n### Win Conditions\n\n- **Cell Victory** — Place all 3 sizes (small, medium, large) of your pieces in a single cell\n- **Board Victory** — Align 4 cells containing your pieces vertically, horizontally, or diagonally on the 4x4 board\n\n### Game Modes\n\n**Local play** lets you freely assign 1–4 player seats, with AI filling any open seats. Great for playing with friends and family on the same device.\n\n**Online play** uses a 6-digit room code for real-time matchmaking. Simply create a room and share the code, or enter a code to join — and you're instantly matched with a remote opponent.\n\n### Strategic Tips\n\nSince different players' pieces can coexist in one cell, simple territory control won't win. You must simultaneously consider multiple win conditions — aiming for cell victories while laying groundwork for board victories, or blocking opponents' cell victories while extending your own lines.",
     "linkLabels": {
       "今すぐプレイ": "Play Now"
     }
