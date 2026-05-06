@@ -30,7 +30,7 @@
     "appDisplayName": "X Video Downloader",
     "about": {
       "catchcopy": "ポストURLを貼るだけ。Xの動画を即保存。",
-      "subcopy": "X（旧Twitter）に投稿された動画を、ブラウザだけでかんたんにダウンロードできる無料Webアプリ。\nポストのURLを貼り付けてボタンを押すだけで、最高画質のMP4ファイルとして保存できます。\nアカウント登録やソフトのインストールは不要。スマホからもPCからもすぐに使えます。\n\n【ご利用にあたっての重要なお願い】\n本アプリは、ご自身が権利を持つ動画、または投稿者から利用許諾を得たポストの動画のダウンロードにのみご利用ください。第三者の権利を侵害する目的での利用は固くお断りします。",
+      "subcopy": "X（旧Twitter）に投稿された動画を、ブラウザだけでかんたんにダウンロードできる無料Webアプリ。\nポストのURLを貼り付けてボタンを押すだけで、最高画質のMP4ファイルとして保存できます。\nアカウント登録やソフトのインストールは不要。スマホからもPCからもすぐに使えます。\n\n【ご利用にあたっての重要なお願い】\n本アプリは、ご自身が権利を持つ動画、または投稿者から利用許諾を得たポストの動画のダウンロードにのみご利用ください。\nお客様の操作による動画ダウンロードに伴うコンテンツ権利侵害について、開発者は一切の責任を負いません。動画の権利関係はお客様ご自身で事前に確認し、すべて自己責任でご利用ください。",
       "features": [
         {"name": "URL貼り付けで抽出", "desc": "XのポストURLを貼り付けて「動画を抽出」を押すだけ。難しい操作は一切ありません"},
         {"name": "最高画質を自動選択", "desc": "ポストに含まれる動画バリエーションの中から、最高ビットレートのMP4を自動的に選択して提供します"},
@@ -158,6 +158,16 @@
           ]
         },
         {
+          "title": "ユーザーの自己責任（重要）",
+          "body": "本アプリはダウンロード機能を提供する手段にすぎず、お客様の操作によって発生する一切の権利侵害について、開発者は責任を負いません。お客様自身が、ダウンロード対象となる動画について事前に権利関係を確認し、ご自身の責任でご利用ください。",
+          "bullets": [
+            "ダウンロード対象の動画について、著作権・肖像権・パブリシティ権・プライバシー権等の権利関係を事前に確認するのは、すべてお客様の責任です",
+            "ダウンロードする動画は、ご自身が権利を持つもの、または投稿者から利用許諾を得たものに限定してください",
+            "本アプリの利用により発生した第三者からの権利侵害の主張、損害賠償請求、削除請求、刑事責任等について、開発者は一切の責任を負わず、すべてお客様自身の自己責任において対応していただきます",
+            "違法または権利を侵害する目的で本アプリを利用し損害が生じた場合でも、開発者はその損害について免責されます"
+          ]
+        },
+        {
           "title": "利用料金",
           "body": "本アプリは無料でご利用いただけます。アプリ内課金や広告表示は一切ありません。"
         },
@@ -250,7 +260,7 @@
       "appDisplayName": "X Video Downloader",
       "about": {
         "catchcopy": "Just paste a URL. Save X videos instantly.",
-        "subcopy": "A free web app that lets you easily download videos from X (formerly Twitter) right in your browser.\nPaste a post URL, click the button, and save the highest-quality MP4 file.\nNo account registration or software installation needed. Works on smartphones and PCs alike.\n\n[Important Notice]\nUse this app only to download videos that you own the rights to, or videos for which you have obtained explicit permission from the poster. Use of the app to infringe third-party rights is strictly prohibited.",
+        "subcopy": "A free web app that lets you easily download videos from X (formerly Twitter) right in your browser.\nPaste a post URL, click the button, and save the highest-quality MP4 file.\nNo account registration or software installation needed. Works on smartphones and PCs alike.\n\n[Important Notice]\nUse this app only to download videos that you own the rights to, or videos for which you have obtained explicit permission from the poster.\nThe developer assumes no liability whatsoever for any rights infringement arising from your download actions. You are solely responsible for verifying the rights status of any video before downloading and for all use of the App at your own risk.",
         "features": [
           {"name": "Paste URL to Extract", "desc": "Just paste an X post URL and click \"Extract Video\". No complicated steps required"},
           {"name": "Best Quality Auto-Selected", "desc": "Automatically picks the highest-bitrate MP4 from the variants in the post"},
@@ -316,6 +326,7 @@
           {"title": "Introduction", "body": "These Terms of Service (hereinafter \"these Terms\") set forth the conditions for using {appName} (hereinafter \"the App\"). By using the App, you are deemed to have agreed to these Terms."},
           {"title": "Service Description", "body": "The App is a free web application that extracts and downloads videos from public posts on X (formerly Twitter).", "bullets": ["Extract video URLs from post URLs", "Save extracted videos as MP4 files", "No registration required — runs entirely in the browser"]},
           {"title": "Conditions of Use (Important)", "body": "You may use the App only to download videos that you own the rights to, or videos for which you have obtained explicit permission from the poster. Use of the App for purposes that infringe third-party rights, or downloading content not falling under any of the following, is prohibited.", "bullets": ["Videos that you yourself posted on X", "Videos for which you have obtained explicit permission from the rights holder", "Videos for which downloading and reuse are permitted under licenses such as Creative Commons"]},
+          {"title": "User Responsibility (Important)", "body": "The App is merely a means to provide download functionality. The developer assumes no liability whatsoever for any rights infringement arising from your use of the App. You must verify the rights status of any video before downloading and use the App entirely at your own risk.", "bullets": ["It is solely your responsibility to verify the rights status (copyright, portrait rights, publicity rights, privacy rights, etc.) of any video before downloading", "Limit downloads to videos that you own the rights to or for which you have obtained the poster's permission", "The developer assumes no liability whatsoever for any third-party claims of rights infringement, damages, takedown requests, or criminal liability arising from your use of the App — you are solely responsible for handling such matters", "The developer is fully indemnified from any damages arising from illegal use of the App or use that infringes the rights of others"]},
           {"title": "Pricing", "body": "The App is available free of charge. There are no in-app purchases or advertisements."},
           {"title": "Supported Content", "body": "The App supports only videos in public X posts that are retrievable via X's APIs. Due to X's specifications, the following types of videos cannot be extracted or downloaded by this App.", "bullets": ["Videos in posts from private (so-called locked) accounts", "Videos in deleted posts", "Videos flagged as sensitive content by X", "Videos in posts that include external link cards (Twitter Card / link previews)", "Long-form videos (videos exceeding the length limits set by X's distribution specifications)", "Videos in posts requiring authentication, age verification, or following"]},
           {"title": "Service Continuity", "body": "The App relies on public APIs operated by X (the syndication API and third-party public APIs) to retrieve video information. These APIs are operated independently by X, and the App's video extraction may be temporarily or permanently unavailable due to changes in X's specifications or service termination. The developer does not guarantee advance notice or recovery for such outages."},
