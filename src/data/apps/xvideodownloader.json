@@ -26,6 +26,179 @@
   ],
   "ogDescription": "X（旧Twitter）の動画をワンクリックでダウンロードできる無料Webツール",
   "description": "### X Video Downloaderについて\n\nX Video Downloaderは、X（旧Twitter）に投稿された動画をかんたんにダウンロードできるWebアプリです。ポストのURLを入力するだけで動画を抽出し、最高画質のMP4ファイルとして保存できます。アカウント登録やソフトのインストールは一切不要です。\n\n### 主な機能\n\n- XのポストURLを貼り付けるだけで動画を抽出\n- 最高ビットレートのMP4を自動選択\n- ワンクリックでダウンロード開始\n- 日本語・英語の2言語に対応\n- スマホ・PC両対応のレスポンシブデザイン\n- 動画はサーバーに保存されないプライバシー配慮設計\n\n### 使い方\n\n1. Xアプリまたはブラウザで動画付きポストのURLをコピー\n2. X Video DownloaderにURLを貼り付け\n3. 「動画を抽出」ボタンをクリック\n4. 表示された動画を確認し「ダウンロード」をクリック\n\n### 注意事項\n\n公開ポストの動画のみ対応しています。非公開アカウントや削除済みポストの動画は取得できません。ダウンロードした動画の利用は、著作権法およびXの利用規約に従ってください。",
+  "documents": {
+    "appDisplayName": "X Video Downloader",
+    "about": {
+      "catchcopy": "ポストURLを貼るだけ。Xの動画を即保存。",
+      "subcopy": "X（旧Twitter）に投稿された動画を、ブラウザだけでかんたんにダウンロードできる無料Webアプリ。\nポストのURLを貼り付けてボタンを押すだけで、最高画質のMP4ファイルとして保存できます。\nアカウント登録やソフトのインストールは不要。スマホからもPCからもすぐに使えます。",
+      "features": [
+        {"name": "URL貼り付けで抽出", "desc": "XのポストURLを貼り付けて「動画を抽出」を押すだけ。難しい操作は一切ありません"},
+        {"name": "最高画質を自動選択", "desc": "ポストに含まれる動画バリエーションの中から、最高ビットレートのMP4を自動的に選択して提供します"},
+        {"name": "ワンクリック保存", "desc": "抽出した動画はそのままブラウザのダウンロード機能で保存可能。保存先はブラウザの設定に従います"},
+        {"name": "サーバーに動画を保存しない", "desc": "動画ファイルはサーバーに蓄積されず、抽出のたびにX側から取得してそのまま転送します"},
+        {"name": "日本語・英語対応", "desc": "URLパラメータで言語を切り替え可能。海外ユーザーも安心して利用できます"},
+        {"name": "スマホ/PC両対応", "desc": "iOS・Android・PCのモダンブラウザに対応したレスポンシブデザイン"},
+        {"name": "完全無料・登録不要", "desc": "課金・広告・アカウント登録は一切なし。ブラウザを開くだけで誰でも無料で使えます"}
+      ],
+      "info": [
+        {"key": "対応プラットフォーム", "value": "Web（モダンブラウザ）"},
+        {"key": "価格", "value": "無料"},
+        {"key": "カテゴリ", "value": "ユーティリティ / 動画ダウンローダー"},
+        {"key": "対応コンテンツ", "value": "X（旧Twitter）の公開ポストに含まれる動画"},
+        {"key": "言語", "value": "日本語、英語"},
+        {"key": "開発", "value": "riverapp.jp"}
+      ],
+      "links": [
+        {"label": "プライバシーポリシー", "href": "/app-document/xvideodownloader/privacy-policy", "internal": true},
+        {"label": "利用規約", "href": "/app-document/xvideodownloader/terms-of-service", "internal": true},
+        {"label": "お問い合わせ", "href": "/app-document/xvideodownloader/contact", "internal": true},
+        {"label": "今すぐ使う（Web版）", "href": "https://x-video-downloader.riverapp.jp", "external": true},
+        {"label": "FAQ・使い方", "href": "https://x-video-downloader.riverapp.jp/faq.html", "external": true},
+        {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+      ]
+    },
+    "contact": {
+      "methods": [
+        {
+          "label": "お問い合わせフォーム",
+          "description": "Google フォームから送信",
+          "url": "https://forms.gle/VnHFHTUDhtagSNvn7",
+          "external": true
+        },
+        {
+          "label": "メールで問い合わせ",
+          "description": "riverapp.jp@gmail.com",
+          "url": "mailto:riverapp.jp@gmail.com",
+          "external": false
+        }
+      ]
+    },
+    "privacy-policy": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本プライバシーポリシーは、{appName}（以下「本アプリ」）における個人情報および利用情報の取り扱いについて説明するものです。本アプリは、お客様のプライバシーを尊重し、個人情報の保護に努めます。"
+        },
+        {
+          "title": "収集する情報",
+          "body": "本アプリは、個人情報を一切収集しません。",
+          "bullets": [
+            "アカウント登録やログインは不要です",
+            "氏名・メールアドレス等の個人情報は収集しません",
+            "Cookieによるトラッキングは行いません",
+            "アクセス解析ツールや広告SDKは一切使用していません"
+          ]
+        },
+        {
+          "title": "ポストURLの取り扱い",
+          "body": "お客様が入力したXポストのURLは、動画を抽出する目的でのみ、開発者の管理するサーバー（バックエンドAPI）に送信されます。サーバーはこのURLを使ってX側の公開APIから動画情報を取得し、動画URLを応答として返します。送信されたURLおよび関連データはサーバー側で永続的には保存されません。"
+        },
+        {
+          "title": "動画データの取り扱い",
+          "body": "動画ファイルそのものは、本アプリのサーバーに保存・蓄積されません。ダウンロード時はサーバーがX側から動画を取得し、ストリーミングでそのままお客様のブラウザに転送します（プロキシ経路）。これは、ブラウザのRefererポリシーに起因するダウンロード失敗を防ぐためのものです。"
+        },
+        {
+          "title": "利用するインフラ",
+          "body": "本アプリは以下のサービスを利用してホスティング・APIを提供しています。各サービスのプライバシーポリシーは各社の公式サイトをご確認ください。",
+          "bullets": [
+            "AWS Amplify（フロントエンドのホスティング）",
+            "Cloudflare Workers（動画抽出APIの実行環境）",
+            "X（旧Twitter）の公開シンジケーションAPI",
+            "vxtwitter.com / fxtwitter.com（公開APIフォールバック）"
+          ]
+        },
+        {
+          "title": "第三者への提供",
+          "body": "本アプリは、お客様のデータを第三者に提供、販売、共有することはありません。"
+        },
+        {
+          "title": "分析ツール・広告",
+          "body": "本アプリは、アクセス解析ツールや広告SDKを一切使用していません。"
+        },
+        {
+          "title": "お子様のプライバシー",
+          "body": "本アプリは個人情報を収集しないため、年齢を問わず安心してご利用いただけます。ただし、Xの利用規約はユーザーの年齢制限を設けています。Xの利用規約に従ってご利用ください。"
+        },
+        {
+          "title": "プライバシーポリシーの変更",
+          "body": "本プライバシーポリシーは、必要に応じて更新されることがあります。変更があった場合は、本ページにて最新の内容を掲載します。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本プライバシーポリシーに関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-05-06"
+    },
+    "terms-of-service": {
+      "sections": [
+        {
+          "title": "はじめに",
+          "body": "本利用規約（以下「本規約」）は、{appName}（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく場合、本規約に同意したものとみなします。"
+        },
+        {
+          "title": "サービスの内容",
+          "body": "本アプリは、X（旧Twitter）の公開ポストに含まれる動画を抽出・ダウンロードできる無料Webアプリケーションです。",
+          "bullets": [
+            "ポストURLからの動画URL抽出",
+            "抽出した動画のMP4ファイルとしての保存",
+            "登録不要・ブラウザのみで動作"
+          ]
+        },
+        {
+          "title": "利用料金",
+          "body": "本アプリは無料でご利用いただけます。アプリ内課金や広告表示は一切ありません。"
+        },
+        {
+          "title": "対応コンテンツ",
+          "body": "本アプリは、Xの公開ポストに含まれる動画のみに対応しています。非公開アカウントの投稿、削除済みポスト、認証が必要なポストの動画は取得できません。X側のAPI仕様変更により、一時的または恒久的に動画抽出ができなくなる場合があります。"
+        },
+        {
+          "title": "ダウンロードしたコンテンツの利用",
+          "body": "ダウンロードした動画の著作権は、原則として元の投稿者または権利者に帰属します。お客様は以下を遵守する必要があります。",
+          "bullets": [
+            "X（旧Twitter）の利用規約および各国の著作権法を遵守すること",
+            "個人で視聴する目的（私的利用）の範囲内に留めること",
+            "権利者の許諾なく動画を再配布・公開・商用利用しないこと",
+            "肖像権・パブリシティ権を侵害しないこと"
+          ]
+        },
+        {
+          "title": "禁止事項",
+          "body": "本アプリのご利用にあたり、以下の行為を禁止します。",
+          "bullets": [
+            "本アプリを利用した著作権・肖像権・その他権利の侵害行為",
+            "本アプリの逆コンパイル、リバースエンジニアリング、逆アセンブル",
+            "本アプリの改変、翻案、二次的著作物の作成",
+            "本アプリのAPIに対する大量・自動化されたアクセス、その他サーバーに過大な負荷をかける行為",
+            "本アプリを利用した営利目的の活動（個人の非商用利用に限ります）",
+            "その他、法令、公序良俗、またはXの利用規約に反する行為"
+          ]
+        },
+        {
+          "title": "知的財産権",
+          "body": "本アプリの実装、デザイン、UI、コンテンツ等に関するすべての知的財産権は開発者に帰属します。本規約は、本アプリの知的財産権をユーザーに移転するものではありません。なお、抽出される動画コンテンツの著作権は本アプリの開発者に帰属するものではなく、原則として元の投稿者または権利者に帰属します。"
+        },
+        {
+          "title": "免責事項",
+          "body": "開発者は、本アプリの利用により生じたいかなる損害についても、一切の責任を負いません。また、本アプリの動作および動画抽出の成功を保証するものではなく、X側のAPI仕様変更等により予告なくサービスの変更・中断・終了を行う場合があります。本アプリを使ってダウンロードしたコンテンツの利用に伴うトラブル（著作権侵害の主張、削除請求等）について、開発者は一切の責任を負いません。"
+        },
+        {
+          "title": "利用規約の変更",
+          "body": "開発者は、必要に応じて本規約を変更することがあります。変更後の規約は、本ページに掲載した時点で効力を生じるものとします。"
+        },
+        {
+          "title": "準拠法",
+          "body": "本規約の解釈および適用は、日本法に準拠するものとします。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "本利用規約に関するご質問やお問い合わせは、お問い合わせページよりご連絡ください。"
+        }
+      ],
+      "lastUpdated": "2026-05-06"
+    }
+  },
   "en": {
     "shortDescription": "Just paste an X (formerly Twitter) post URL to easily download videos. Automatically selects the highest quality MP4 and saves with one click. Supports Japanese and English, no registration required — a free tool.",
     "subtitle": "Save X videos with one click",
@@ -33,7 +206,90 @@
     "description": "### About X Video Downloader\n\nX Video Downloader is a web app that makes it easy to download videos posted on X (formerly Twitter). Simply enter the post URL to extract the video and save it as the highest quality MP4 file. No account registration or software installation required.\n\n### Key Features\n\n- Extract videos by pasting X post URLs\n- Automatically selects the highest bitrate MP4\n- One-click download\n- Supports Japanese and English\n- Responsive design for both mobile and PC\n- Privacy-conscious design — videos are not stored on our servers\n\n### How to Use\n\n1. Copy the URL of a video post from the X app or browser\n2. Paste the URL into X Video Downloader\n3. Click the \"Extract Video\" button\n4. Check the displayed video and click \"Download\"\n\n### Notes\n\nOnly videos from public posts are supported. Videos from private accounts or deleted posts cannot be retrieved. Please use downloaded videos in compliance with copyright laws and X's terms of service.",
     "linkLabels": {
       "今すぐ使う": "Use Now",
-      "FAQ・使い方": "FAQ & How to Use"
+      "FAQ・使い方": "FAQ & How to Use",
+      "このアプリについて": "About",
+      "プライバシーポリシー": "Privacy Policy",
+      "利用規約": "Terms of Service",
+      "お問い合わせ": "Contact"
+    },
+    "documents": {
+      "appDisplayName": "X Video Downloader",
+      "about": {
+        "catchcopy": "Just paste a URL. Save X videos instantly.",
+        "subcopy": "A free web app that lets you easily download videos from X (formerly Twitter) right in your browser.\nPaste a post URL, click the button, and save the highest-quality MP4 file.\nNo account registration or software installation needed. Works on smartphones and PCs alike.",
+        "features": [
+          {"name": "Paste URL to Extract", "desc": "Just paste an X post URL and click \"Extract Video\". No complicated steps required"},
+          {"name": "Best Quality Auto-Selected", "desc": "Automatically picks the highest-bitrate MP4 from the variants in the post"},
+          {"name": "One-Click Save", "desc": "Save the extracted video using your browser's standard download. Destination follows your browser settings"},
+          {"name": "No Server-Side Video Storage", "desc": "Videos are not stored on our servers — they are fetched from X on demand and streamed straight to you"},
+          {"name": "Japanese & English UI", "desc": "Switch language via URL parameter. Friendly to international users"},
+          {"name": "Mobile & PC Both Supported", "desc": "Responsive design that works on iOS, Android, and PC modern browsers"},
+          {"name": "Free, No Registration", "desc": "No payments, no ads, no account required. Just open the browser and use it"}
+        ],
+        "info": [
+          {"key": "Platform", "value": "Web (modern browsers)"},
+          {"key": "Price", "value": "Free"},
+          {"key": "Category", "value": "Utility / Video Downloader"},
+          {"key": "Supported Content", "value": "Videos in public posts on X (formerly Twitter)"},
+          {"key": "Language", "value": "Japanese, English"},
+          {"key": "Developer", "value": "riverapp.jp"}
+        ],
+        "links": [
+          {"label": "Privacy Policy", "href": "/app-document/xvideodownloader/privacy-policy", "internal": true},
+          {"label": "Terms of Service", "href": "/app-document/xvideodownloader/terms-of-service", "internal": true},
+          {"label": "Contact", "href": "/app-document/xvideodownloader/contact", "internal": true},
+          {"label": "Use Now (Web)", "href": "https://x-video-downloader.riverapp.jp", "external": true},
+          {"label": "FAQ & How to Use", "href": "https://x-video-downloader.riverapp.jp/faq.html", "external": true},
+          {"label": "riverapp.jp", "href": "https://riverapp.jp", "external": true}
+        ]
+      },
+      "contact": {
+        "methods": [
+          {
+            "label": "Contact Form",
+            "description": "Submit via Google Forms",
+            "url": "https://forms.gle/VnHFHTUDhtagSNvn7",
+            "external": true
+          },
+          {
+            "label": "Contact by Email",
+            "description": "riverapp.jp@gmail.com",
+            "url": "mailto:riverapp.jp@gmail.com",
+            "external": false
+          }
+        ]
+      },
+      "privacy-policy": {
+        "sections": [
+          {"title": "Introduction", "body": "This privacy policy explains how personal information and usage data are handled in {appName} (hereinafter \"the App\"). The App respects your privacy and is committed to protecting your personal information."},
+          {"title": "Information Collected", "body": "The App does not collect any personal information.", "bullets": ["No account registration or login required", "We do not collect personal information such as names or email addresses", "We do not use cookies for tracking", "No analytics tools or advertising SDKs are used"]},
+          {"title": "Handling of Post URLs", "body": "The X post URL you submit is sent to the developer's server (backend API) solely for the purpose of extracting the video. The server uses this URL to retrieve video information from X's public APIs and returns the video URL in response. Submitted URLs and related data are not persistently stored on our server."},
+          {"title": "Handling of Video Data", "body": "Video files themselves are not stored or accumulated on our server. During download, the server fetches the video from X and streams it directly to your browser (proxy path). This is to avoid download failures caused by browser Referer policies."},
+          {"title": "Infrastructure Used", "body": "The App uses the following services for hosting and APIs. Please refer to each provider's official site for their privacy policies.", "bullets": ["AWS Amplify (frontend hosting)", "Cloudflare Workers (video extraction API runtime)", "X (formerly Twitter) public syndication API", "vxtwitter.com / fxtwitter.com (public API fallbacks)"]},
+          {"title": "Third-Party Sharing", "body": "The App does not provide, sell, or share your data with any third parties."},
+          {"title": "Analytics & Advertising", "body": "The App does not use any analytics tools or advertising SDKs."},
+          {"title": "Children's Privacy", "body": "Since the App does not collect personal information, it can be used safely regardless of age. However, X's terms of service impose age restrictions on its users — please use this app in accordance with X's terms."},
+          {"title": "Policy Changes", "body": "This privacy policy may be updated as needed. Any changes will be posted on this page."},
+          {"title": "Contact", "body": "For questions regarding this privacy policy, please reach out through the contact page."}
+        ],
+        "lastUpdated": "2026-05-06"
+      },
+      "terms-of-service": {
+        "sections": [
+          {"title": "Introduction", "body": "These Terms of Service (hereinafter \"these Terms\") set forth the conditions for using {appName} (hereinafter \"the App\"). By using the App, you are deemed to have agreed to these Terms."},
+          {"title": "Service Description", "body": "The App is a free web application that extracts and downloads videos from public posts on X (formerly Twitter).", "bullets": ["Extract video URLs from post URLs", "Save extracted videos as MP4 files", "No registration required — runs entirely in the browser"]},
+          {"title": "Pricing", "body": "The App is available free of charge. There are no in-app purchases or advertisements."},
+          {"title": "Supported Content", "body": "The App supports only videos in public posts on X. Videos from private accounts, deleted posts, or posts requiring authentication cannot be retrieved. Due to changes in X's API specifications, video extraction may become temporarily or permanently unavailable."},
+          {"title": "Use of Downloaded Content", "body": "Copyright in downloaded videos generally belongs to the original poster or rights holder. You must comply with the following.", "bullets": ["Comply with X's (formerly Twitter) terms of service and applicable copyright laws in your jurisdiction", "Limit use to personal viewing (private use)", "Do not redistribute, publish, or commercially use the videos without permission from the rights holder", "Do not infringe portrait rights or publicity rights"]},
+          {"title": "Prohibited Activities", "body": "The following activities are prohibited when using the App.", "bullets": ["Infringement of copyrights, portrait rights, or other rights through use of the App", "Decompiling, reverse engineering, or disassembling the App", "Modifying, adapting, or creating derivative works", "Bulk or automated access to the App's API, or any actions that place excessive load on the server", "Using the App for commercial purposes (personal non-commercial use only)", "Any activities violating laws, public order, or X's terms of service"]},
+          {"title": "Intellectual Property", "body": "All intellectual property rights related to the App's implementation, design, UI, and content belong to the developer. These Terms do not transfer any intellectual property rights to the user. Note that copyrights to extracted video content do not belong to the App's developer — they generally belong to the original poster or rights holder."},
+          {"title": "Disclaimer", "body": "The developer shall not be liable for any damages arising from use of the App. The developer does not guarantee operation or successful video extraction, and may change, suspend, or terminate the service without prior notice due to changes in X's API specifications or other reasons. The developer assumes no responsibility for any disputes (copyright infringement claims, takedown requests, etc.) arising from the use of content downloaded with this App."},
+          {"title": "Changes to Terms", "body": "The developer may modify these Terms as needed. Changes take effect upon posting on this page."},
+          {"title": "Governing Law", "body": "These Terms shall be governed by the laws of Japan."},
+          {"title": "Contact", "body": "For questions regarding these Terms, please reach out through the contact page."}
+        ],
+        "lastUpdated": "2026-05-06"
+      }
     }
   }
 }
